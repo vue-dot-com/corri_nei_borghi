@@ -1,0 +1,202 @@
+/* Header */
+.header {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.navbar-corri-nei-borghi {
+  /*background-color: #7e2a2a;*/
+  background-color: #883939;
+  background-image: url(/public/images/bandiera_pace_vuota.jpg);
+  background-repeat: repeat-x;
+  background-size: 30% 5%;
+  background-position: bottom;
+  font-size: 20px;
+}
+
+.modal-titles {
+  color: #883939;
+  text-shadow: 1px 1px 1px black;
+}
+
+.modal-header {
+  background-color: #883939;
+  background-image: url(/public/images/bandiera_pace_vuota.jpg);
+  background-repeat: repeat-x;
+  background-size: 30% 5%;
+  background-position: bottom;
+  font-size: 20px;
+}
+
+.modal-header .modal-title {
+  color: #ef8a16;
+}
+
+.logo-small {
+  width: 150px;
+  transition: all linear 0.5s;
+}
+
+.tappe-tile {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 3px;
+}
+
+/* CSS for small screens (e.g., mobile devices) */
+@media (max-width: 768px) {
+  .navbar-corri-nei-borghi {
+    font-size: 10px; /* Decrease font size */
+  }
+
+  .nav-link {
+    padding: 0.5rem 0.75rem; /* Decrease padding */
+  }
+
+  .logo-small {
+    width: 50px; /* Decrease logo size */
+    transition: none;
+  }
+}
+
+.container-max-width {
+  max-width: 1600px !important;
+}
+
+.container-main {
+  padding-top: 5rem;
+}
+
+.carousel-background {
+  width: 100%;
+  height: 400px; /* Adjust height as needed */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-item {
+  position: relative;
+}
+
+.carousel-caption {
+  background-color: #66666698;
+}
+
+.menu-bar {
+  display: flex;
+  align-items: center;
+}
+
+.menu-voice-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.menu-voice-list li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.menu-voice-list li:last-child {
+  margin-right: 0;
+}
+
+.menu-voice-list a {
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.menu-voice-list a:hover {
+  color: #007bff;
+}
+
+.left-menu-part {
+  position: absolute;
+  left: 20%;
+}
+
+.right-menu-part {
+  position: absolute;
+  right: 20%;
+}
+
+/* New styles for event info */
+.event-info {
+  background-color: #f9f9f9;
+  padding: 20px;
+  text-align: center;
+}
+
+.event-info h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.event-info p {
+  font-size: 1rem;
+  color: #666;
+}
+
+#bootstrap-overrides .nav-link {
+  color: #ef8a16;
+  transition: all 0.3s ease;
+}
+#bootstrap-overrides .nav-item {
+  margin-right: 25px;
+  margin-left: 25px;
+}
+
+#bootstrap-overrides .nav-link:hover {
+  transform: scale(110%);
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+.bouncing-text {
+  animation: bounce 0.8s ease-in-out 3s 3;
+}
+
+/* Add styles for classifiche table */
+.classifiche-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.location-header,
+.non-competitiva-header,
+.competitiva-header {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+  background-color: #f2f2f2;
+}
+
+.location-cell,
+.non-competitiva-f-cell,
+.non-competitiva-m-cell,
+.competitiva-f-cell,
+.competitiva-m-cell {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+#bootstrap-overrides .card-img-top {
+  object-fit: cover;
+  height: 400px;
+}
