@@ -191,7 +191,7 @@ async function generateTappeCards(tappe, year, componentsIds) {
   // Loop through each location and load card.html, then populate and append it
   tappeFilteredOnYear.gare.forEach(async (gara) => {
     // Fetch card.html content
-    const response = await fetch("/src/components/card.html");
+    const response = await fetch("src/components/card.html");
     const html = await response.text();
 
     // Create a temporary element to parse the HTML string
@@ -261,7 +261,7 @@ async function generateModalsForCards(tappe, year, componentName) {
   // Loop through each location and load card.html, then populate and append it
   tappeFilteredOnYear.gare.forEach(async (gara) => {
     // Fetch card.html content
-    const response = await fetch(`/src/components/${componentName}.html`);
+    const response = await fetch(`src/components/${componentName}.html`);
     const html = await response.text();
 
     // Create a temporary element to parse the HTML string

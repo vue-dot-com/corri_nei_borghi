@@ -9,7 +9,7 @@
 .navbar-corri-nei-borghi {
   /*background-color: #7e2a2a;*/
   background-color: #883939;
-  background-image: url(/public/images/bandiera_pace_vuota.jpg);
+  background-image: url(../images/bandiera_pace_vuota.jpg);
   background-repeat: repeat-x;
   background-size: 30% 5%;
   background-position: bottom;
@@ -23,7 +23,7 @@
 
 .modal-header {
   background-color: #883939;
-  background-image: url(/public/images/bandiera_pace_vuota.jpg);
+  background-image: url(../images/bandiera_pace_vuota.jpg);
   background-repeat: repeat-x;
   background-size: 30% 5%;
   background-position: bottom;
