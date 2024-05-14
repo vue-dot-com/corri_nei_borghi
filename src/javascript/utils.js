@@ -189,7 +189,8 @@ async function generateTappeCards(tappe, year, componentsIds) {
   const cardContainer = document.getElementById(cardContainerId);
 
   // Loop through each location and load card.html, then populate and append it
-  tappeFilteredOnYear.gare.forEach(async (gara) => {
+  // Array to store promises for fetching HTML content, in this way tappe cards are ordered by appearance.
+  const fetchPromises = tappeFilteredOnYear.gare.map(async (gara) => {
     // Fetch card.html content
     const response = await fetch("src/components/card.html");
     const html = await response.text();
@@ -198,7 +199,7 @@ async function generateTappeCards(tappe, year, componentsIds) {
     const tempElement = document.createElement("div");
     tempElement.innerHTML = html.trim();
 
-    // Replace placeholder information with actual data
+    // Populate card with data
     tempElement.querySelector(
       "#card-tappa-image"
     ).innerHTML = `<img src="${gara.imgCopertina}" class="card-img-top" alt="${gara.name} copertina" />`;
@@ -250,9 +251,15 @@ async function generateTappeCards(tappe, year, componentsIds) {
     modals.forEach(
       (modal) => (modal.id = `${modal.id}-${gara.location.toLowerCase()}`)
     );
-    // Append the card to the card container
-    cardContainer.appendChild(tempElement.querySelector("#card-tappe"));
+
+    return tempElement.querySelector("#card-tappe");
   });
+
+  // Wait for all fetch and population operations to complete
+  const cards = await Promise.all(fetchPromises);
+
+  // Append all cards to the card container in the correct order
+  cards.forEach((card) => cardContainer.appendChild(card));
 }
 
 async function generateModalsForCards(tappe, year, componentName) {
@@ -279,7 +286,6 @@ async function generateModalsForCards(tappe, year, componentName) {
     // Replace modal content
     const modalBody = tempElement.querySelector(".modal-body");
     let modalBodyContent;
-    // TODO: Each modal has itw own structure
     if (componentName === "programma") {
       modalBodyContent = generateProgrammaModalBodyContent(gara);
     }
@@ -300,8 +306,6 @@ async function generateModalsForCards(tappe, year, componentName) {
     const existingModal = document.getElementById(
       `modal-${componentName}-${gara.location.toLowerCase()}`
     );
-
-    console.log(existingModal);
 
     existingModal.parentNode.replaceChild(
       tempElement.querySelector(
@@ -355,7 +359,7 @@ function generatePercorsoModalBodyContent(tappa) {
     ${e.gpx ? `<li><strong>Gpx file:</strong> ${e.gpx}</li>` : ""}
     ${
       e.img
-        ? `<li><strong>Immagine percorso:</strong> <img src="${e.img}" /></li>`
+        ? `<li><strong>Immagine percorso:</strong> <img src="${e.img}" class="img-fluid"/></li>`
         : ""
     }
     </ul>
