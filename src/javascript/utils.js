@@ -10,13 +10,13 @@ function resizeHeaderLogo() {
   window.addEventListener("scroll", function () {
     // Calculate the new width based on scroll position
     if (this.window.scrollY > 20) {
-      var newWidth = 100; // Adjust the factor as needed
+      var newWidth = 35; // Adjust the factor as needed
     } else {
-      newWidth = 150;
+      newWidth = 60;
     }
 
     // Set the new width for the image
-    logoImage.style.width = newWidth + "px";
+    logoImage.style.width = newWidth + "%";
   });
 }
 
@@ -204,7 +204,7 @@ async function generateTappeCards(tappe, year, componentsIds) {
       "#card-tappa-image"
     ).innerHTML = `<img src="${gara.imgCopertina}" class="card-img-top" alt="${gara.name} copertina" />`;
     tempElement.querySelector("#card-tappa-information").innerHTML = `
-      <h5 class="card-title" style="color: #883939"><b>${gara.location}</b></h5>
+      <h5 class="card-title" style="color: #7f2b2b"><b>${gara.location}</b></h5>
       <h6 class="card-subtitle">${gara.date}</h6>
       <p class="card-text">${gara.description}</p>
     `;

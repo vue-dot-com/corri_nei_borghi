@@ -7,8 +7,7 @@
 }
 
 .navbar-corri-nei-borghi {
-  /*background-color: #7e2a2a;*/
-  background-color: #883939;
+  background-color: #7f2b2b;
   background-image: url(../images/bandiera_pace_vuota.jpg);
   background-repeat: repeat-x;
   background-size: 30% 5%;
@@ -16,13 +15,25 @@
   font-size: 20px;
 }
 
+.footer-corri-nei-borghi {
+  background-color: #7f2b2b;
+  background-image: url(../images/bandiera_pace_vuota.jpg);
+  background-repeat: repeat-x;
+  background-size: 30% 5%;
+  background-position: bottom;
+}
+
+.footer-corri-nei-borghi .text-content {
+  color: #ef8a16;
+}
+
 .modal-titles {
-  color: #883939;
+  color: #7f2b2b;
   text-shadow: 1px 1px 1px black;
 }
 
 .modal-header {
-  background-color: #883939;
+  background-color: #7f2b2b;
   background-image: url(../images/bandiera_pace_vuota.jpg);
   background-repeat: repeat-x;
   background-size: 30% 5%;
@@ -35,20 +46,49 @@
 }
 
 .logo-small {
-  width: 150px;
+  width: 60%;
   transition: all linear 0.5s;
+}
+
+.container-tappe-tile {
+  position: relative;
 }
 
 .tappe-tile {
   max-width: 100%;
   max-height: 100%;
   border-radius: 3px;
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+
+.middle-tappe-tile {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container-tappe-tile:hover .tappe-tile {
+  opacity: 0.3;
+}
+
+.container-tappe-tile:hover .middle-tappe-tile {
+  opacity: 1;
 }
 
 /* CSS for small screens (e.g., mobile devices) */
 @media (max-width: 768px) {
   .navbar-corri-nei-borghi {
-    font-size: 10px; /* Decrease font size */
+    font-size: 15 px; /* Decrease font size */
   }
 
   .nav-link {
