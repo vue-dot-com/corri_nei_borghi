@@ -405,3 +405,76 @@ function enablePopovers() {
     (popoverTriggerEl) => new bootstrap.Popover(popoverTriggerEl)
   );
 }
+
+function convertDates(tappe, year) {
+  const tappeFilteredOnYear = tappe.filter((elem) => elem.year === year)[0];
+  const dates = tappeFilteredOnYear.gare.map((gara) => {
+    let tmpDate = gara.date.split(" ");
+    if (tmpDate[1] === "Luglio") {
+      tmpDate[1] = "07" - 1;
+    } else {
+      tmpDate[1] = "08" - 1;
+    }
+    tmpDate.push(year);
+    const newDate = new Date(Date.UTC(tmpDate[2], tmpDate[1], tmpDate[0]));
+    const newTimeStamp = newDate.getTime();
+    return newTimeStamp;
+  });
+  return dates;
+}
+
+function startTimer(tappe, year, componentName) {
+  const tappeFilteredOnYear = tappe.filter((elem) => elem.year === year)[0];
+  let start = new Date(parseInt(Date.now()));
+  // Delay start date by one day so that we can show we are in the event day
+  start.setHours(start.getHours() + 24);
+  const convertedDates = convertDates(tappe, year);
+  let nextDates = convertedDates.filter((date) => date > start);
+
+  if (nextDates.length > 0) {
+    const tappaName =
+    tappeFilteredOnYear.gare[tappeFilteredOnYear.gare.length - nextDates.length]
+      .location;
+    const nextDate = nextDates[0];
+    const intervalId = setInterval(() => {
+      const now = Date.now();
+      let difference = nextDate - now;
+
+      if (difference <= 0) {
+        clearInterval(intervalId);
+        // Optionally handle the case when the countdown ends
+        document
+          .getElementById(componentName)
+          .getElementsByClassName(
+            "countdown-content"
+          )[0].innerText = `Ci vediamo questa sera a ${tappaName}!`;
+        return;
+      }
+
+      const days = Math.floor(difference / (1000 * 60 * 60 * 24));
+      difference -= days * 1000 * 60 * 60 * 24;
+
+      const hours = Math.floor(difference / (1000 * 60 * 60));
+      difference -= hours * 1000 * 60 * 60;
+
+      const minutes = Math.floor(difference / (1000 * 60));
+      difference -= minutes * 1000 * 60;
+
+      const seconds = Math.floor(difference / 1000);
+
+      const countdownString = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+
+      // Update the UI component with the countdown string
+      document
+        .getElementById(componentName)
+        .getElementsByClassName("countdown-content")[0].innerText =
+        countdownString;
+    }, 1000);
+  } else {
+    // Optionally handle the case when there are no upcoming dates
+    document
+      .getElementById(componentName)
+      .getElementsByClassName("countdown-content")[0].innerText =
+      "Ci vediamo l'anno prossimo! Grazie a tutti...";
+  }
+}

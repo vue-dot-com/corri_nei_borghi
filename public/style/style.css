@@ -240,3 +240,15 @@
   object-fit: cover;
   height: 400px;
 }
+
+#countdown .card {
+  margin-bottom: 2px;
+}
+
+#countdown .card-header{
+  background-color: #7f2b2b;
+}
+
+#countdown .card-subtitle{
+  color:#ef8a16 !important;
+}
