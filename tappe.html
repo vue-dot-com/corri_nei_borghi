@@ -58,19 +58,19 @@
     <script type="module">
       import constants from "./src/javascript/constants.js";
       // Call the fetch navbar
-      await fetchAndInsertNavbar("tappe");
+      fetchAndInsertNavbar("tappe");
       // Call other functions to insert components
-      await fetchAndInsertComponent("src/components/sponsor.html", "sponsor");
-      await fetchAndInsertComponent("src/components/footer.html", "footer");
+      fetchAndInsertComponent("src/components/sponsor.html", "sponsor");
+      fetchAndInsertComponent("src/components/footer.html", "footer");
       // For each tappa generate a card
-      await generateTappeCards(constants.tappe, 2024, {
+      generateTappeCards(constants.tappe, 2024, {
         cardContainerId: "cardContainer",
       });
 
-      await generateModalsForCards(constants.tappe, 2024, "percorso");
-      await generateModalsForCards(constants.tappe, 2024, "programma");
-      await generateModalsForCards(constants.tappe, 2024, "regolamento");
-      await generateModalsForCards(constants.tappe, 2024, "classifica");
+      generateModalsForCards(constants.tappe, 2024, "percorso");
+      generateModalsForCards(constants.tappe, 2024, "programma");
+      generateModalsForCards(constants.tappe, 2024, "regolamento");
+      generateModalsForCards(constants.tappe, 2024, "classifica");
       enablePopovers();
     </script>
   </body>
