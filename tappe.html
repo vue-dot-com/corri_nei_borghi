@@ -62,15 +62,11 @@
       // Call other functions to insert components
       fetchAndInsertComponent("src/components/sponsor.html", "sponsor");
       fetchAndInsertComponent("src/components/footer.html", "footer");
-      // For each tappa generate a card
-      generateTappeCards(constants.tappe, 2024, {
+      // For each tappa generate a card and its modals
+      generateTappePageContent(constants.tappe, 2024, {
         cardContainerId: "cardContainer",
+        modals: ["percorso", "programma", "regolamento", "classifica"],
       });
-
-      generateModalsForCards(constants.tappe, 2024, "percorso");
-      generateModalsForCards(constants.tappe, 2024, "programma");
-      generateModalsForCards(constants.tappe, 2024, "regolamento");
-      generateModalsForCards(constants.tappe, 2024, "classifica");
       enablePopovers();
     </script>
   </body>

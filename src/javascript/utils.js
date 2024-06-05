@@ -181,12 +181,11 @@ function setElementAttibutes(element, attributes = {}) {
   }
 }
 
-async function generateTappeCards(tappe, year, componentsIds) {
-  const { cardContainerId } = componentsIds;
+async function generateTappeCards(tappe, year, componentId) {
   const tappeFilteredOnYear = tappe.filter((elem) => elem.year === year)[0];
 
   // Get the container element for the cards
-  const cardContainer = document.getElementById(cardContainerId);
+  const cardContainer = document.getElementById(componentId);
 
   // Loop through each location and load card.html, then populate and append it
   // Array to store promises for fetching HTML content, in this way tappe cards are ordered by appearance.
@@ -397,6 +396,19 @@ function generateClassificaModalBodyContent(tappa) {
   return html;
 }
 
+function generateTappePageContent(tappe, year, componentsIds) {
+  // We use then and not async await in order to support old mobile browsers like my Safari on iPhone 6
+  generateTappeCards(tappe, year, componentsIds.cardContainerId)
+    .then(() => {
+      componentsIds.modals.forEach((modal) => {
+        generateModalsForCards(tappe, year, modal);
+      });
+    })
+    .catch((error) => {
+      console.error("An error occurred during the process:", error);
+    });
+}
+
 function enablePopovers() {
   const popoverTriggerList = document.querySelectorAll(
     '[data-bs-toggle="popover"]'
@@ -433,8 +445,9 @@ function startTimer(tappe, year, componentName) {
 
   if (nextDates.length > 0) {
     const tappaName =
-    tappeFilteredOnYear.gare[tappeFilteredOnYear.gare.length - nextDates.length]
-      .location;
+      tappeFilteredOnYear.gare[
+        tappeFilteredOnYear.gare.length - nextDates.length
+      ].location;
     const nextDate = nextDates[0];
     const intervalId = setInterval(() => {
       const now = Date.now();
