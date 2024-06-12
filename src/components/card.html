@@ -3,54 +3,71 @@
   <div class="card-body">
     <div id="card-tappa-information"></div>
     <br />
-    <div
-      class="btn-group btn-group-sm"
-      role="group"
-      aria-label="Basic radio toggle button group"
-    >
-      <input
-        type="radio"
-        class="btn-check"
-        name="btnradio"
-        id="btnradio1"
-        autocomplete="off"
-        data-bs-toggle="modal"
-        data-bs-target="#programma"
-      />
-      <label class="btn btn-outline-primary" for="btnradio1">Programma</label>
+    <div class="card-buttons">
+      <div
+        class="btn-group btn-group-sm"
+        id="btn-group-modals"
+        role="group"
+        aria-label="Basic radio toggle button group"
+      >
+        <input
+          type="radio"
+          class="btn-check"
+          name="btnradio"
+          id="btnradio1"
+          autocomplete="off"
+          data-bs-toggle="modal"
+          data-bs-target="#programma"
+        />
+        <label class="btn btn-outline-primary" for="btnradio1">Programma</label>
 
-      <input
-        type="radio"
-        class="btn-check"
-        name="btnradio"
-        id="btnradio2"
-        autocomplete="off"
-        data-bs-toggle="modal"
-        data-bs-target="#percorso"
-      />
-      <label class="btn btn-outline-primary" for="btnradio2">Percorso</label>
+        <input
+          type="radio"
+          class="btn-check"
+          name="btnradio"
+          id="btnradio2"
+          autocomplete="off"
+          data-bs-toggle="modal"
+          data-bs-target="#percorso"
+        />
+        <label class="btn btn-outline-primary" for="btnradio2">Percorso</label>
 
-      <input
-        type="radio"
-        class="btn-check"
-        name="btnradio"
-        id="btnradio3"
-        autocomplete="off"
-        data-bs-toggle="modal"
-        data-bs-target="#regolamento"
-      />
-      <label class="btn btn-outline-primary" for="btnradio3">Regolamento</label>
+        <input
+          type="radio"
+          class="btn-check"
+          name="btnradio"
+          id="btnradio3"
+          autocomplete="off"
+          data-bs-toggle="modal"
+          data-bs-target="#regolamento"
+        />
+        <label class="btn btn-outline-primary" for="btnradio3"
+          >Regolamento</label
+        >
 
-      <input
-        type="radio"
-        class="btn-check"
-        name="btnradio"
-        id="btnradio4"
-        autocomplete="off"
-        data-bs-toggle="modal"
-        data-bs-target="#classifica"
-      />
-      <label class="btn btn-outline-primary" for="btnradio4">Classifiche</label>
+        <input
+          type="radio"
+          class="btn-check"
+          name="btnradio"
+          id="btnradio4"
+          autocomplete="off"
+          data-bs-toggle="modal"
+          data-bs-target="#classifica"
+        />
+        <label class="btn btn-outline-primary" for="btnradio4"
+          >Classifiche</label
+        >
+      </div>
+
+      <br />
+
+      <button
+        type="button"
+        class="btn btn-primary px-4 bouncing-text"
+        id="button-iscriviti"
+      >
+        <b>ISCRIVITI</b>
+      </button>
     </div>
     <div id="modal-programma"></div>
     <div id="modal-percorso"></div>

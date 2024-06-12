@@ -241,14 +241,20 @@
   height: 400px;
 }
 
+#card-tappe .card-buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 #countdown .card {
   margin-bottom: 2px;
 }
 
-#countdown .card-header{
+#countdown .card-header {
   background-color: #7f2b2b;
 }
 
-#countdown .card-subtitle{
-  color:#ef8a16 !important;
+#countdown .card-subtitle {
+  color: #ef8a16 !important;
 }

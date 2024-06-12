@@ -208,6 +208,14 @@ async function generateTappeCards(tappe, year, componentId) {
       <p class="card-text">${gara.description}</p>
     `;
 
+    // Dynamically set external link for the Iscriviti button
+    const iscrivitiButton = tempElement.querySelector("#button-iscriviti");
+
+    setElementAttibutes(iscrivitiButton, {
+      id: `button-iscriviti-${gara.location.toLowerCase()}`,
+      onclick: `window.open('${gara.links.iscrizioni}', '_blank');`,
+    });
+
     // Replace modal buttons to point to the correct programma/percorso/regolamento
     // Get all radio buttons with class 'btn-check' and related labels
     const radioButtons = tempElement.querySelectorAll(".btn-check");
@@ -259,6 +267,20 @@ async function generateTappeCards(tappe, year, componentId) {
 
   // Append all cards to the card container in the correct order
   cards.forEach((card) => cardContainer.appendChild(card));
+
+  // Add event listener to change button group class depending on screen size
+  const resizeButtonGroup = () => {
+    let buttonGroup = document.getElementById("btn-group-modals");
+    console.log(buttonGroup);
+    window.innerWidth < 420
+      ? setElementAttibutes(buttonGroup, {
+          class: "btn-group-vertical btn-group-sm",
+        })
+      : setElementAttibutes(buttonGroup, { class: "btn-group btn-group-sm" });
+  };
+
+  // Add event listener for window resize
+  window.addEventListener("resize", resizeButtonGroup);
 }
 
 async function generateModalsForCards(tappe, year, componentName) {

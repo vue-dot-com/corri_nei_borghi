@@ -60,6 +60,10 @@ const tappe = [
           f: "",
           m: "",
         },
+        links: {
+          iscrizioni: "https://api.endu.net/r/i/86643",
+          classifiche: "https://api.endu.net/r/r/86643",
+        },
         regolamento: "",
       },
       {
@@ -114,6 +118,10 @@ const tappe = [
         competitiva: {
           f: "",
           m: "",
+        },
+        links: {
+          iscrizioni: "https://api.endu.net/r/i/86682",
+          classifiche: "https://api.endu.net/r/r/86682",
         },
         regolamento: "public/files/regulations/2024_vertova.pdf",
       },
@@ -171,6 +179,10 @@ const tappe = [
           f: "",
           m: "",
         },
+        links: {
+          iscrizioni: "https://api.endu.net/r/i/86720",
+          classifiche: "https://api.endu.net/r/r/86720",
+        },
         regolamento: "",
       },
       {
@@ -226,6 +238,10 @@ const tappe = [
         competitiva: {
           f: "",
           m: "",
+        },
+        links: {
+          iscrizioni: "https://api.endu.net/r/i/86765",
+          classifiche: "https://api.endu.net/r/ec/86765",
         },
         regolamento: "",
       },
@@ -283,6 +299,10 @@ const tappe = [
           f: "",
           m: "",
         },
+        links: {
+          iscrizioni: "https://api.endu.net/r/i/92117",
+          classifiche: "https://api.endu.net/r/r/92117",
+        },
         regolamento: "",
       },
       {
@@ -338,6 +358,10 @@ const tappe = [
         competitiva: {
           f: "",
           m: "",
+        },
+        links: {
+          iscrizioni: "https://api.endu.net/r/i/86823",
+          classifiche: "https://api.endu.net/r/r/86823",
         },
         regolamento: "",
       },
@@ -396,6 +420,10 @@ const tappe = [
           f: "",
           m: "",
         },
+        links: {
+          iscrizioni: "https://api.endu.net/r/i/86806",
+          classifiche: "https://api.endu.net/r/r/86806",
+        },
         regolamento: "public/files/regulations/2024_parre.pdf",
       },
       {
@@ -453,10 +481,20 @@ const tappe = [
           f: "",
           m: "",
         },
+        links: {
+          iscrizioni: "https://api.endu.net/r/i/86837",
+          classifiche: "https://api.endu.net/r/r/86837",
+        },
         regolamento: "public/files/regulations/2024_cerete.pdf",
       },
     ],
-    trofeo: { individuale: "", squadre: "" },
+    trofeo: {
+      individuale: "",
+      squadre: "",
+      links: {
+        classifiche: "https://api.endu.net/r/r/85547",
+      },
+    },
   },
 ];
 
