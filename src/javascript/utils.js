@@ -270,12 +270,17 @@ async function generateTappeCards(tappe, year, componentId) {
 
   // Add event listener to change button group class depending on screen size
   const resizeButtonGroup = () => {
-    let buttonGroup = document.getElementById("btn-group-modals");
-    window.innerWidth < 420
-      ? setElementAttibutes(buttonGroup, {
+    let buttonGroup = document.querySelectorAll("#btn-group-modals");
+    console.log(buttonGroup);
+    buttonGroup.forEach((button) => {
+      if (window.innerWidth < 420) {
+        setElementAttibutes(button, {
           class: "btn-group-vertical btn-group-sm",
-        })
-      : setElementAttibutes(buttonGroup, { class: "btn-group btn-group-sm" });
+        });
+      } else {
+        setElementAttibutes(button, { class: "btn-group btn-group-sm" });
+      }
+    });
   };
 
   // Trigger resize on first load
