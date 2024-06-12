@@ -95,22 +95,22 @@
             <div
               class="d-grid gap-2 d-md-flex justify-content-center mb-5 align-items-center"
             >
-              <span
+              <!-- Now enrollments are open <span
                 class="d-flex justify-content-center"
                 tabindex="0"
                 data-bs-toggle="popover"
                 data-bs-trigger="hover focus"
                 data-bs-title="Iscrizioni chiuse"
-                data-bs-content="Al momento le iscrizioni sono chiuse. Quando le apriremo, sarai reindirizzato al sito Endu per completare la tua iscrizione. Grazie!"
+                data-bs-content="Al momento le iscrizioni sono chiuse. Quando le apriremo, sarai reindirizzato al sito Endu per completare la tua iscrizione alla tappa selezionata. Grazie!"
+              > -->
+              <button
+                type="button"
+                class="btn btn-primary btn-lg px-4 me-md-2 bouncing-text"
+                id="button-color"
               >
-                <button
-                  type="button"
-                  class="btn btn-primary btn-lg px-4 me-md-2 bouncing-text"
-                  id="button-color"
-                >
-                  <b>ISCRIVITI</b>
-                </button>
-              </span>
+                <b>ISCRIVITI</b>
+              </button>
+              <!-- </span> -->
               <span
                 class="d-inline-block"
                 tabindex="0"
@@ -173,6 +173,9 @@
       startTimer(constants.tappe, 2024, "countdown");
       // Call to enable popovers on the page
       enablePopovers();
+      document.getElementById("button-color").onclick = function () {
+        location.href = "tappe.html";
+      };
     </script>
   </body>
 </html>
