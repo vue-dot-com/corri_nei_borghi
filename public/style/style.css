@@ -241,18 +241,18 @@
   height: 400px;
 }
 
-#btn-group-modals .btn:hover{
+#btn-group-modals .btn:hover {
   background-color: rgb(233, 230, 230);
   font-weight: 500;
 }
 
-#btn-group-modals .btn-check:checked+.btn {
+#btn-group-modals .btn-check:checked + .btn {
   background-color: rgba(233, 230, 230, 0.694);
   font-weight: 500;
   color: #7f2b2b;
 }
 
-#btn-group-modals .btn-check:checked+.btn:hover {
+#btn-group-modals .btn-check:checked + .btn:hover {
   background-color: rgb(233, 230, 230);
   font-weight: 500;
 }
@@ -260,7 +260,7 @@
 #btn-group-modals .btn {
   background-color: whitesmoke;
   border-color: white;
-  color:#7f2b2b
+  color: #7f2b2b;
 }
 
 #card-tappe .card-buttons {
@@ -279,4 +279,8 @@
 
 #countdown .card-subtitle {
   color: #ef8a16 !important;
+}
+
+#bootstrap-overrides .accordion-body {
+  overflow: auto;
 }
