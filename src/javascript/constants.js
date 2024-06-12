@@ -88,7 +88,7 @@ const tappe = [
         },
         percorso: {
           baby: {
-            km: "Under 8: 350 mt. Under 14: 900 mt. (possibilità di n.2 categorie in base agli iscritti) ",
+            km: "Under 8: 350 mt. | Under 14: 900 mt. (possibilità di n.2 categorie in base agli iscritti)",
             dislivello: "",
             img: "public/images/courses/vertova_baby.png",
             gpx: "",
@@ -190,45 +190,44 @@ const tappe = [
         location: "Gromo",
         date: "26 Luglio",
         logo: "/public/images/logos/gromo.png",
-        description: "",
+        description: "Gara podistica per le vie del borgo medievale di Gromo",
         imgCopertina:
           "https://upload.wikimedia.org/wikipedia/commons/1/1d/Borgo_di_Gromo.jpg",
         programma: {
-          partenzaBaby: "",
-          partenzaNonCompetitiva: "",
-          partenzaCompetitiva: { m: "", f: "" },
-          ritrovo: "",
-          parcheggi: "",
-          docce: "",
-          ristoro: "",
-          altro: "",
+          partenzaBaby: "18:45",
+          partenzaNonCompetitiva: "19:30",
+          partenzaCompetitiva: { m: "20:45", f: "20:15" },
+          ritrovo: "Piazza Dante",
+          parcheggi: "Presso il piazzale del borgo, su via papa Giovanni XXIII",
+          docce: "No",
+          ristoro: "Pasta party a fine competizione in piazza Dante",
+          altro:
+            "Iscrizioni presso ufficio turistico in piazza Dante. Contatti: prolocogromo@gmail.com / Matteo 3922442636",
         },
         percorso: {
           baby: {
-            km: "",
+            km: "Under 8: 700 mt | 9-11 anni: 700 mt | 12-13 anni: 2,5 km",
             dislivello: "",
-            img: "",
+            img: "public/images/courses/gromo_baby.png",
             gpx: "",
           },
           nonCompetitiva: {
-            km: "",
+            km: "4 km",
             dislivello: "",
-            img: "",
+            img: "public/images/courses/gromo_nc_c.png",
             gpx: "",
           },
           competitiva: {
             m: {
-              km: "",
-              dislivello: "",
-              img: "",
-              gpx: "",
+              km: "6 km",
+              dislivello: "200 mt",
             },
             f: {
-              km: "",
-              dislivello: "",
-              img: "",
-              gpx: "",
+              km: "4 km",
+              dislivello: "150 mt",
             },
+            img: "public/images/courses/gromo_nc_c.png",
+            gpx: "",
           },
         },
         nonCompetitiva: {
@@ -243,7 +242,7 @@ const tappe = [
           iscrizioni: "https://api.endu.net/r/i/86765",
           classifiche: "https://api.endu.net/r/ec/86765",
         },
-        regolamento: "",
+        regolamento: "public/files/regulations/2024_gromo.pdf",
       },
       {
         name: "",
@@ -386,7 +385,7 @@ const tappe = [
         },
         percorso: {
           baby: {
-            km: "R1 300m - R2 600 m - R3 1500 m",
+            km: "R1 300m | R2 600 m | R3 1500 m",
             dislivello: "",
             img: "",
             gpx: "",
