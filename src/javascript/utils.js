@@ -1,7 +1,7 @@
 function resizeHeaderLogo() {
   // Check window size
-  if (window.innerWidth <= 768) {
-    // Avoid running the function if window size is 768px or smaller
+  if (window.innerWidth <= 1200) {
+    // Avoid running the function if window size is 1200px or smaller
     return;
   }
   // Get the image element
@@ -40,7 +40,7 @@ async function fetchAndInsertNavbar(page) {
     // Function to fetch and insert navbar HTML content
     const insertNavbar = async () => {
       response =
-        window.innerWidth > 768
+        window.innerWidth > 1200
           ? await fetch("src/components/header.html")
           : await fetch("src/components/offcanvas_header.html");
 
