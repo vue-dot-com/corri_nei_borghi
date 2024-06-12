@@ -293,3 +293,23 @@ body {
 #bootstrap-overrides .accordion-body {
   overflow: auto;
 }
+
+.social-icons {
+  position: absolute;
+  top: 10px; /* Adjust as needed */
+  right: 20px; /* Adjust as needed */
+}
+
+.social-icons .svg-link {
+  text-decoration: none; /*Avoid underline in svg*/
+}
+
+.social-icons-offcanvas {
+  position: absolute;
+  top: 15px; /* Adjust as needed */
+  right: 150px; /* Adjust as needed */
+}
+
+.social-icons-offcanvas .svg-link {
+  text-decoration: none; /*Avoid underline in svg*/
+}
