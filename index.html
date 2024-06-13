@@ -42,53 +42,73 @@
                 XVII^ Edizione <i>- una tappa tira l'altra...</i>
               </h2>
             </div>
-            <p class="lead">
-              La
-              <strong style="color: #ef8a16; font-weight: bold"
-                >XVII edizione</strong
-              >
-              del
-              <strong style="color: #7f2b2b; font-weight: bold"
-                >Circuito Corri nei Borghi 2024</strong
-              >
-              ha definito il proprio calendario. Ben
-              <strong>otto eventi</strong> scandiranno il periodo dal
-              <strong
-                style="
-                  background-color: rgba(255, 255, 0, 0.5);
-                  font-weight: bold;
-                "
-                >5 luglio al 24 agosto</strong
-              >, abbracciando il suggestivo scenario della
-              <strong
-                style="
-                  background-color: rgba(0, 128, 0, 0.5);
-                  font-weight: bold;
-                "
-                >medio-alta Val Seriana</strong
-              >
-              durante la stagione turistica più vivace. Cosa c'è di meglio per
-              celebrare l'anno olimpico se non con un ricco circuito podistico
-              che attraversa i nostri incantevoli
-              <strong style="color: #7f2b2b; font-weight: bold"
-                >Borghi Storici</strong
-              >...La continuità del progetto, la collaborazione e il sostegno
-              della nostra comunità mantengono vivo l'entusiasmo, spingendo
-              sempre più borghi ad unirsi al
-              <strong style="color: #7f2b2b; font-weight: bold"
-                >Circuito Corri nei Borghi</strong
-              >. Ancora una volta, a Cerete spetta il merito di ospitare il
-              <strong
-                style="
-                  background-color: rgba(255, 255, 0, 0.5);
-                  font-weight: bold;
-                "
-                >Trofeo Danilo Fiorina</strong
-              >, consegnandolo alle squadre meritevoli durante il gran finale
-              del <strong>24 agosto 2024</strong>.
-              <br />
-              <i>Il direttivo</i>
-            </p>
+            <div class="card" id="lead-text">
+              <div class="card-body">
+                <p class="lead" id="text">
+                  La
+                  <strong style="color: #ef8a16; font-weight: bold"
+                    >XVII edizione</strong
+                  >
+                  del
+                  <strong style="color: #7f2b2b; font-weight: bold"
+                    >Circuito Corri nei Borghi 2024</strong
+                  >
+                  ha definito il proprio calendario. Ben
+                  <strong>otto eventi</strong> scandiranno il periodo dal
+                  <strong
+                    style="
+                      background-color: rgba(255, 255, 0, 0.5);
+                      font-weight: bold;
+                    "
+                    >5 luglio al 24 agosto</strong
+                  >, abbracciando il suggestivo scenario della
+                  <strong
+                    style="
+                      background-color: rgba(0, 128, 0, 0.5);
+                      font-weight: bold;
+                    "
+                    >medio-alta Val Seriana</strong
+                  >
+                  durante la stagione turistica più vivace. Cosa c'è di meglio
+                  per celebrare l'anno olimpico se non con un ricco circuito
+                  podistico che attraversa i nostri incantevoli
+                  <strong style="color: #7f2b2b; font-weight: bold"
+                    >Borghi Storici</strong
+                  >...La continuità del progetto, la collaborazione e il
+                  sostegno della nostra comunità mantengono vivo l'entusiasmo,
+                  spingendo sempre più borghi ad unirsi al
+                  <strong style="color: #7f2b2b; font-weight: bold"
+                    >Circuito Corri nei Borghi</strong
+                  >. Ancora una volta, a Cerete spetta il merito di ospitare il
+                  <strong
+                    style="
+                      background-color: rgba(255, 255, 0, 0.5);
+                      font-weight: bold;
+                    "
+                    >Trofeo Danilo Fiorina</strong
+                  >, consegnandolo alle squadre meritevoli durante il gran
+                  finale del <strong>24 agosto 2024</strong>.
+                  <br />
+                  <i>Il direttivo</i>
+                </p>
+
+                <button id="show-more-btn">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="25"
+                    height="25"
+                    fill="currentColor"
+                    class="bi bi-chevron-down"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
           </div>
           <div class="col-lg-6">
             <!---Container for the carousel--->
@@ -173,9 +193,12 @@
       startTimer(constants.tappe, 2024, "countdown");
       // Call to enable popovers on the page
       enablePopovers();
+      // Redirect to tappe page on button Iscriviti click
       document.getElementById("button-color").onclick = function () {
         location.href = "tappe.html";
       };
+      // Show/hide text in mobile website
+      document.getElementById("show-more-btn").onclick = showMoreText
     </script>
   </body>
 </html>

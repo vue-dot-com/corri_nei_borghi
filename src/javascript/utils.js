@@ -271,7 +271,6 @@ async function generateTappeCards(tappe, year, componentId) {
   // Add event listener to change button group class depending on screen size
   const resizeButtonGroup = () => {
     let buttonGroup = document.querySelectorAll("#btn-group-modals");
-    console.log(buttonGroup);
     buttonGroup.forEach((button) => {
       if (window.innerWidth < 420) {
         setElementAttibutes(button, {
@@ -520,3 +519,49 @@ function startTimer(tappe, year, componentName) {
       "Ci vediamo l'anno prossimo! Grazie a tutti...";
   }
 }
+
+// Function to show/hide text in the first page, specifically designed for mobile website
+function showMoreText() {
+  const textElement = document.querySelectorAll(
+    "#lead-text .card-body"
+  )[0];
+  const button = document.getElementById("show-more-btn");
+  if (window.innerWidth < 1200) {
+    if (textElement.style["max-height"]) {
+      textElement.style.maxHeight = null;
+      button.innerHTML = `
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="25"
+              height="25"
+              fill="currentColor"
+              class="bi bi-chevron-down"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"
+              />
+            </svg>
+      `;
+    } else {
+      textElement.style.maxHeight = textElement.scrollHeight + "px";
+      button.innerHTML = `
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="25"
+              height="25"
+              fill="currentColor"
+              class="bi bi-chevron-up"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708z"
+              />
+            </svg>
+      `;
+    }
+  }
+};
+

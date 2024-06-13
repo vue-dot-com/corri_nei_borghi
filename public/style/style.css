@@ -313,3 +313,37 @@ body {
 .social-icons-offcanvas .svg-link {
   text-decoration: none; /*Avoid underline in svg*/
 }
+
+
+#lead-text.card {
+  border: none;
+}
+
+@media (max-width: 991px) { /*Apply when columns are squeezed to be like on mobile*/
+  #lead-text .card-body {
+    position: relative;
+    max-height: 200px; /* Adjust height as needed to show 5 lines */
+    overflow: hidden;
+  }
+
+  #show-more-btn {
+    opacity: 0.8;
+    border: none;
+    border-radius: 3px;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.8), #7f2b2b);
+    width: 100%;
+    font-size: 1.5em;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+    position: absolute;
+    bottom: 0px;
+    color: #ef8a16;
+  }
+}
+
+@media (min-width: 992px) {
+  #show-more-btn {
+    display: none;
+  }
+}
