@@ -52,6 +52,14 @@
               nei rispettivi regolamenti di ogni evento, per le categorie dei
               ragazzi il giorno della gara. direttamente...
             </p>
+            <p>
+              <strong>Promo ISCRIZIONE FULL</strong> cumulativa per tutte le
+              otto gare a
+              <strong style="text-decoration: underline"
+                >€50,00, anziché €80,00, da versare entro la prima tappa di
+                Rovetta tramite IBAN IT 08 A 03069 52910 100000003626
+              </strong>
+            </p>
           </div>
         </section>
         <hr />
@@ -138,6 +146,12 @@
               Trofeo verrà assegnato alla Società con più atleti in classifica
               nell’ultima gara del circuito.
             </p>
+            <p>
+              <strong>Premio speciale UNO DI NOI</strong> per le sole categorie
+              Senior a chi risulterà in classifiche in tutte le 8 Tappe,
+              indipendentemente dagli scarti obbligatori, occhiale NEON Arrow
+              2.0 da ritirare all’ultima tappa di Cerete.
+            </p>
           </div>
           <div>
             <p>
@@ -180,6 +194,9 @@
 
         <hr />
       </div>
+      <button type="button" class="btn btn-outline-secondary" id="download">
+        Scarica il regolamento
+      </button>
     </main>
 
     <!---Sponsors-->
@@ -198,6 +215,10 @@
       // Call other functions to insert components
       fetchAndInsertComponent("src/components/sponsor.html", "sponsor");
       fetchAndInsertComponent("src/components/footer.html", "footer");
+      // Redirect to tappe page on button Iscriviti click
+      document.getElementById("download").onclick = function () {
+        window.open("public/files/regulations/2024_circuito.pdf","_blank");
+      };
     </script>
   </body>
 </html>
