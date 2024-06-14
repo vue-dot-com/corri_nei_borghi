@@ -347,3 +347,13 @@ body {
     display: none;
   }
 }
+
+#news-accordion .accordion-button.main {
+  background-color: #7f2b2b;
+  color: #ef8a16;
+  font-weight: 500;
+}
+
+#news-accordion-flush .accordion-button.collapsed {
+  font-weight: 500;
+}

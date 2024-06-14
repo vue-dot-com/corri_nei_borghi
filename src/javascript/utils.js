@@ -522,9 +522,7 @@ function startTimer(tappe, year, componentName) {
 
 // Function to show/hide text in the first page, specifically designed for mobile website
 function showMoreText() {
-  const textElement = document.querySelectorAll(
-    "#lead-text .card-body"
-  )[0];
+  const textElement = document.querySelectorAll("#lead-text .card-body")[0];
   const button = document.getElementById("show-more-btn");
   if (window.innerWidth < 1200) {
     if (textElement.style["max-height"]) {
@@ -563,5 +561,14 @@ function showMoreText() {
       `;
     }
   }
-};
+}
 
+// Function to count news inside news accordion in index page and update badge
+function countNews() {
+  const news = document.getElementById("news");
+  const newsAccordion = news.querySelector("#news-accordion-flush");
+  const newsArray = newsAccordion.getElementsByClassName("accordion-item");
+  const nNews = newsArray.length;
+  const badge = news.querySelector("#news-count");
+  badge.textContent = nNews;
+}

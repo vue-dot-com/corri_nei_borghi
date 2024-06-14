@@ -111,7 +111,6 @@
             </div>
           </div>
           <div class="col-lg-6">
-            <!---Container for the carousel--->
             <div
               class="d-grid gap-2 d-md-flex justify-content-center mb-5 align-items-center"
             >
@@ -168,9 +167,9 @@
             </div>
           </div>
         </div>
+        <div id="news"></div>
       </div>
     </main>
-
     <!---Sponsors-->
     <div id="sponsor"></div>
 
@@ -190,6 +189,11 @@
       fetchAndInsertComponent("src/components/sponsor.html", "sponsor");
       fetchAndInsertComponent("src/components/footer.html", "footer");
       fetchAndInsertComponent("src/components/countdown.html", "countdown");
+      fetchAndInsertComponent("src/components/news.html", "news").then(() => {
+        // Count news to show correct number inside accordion
+        countNews();
+      });
+      // Start the timer
       startTimer(constants.tappe, 2024, "countdown");
       // Call to enable popovers on the page
       enablePopovers();
@@ -198,7 +202,7 @@
         location.href = "tappe.html";
       };
       // Show/hide text in mobile website
-      document.getElementById("show-more-btn").onclick = showMoreText
+      document.getElementById("show-more-btn").onclick = showMoreText;
     </script>
   </body>
 </html>
