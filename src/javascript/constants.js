@@ -15,13 +15,14 @@ const tappe = [
         imgCopertina:
           "https://mycity.s3.sbg.io.cloud.ovh.net/3509926/IMG_6559-(2).jpg",
         programma: {
-          partenzaBaby: "",
-          partenzaNonCompetitiva: "",
-          partenzaCompetitiva: { m: "", f: "" },
-          ritrovo: "",
+          partenzaBaby: "18:45",
+          partenzaNonCompetitiva: "19:30",
+          partenzaCompetitiva: { m: "20:45", f: "20:15" },
+          ritrovo: "18:30 in Rovetta (BG) presso la Piazza Marinoni",
           parcheggi: "",
           docce: "",
-          ristoro: "",
+          ristoro:
+            "Dalle ore 19:00 presso il parco giochi comunale (serata gastronomica organizzata dal Cre)",
           altro: "",
         },
         percorso: {
@@ -32,20 +33,20 @@ const tappe = [
             gpx: "",
           },
           nonCompetitiva: {
-            km: "",
+            km: "4,8 km",
             dislivello: "",
             img: "",
             gpx: "",
           },
           competitiva: {
             m: {
-              km: "",
+              km: "6,4 km",
               dislivello: "",
               img: "",
               gpx: "",
             },
             f: {
-              km: "",
+              km: "4,8 km",
               dislivello: "",
               img: "",
               gpx: "",
@@ -64,7 +65,7 @@ const tappe = [
           iscrizioni: "https://api.endu.net/r/i/86643",
           classifiche: "https://api.endu.net/r/r/86643",
         },
-        regolamento: "",
+        regolamento: "public/files/regulations/2024_rovetta.pdf",
       },
       {
         name: "Verto..va Run Night",
@@ -183,7 +184,7 @@ const tappe = [
           iscrizioni: "https://api.endu.net/r/i/86720",
           classifiche: "https://api.endu.net/r/r/86720",
         },
-        regolamento: "",
+        regolamento: "public/files/regulations/2024_clusone.pdf",
       },
       {
         name: "Bèch to Run",
@@ -255,8 +256,9 @@ const tappe = [
         programma: {
           partenzaBaby: "",
           partenzaNonCompetitiva: "",
-          partenzaCompetitiva: { m: "", f: "" },
-          ritrovo: "",
+          partenzaCompetitiva: { m: "20:45", f: "20:15" },
+          ritrovo:
+            "per le ore 18:30 Albino ( BG ) nei pressi dell'Oratorio Papa Giovanni XXIII in Via Don Cristoforo Rossi n.10",
           parcheggi: "",
           docce: "",
           ristoro: "",
@@ -270,20 +272,20 @@ const tappe = [
             gpx: "",
           },
           nonCompetitiva: {
-            km: "",
+            km: "4,8 km",
             dislivello: "",
             img: "",
             gpx: "",
           },
           competitiva: {
             m: {
-              km: "",
+              km: "6,4 km",
               dislivello: "",
               img: "",
               gpx: "",
             },
             f: {
-              km: "",
+              km: "4,8 km",
               dislivello: "",
               img: "",
               gpx: "",
@@ -302,7 +304,7 @@ const tappe = [
           iscrizioni: "https://api.endu.net/r/i/92117",
           classifiche: "https://api.endu.net/r/r/92117",
         },
-        regolamento: "",
+        regolamento: "public/files/regulations/2024_albino.pdf",
       },
       {
         name: "Corri Ardesio corri",
@@ -313,10 +315,11 @@ const tappe = [
         imgCopertina:
           "https://upload.wikimedia.org/wikipedia/commons/1/11/Ardesio_Landscape_01.JPG",
         programma: {
-          partenzaBaby: "",
-          partenzaNonCompetitiva: "",
-          partenzaCompetitiva: { m: "", f: "" },
-          ritrovo: "",
+          partenzaBaby: "19:00",
+          partenzaNonCompetitiva: "19:45",
+          partenzaCompetitiva: { m: "21:00", f: "20:30" },
+          ritrovo:
+            "Per le ore 18:30 in Ardesio (BG) presso la Piazza B. Moretto",
           parcheggi: "",
           docce: "",
           ristoro: "",
@@ -330,20 +333,20 @@ const tappe = [
             gpx: "",
           },
           nonCompetitiva: {
-            km: "",
+            km: "4,5 km",
             dislivello: "",
             img: "",
             gpx: "",
           },
           competitiva: {
             m: {
-              km: "",
+              km: "6 km",
               dislivello: "",
               img: "",
               gpx: "",
             },
             f: {
-              km: "",
+              km: "4,5 km",
               dislivello: "",
               img: "",
               gpx: "",
@@ -362,7 +365,7 @@ const tappe = [
           iscrizioni: "https://api.endu.net/r/i/86823",
           classifiche: "https://api.endu.net/r/r/86823",
         },
-        regolamento: "",
+        regolamento: "public/files/regulations/2024_ardesio.pdf",
       },
       {
         name: "RUN PAR Correndo nel Borgo di Parre",
