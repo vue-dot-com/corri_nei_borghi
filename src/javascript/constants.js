@@ -390,28 +390,26 @@ const tappe = [
           baby: {
             km: "R1 300m | R2 600 m | R3 1500 m",
             dislivello: "",
-            img: "",
+            img: "public/images/courses/parre_baby.png",
             gpx: "",
           },
           nonCompetitiva: {
             km: "3 km",
             dislivello: "100m",
-            img: "",
+            img: "public/images/courses/parre_nc_c.png",
             gpx: "",
           },
           competitiva: {
             m: {
               km: "6 km",
               dislivello: "200m",
-              img: "",
-              gpx: "",
             },
             f: {
               km: "4,5 km",
               dislivello: "150m",
-              img: "",
-              gpx: "",
             },
+            img: "public/images/courses/parre_nc_c.png",
+            gpx: "",
           },
         },
         nonCompetitiva: {
