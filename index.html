@@ -130,21 +130,22 @@
                 <b>ISCRIVITI</b>
               </button>
               <!-- </span> -->
-              <span
+              <!-- <span
                 class="d-inline-block"
                 tabindex="0"
                 data-bs-toggle="popover"
                 data-bs-trigger="hover focus"
                 data-bs-title="Classifiche non disponibili"
                 data-bs-content="Al momento le classifiche non sono disponibili. Non appena saranno pubblicate potrai consultarle. Grazie!"
+              > -->
+              <button
+                type="button"
+                class="btn btn-outline-secondary btn-lg px-4"
+                id="button-classifiche"
               >
-                <button
-                  type="button"
-                  class="btn btn-outline-secondary btn-lg px-4"
-                >
-                  Classifiche circuito
-                </button>
-              </span>
+                Classifiche circuito
+              </button>
+              <!-- </span> -->
             </div>
 
             <div id="countdown"></div>
@@ -200,6 +201,11 @@
       // Redirect to tappe page on button Iscriviti click
       document.getElementById("button-color").onclick = function () {
         location.href = "tappe.html";
+      };
+      // Redirect to Edndu classifiche
+      document.getElementById("button-classifiche").onclick = function () {
+        location.href = "classifiche.html";
+        // window.open(constants.tappe[0].trofeo.links.classifiche, "_blank");
       };
       // Show/hide text in mobile website
       document.getElementById("show-more-btn").onclick = showMoreText;

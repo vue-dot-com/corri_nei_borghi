@@ -104,10 +104,18 @@ function generateClassificheHTML(tappe, componentsIds) {
     yearData.gare.forEach((gara) => {
       html_table += "<tr>";
       html_table += `<td colspan='3' class='location-cell'><b>${gara.location}</b></td>`;
-      html_table += `<td class='non-competitiva-f-cell'><a href="${gara.nonCompetitiva.f}" target="_blank">Non Comp. Femminile</a></td>`;
-      html_table += `<td class='non-competitiva-m-cell'><a href="${gara.nonCompetitiva.m}" target="_blank">Non Comp. Maschile</a></td>`;
-      html_table += `<td class='competitiva-f-cell'><a href="${gara.competitiva.f}" target="_blank">Comp. Femminile</a></td>`;
-      html_table += `<td class='competitiva-m-cell'><a href="${gara.competitiva.m}" target="_blank">Comp. Maschile</a></td>`;
+      html_table += `<td class='non-competitiva-f-cell'><a href="${
+        gara.nonCompetitiva.f || gara.links.classifiche
+      }" target="_blank">Non Comp. Femminile</a></td>`;
+      html_table += `<td class='non-competitiva-m-cell'><a href="${
+        gara.nonCompetitiva.m || gara.links.classifiche
+      }" target="_blank">Non Comp. Maschile</a></td>`;
+      html_table += `<td class='competitiva-f-cell'><a href="${
+        gara.competitiva.f || gara.links.classifiche
+      }" target="_blank">Comp. Femminile</a></td>`;
+      html_table += `<td class='competitiva-m-cell'><a href="${
+        gara.competitiva.m || gara.links.classifiche
+      }" target="_blank">Comp. Maschile</a></td>`;
       html_table += "</tr>";
     });
 
@@ -115,8 +123,12 @@ function generateClassificheHTML(tappe, componentsIds) {
     html_table += "</table>";
 
     // Add trofeo information
-    html_trophy += `<p><a href="${yearData.trofeo.individuale}" target="_blank">Trofeo Individuale</a> (Competitiva e Non Competitiva)</p>`;
-    html_trophy += `<p><a href="${yearData.trofeo.squadre}" target="_blank">Trofeo Squadre</a></p>`;
+    html_trophy += `<p><a href="${
+      yearData.trofeo.individuale || yearData.trofeo.links.classifiche
+    }" target="_blank">Trofeo Individuale</a> (Competitiva e Non Competitiva)</p>`;
+    html_trophy += `<p><a href="${
+      yearData.trofeo.squadre || yearData.trofeo.links.classifiche
+    }" target="_blank">Trofeo Squadre</a></p>`;
   });
 
   // Insert HTML content into the DOM
@@ -403,8 +415,8 @@ function generateRegolamentoModalBodyContent(tappa) {
 
 function generateClassificaModalBodyContent(tappa) {
   // TODO: Include baby run?
-  // Links are disabled if no classifica has been added
-  const { nonCompetitiva, competitiva } = tappa;
+  // Links are disabled if no Endu link is found
+  const { nonCompetitiva, competitiva, links } = tappa;
   const classificaArray = [nonCompetitiva, competitiva];
   let html = "";
   classificaArray.map((e, index) => {
@@ -412,11 +424,15 @@ function generateClassificaModalBodyContent(tappa) {
     ${index === 0 ? "Non competitiva" : "Competitiva"}
     </h4>
     <ul>
-    <li><strong>Maschile: </strong><a href="${e.m}" style="${
-      !e.m ? "pointer-events: none; cursor: default;" : ""
+    <li><strong>Maschile: </strong><a href="${
+      e.m ? e.m : links.classifiche
+    }" target="_blank" style="${
+      !links.classifiche ? "pointer-events: none; cursor: default;" : ""
     }">Classifica finale</a></li>
-    <li><strong>Femminile: </strong><a href="${e.m}" style="${
-      !e.m ? "pointer-events: none; cursor: default;" : ""
+    <li><strong>Femminile: </strong><a href="${
+      e.f ? e.f : links.classifiche
+    }" target="_blank" style="${
+      !links.classifiche ? "pointer-events: none; cursor: default;" : ""
     }">Classifica finale</a></li>
     </ul>
     `;

@@ -54,12 +54,12 @@ const tappe = [
           },
         },
         nonCompetitiva: {
-          f: "",
-          m: "",
+          f: "public/files/rankings/2024_rovetta_nc.pdf",
+          m: "public/files/rankings/2024_rovetta_nc.pdf",
         },
         competitiva: {
-          f: "",
-          m: "",
+          f: "public/files/rankings/2024_rovetta_c_f.pdf",
+          m: "public/files/rankings/2024_rovetta_c_m.pdf",
         },
         links: {
           iscrizioni: "https://api.endu.net/r/i/86643",
