@@ -429,7 +429,7 @@ const tappe = [
       {
         name: "4 PASS SÖ E ZO PER OL PAIS",
         location: "Cerete",
-        date: "28 Agosto",
+        date: "24 Agosto",
         logo: "/public/images/logos/cerete.png",
         description:
           "XXVII° Memorial “Paolo Zambetti” 1° assoluto maschile VIII° Trofeo “Luigi Loda” 1° assoluta femminile VI° MEMORIAL DANILO FIORINA Trofeo per società",
@@ -437,7 +437,7 @@ const tappe = [
           "https://www.valseriana.eu/wp-content/uploads/2016/04/cerete_alto_chiesa_parrocchiale_santi_apostoli_filippo_e_giacomo__IMG_9441-52-800-600-80.jpg",
         programma: {
           partenzaBaby: "19:00",
-          partenzaNonCompetitiva: "Ragazzi - Adolescenti: 19:15. Liberi: 20.15",
+          partenzaNonCompetitiva: "Ragazzi - Adolescenti: 19:15. Liberi: 19:30",
           partenzaCompetitiva: { m: "20:45", f: "20:15" },
           ritrovo:
             "Presso il centro sportivo “Danilo Fiorina” - Piazza Martiri della Libertà",
@@ -466,8 +466,8 @@ const tappe = [
               dislivello: "160m",
             },
             f: {
-              km: "5,6 km",
-              dislivello: "160m",
+              km: "4 km",
+              dislivello: "120m",
             },
             img: "public/images/courses/cerete_nc_c.png",
             gpx: "",
