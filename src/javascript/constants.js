@@ -136,15 +136,15 @@ const tappe = [
         imgCopertina:
           "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Clusone_Municipio_3.jpg/2560px-Clusone_Municipio_3.jpg",
         programma: {
-          partenzaBaby: "19:30",
-          partenzaNonCompetitiva: "20:30",
+          partenzaBaby: "19:45",
+          partenzaNonCompetitiva: "20:20",
           partenzaCompetitiva: { m: "21:30", f: "21:00" },
           ritrovo: "Piazza Orologio",
           parcheggi:
             "Presso il Piazzale del Sole; Conad Viale Gusmini; Piazza Manzù (coperto)",
           docce: "No",
           ristoro: "Sì, solo arrivo",
-          altro: "Iscrizioni in Piazza Orologio dalle 18:00",
+          altro: "Iscrizioni in Piazza Orologio dalle 18:30",
         },
         percorso: {
           baby: {
