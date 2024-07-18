@@ -467,12 +467,14 @@ function convertDates(tappe, year) {
   const dates = tappeFilteredOnYear.gare.map((gara) => {
     let tmpDate = gara.date.split(" ");
     if (tmpDate[1] === "Luglio") {
-      tmpDate[1] = "07" - 1;
+      tmpDate[1] = parseInt("07", 10) - 1;
     } else {
-      tmpDate[1] = "08" - 1;
+      tmpDate[1] = parseInt("08", 10) - 1;
     }
     tmpDate.push(year);
-    const newDate = new Date(Date.UTC(tmpDate[2], tmpDate[1], tmpDate[0]));
+    const newDate = new Date(
+      Date.UTC(tmpDate[2], tmpDate[1], tmpDate[0], 0, 0, 0)
+    );
     const newTimeStamp = newDate.getTime();
     return newTimeStamp;
   });
@@ -481,11 +483,11 @@ function convertDates(tappe, year) {
 
 function startTimer(tappe, year, componentName) {
   const tappeFilteredOnYear = tappe.filter((elem) => elem.year === year)[0];
-  let start = new Date(parseInt(Date.now()));
-  // Delay start date by one day so that we can show we are in the event day
-  start.setHours(start.getHours() + 24);
+  // Set start date
+  const start = new Date();
+  start.setUTCHours(0, 0, 0, 0);
   const convertedDates = convertDates(tappe, year);
-  let nextDates = convertedDates.filter((date) => date > start);
+  let nextDates = convertedDates.filter((date) => date >= start.getTime());
 
   if (nextDates.length > 0) {
     const tappaName =
@@ -494,18 +496,31 @@ function startTimer(tappe, year, componentName) {
       ].location;
     const nextDate = nextDates[0];
     const intervalId = setInterval(() => {
-      const now = Date.now();
-      let difference = nextDate - now;
+      const now = new Date();
+      let difference = nextDate - now.getTime();
 
-      if (difference <= 0) {
-        clearInterval(intervalId);
-        // Optionally handle the case when the countdown ends
+      const targetDate = new Date(nextDate);
+      const endOfDay = new Date(
+        targetDate.getUTCFullYear(),
+        targetDate.getUTCMonth(),
+        targetDate.getUTCDate(),
+        23,
+        59,
+        59
+      );
+
+      if (start >= targetDate && now <= endOfDay) {
         document
           .getElementById(componentName)
           .getElementsByClassName(
             "countdown-content"
           )[0].innerText = `Ci vediamo questa sera a ${tappaName}!`;
+        clearInterval(intervalId); // Clear the interval once the target date is reached
         return;
+      }
+
+      if (difference <= 0) {
+        difference = 0; // Ensure difference doesn't go negative
       }
 
       const days = Math.floor(difference / (1000 * 60 * 60 * 24));
