@@ -314,12 +314,12 @@ body {
   text-decoration: none; /*Avoid underline in svg*/
 }
 
-
 #lead-text.card {
   border: none;
 }
 
-@media (max-width: 991px) { /*Apply when columns are squeezed to be like on mobile*/
+@media (max-width: 991px) {
+  /*Apply when columns are squeezed to be like on mobile*/
   #lead-text .card-body {
     position: relative;
     max-height: 200px; /* Adjust height as needed to show 5 lines */
@@ -356,4 +356,15 @@ body {
 
 #news-accordion-flush .accordion-button.collapsed {
   font-weight: 500;
+}
+
+.card-container-media {
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card-container-media .card {
+  margin-right: 3rem;
 }
