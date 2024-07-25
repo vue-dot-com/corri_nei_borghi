@@ -246,16 +246,16 @@ const tappe = [
         regolamento: "public/files/regulations/2024_gromo.pdf",
       },
       {
-        name: "",
+        name: "1a sulle strade del Moroni",
         location: "Albino",
         date: "2 Agosto",
         logo: "",
-        description: "",
+        description: "La 1a sulle strade del Moroni. Non puoi mancare.",
         imgCopertina:
           "https://www.valseriana.eu/wp-content/uploads/2016/04/albino_chiesa_IMG_1596-20-800-600-80.jpg",
         programma: {
-          partenzaBaby: "",
-          partenzaNonCompetitiva: "",
+          partenzaBaby: "19:15",
+          partenzaNonCompetitiva: "Esordienti: 19:30 | Liberi: 19:40",
           partenzaCompetitiva: { m: "20:45", f: "20:15" },
           ritrovo:
             "per le ore 18:30 Albino ( BG ) nei pressi dell'Oratorio Papa Giovanni XXIII in Via Don Cristoforo Rossi n.10",
@@ -266,13 +266,13 @@ const tappe = [
         },
         percorso: {
           baby: {
-            km: "",
+            km: "500 mt",
             dislivello: "",
             img: "",
             gpx: "",
           },
           nonCompetitiva: {
-            km: "4,8 km",
+            km: "Esordienti: 1000 mt | Liberi: 1000 mt | Liberi: 4,8 km",
             dislivello: "",
             img: "",
             gpx: "",
