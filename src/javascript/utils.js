@@ -603,3 +603,97 @@ function countNews() {
   const badge = news.querySelector("#news-count");
   badge.textContent = nNews;
 }
+
+async function generateMediaCards(tappe, year, componentId) {
+  const tappeFilteredOnYear = tappe.filter((elem) => elem.year === year)[0];
+
+  // Get the container element for the cards
+  const cardContainer = document.getElementById(componentId);
+
+  // Loop through each location and load card.html, then populate and append it
+  // Array to store promises for fetching HTML content, in this way tappe cards are ordered by appearance.
+  const fetchPromises = tappeFilteredOnYear.gare.map(async (gara) => {
+    if (gara.foto.category[0].link == "") {
+      return null;
+    }
+    // Fetch card.html content
+    const response = await fetch("src/components/card_media.html");
+    const html = await response.text();
+
+    // Create a temporary element to parse the HTML string
+    tempElement = document.createElement("div");
+    tempElement.innerHTML = html.trim();
+
+    // Populate card with data
+    tempElement.querySelector(
+      ".card-tappa-image"
+    ).innerHTML = `<img src="${gara.foto.copertina}" class="card-img-top" alt="${gara.name} copertina" />`;
+    tempElement.querySelector(".card-title").innerHTML = `${gara.location}`;
+    tempElement.querySelector(".card-media-description").innerHTML = `${
+      gara.foto.description || "&nbsp;"
+    }`;
+
+    // Dynamically set external link for the Foto button or dropdown menu
+    if (gara.foto.category.length === 1) {
+      let fotoObj = gara.foto.category[0];
+      if (fotoObj.link !== "") {
+        // Create an anchor element
+        let fotoLink = document.createElement("a");
+        fotoLink.href = fotoObj.link;
+        fotoLink.target = "_blank";
+        fotoLink.classList.add("btn", "btn-primary");
+        fotoLink.textContent = "Foto";
+
+        // Append it to the desired location
+        tempElement.querySelector("#card-media").appendChild(fotoLink);
+      }
+    } else {
+      // Create a button group for multiple categories
+      let btnGroup = document.createElement("div");
+      btnGroup.classList.add("btn-group");
+      btnGroup.setAttribute("role", "group");
+
+      let dropdownBtn = document.createElement("button");
+      dropdownBtn.type = "button";
+      dropdownBtn.classList.add("btn", "btn-primary", "dropdown-toggle");
+      btnGroup.setAttribute("role", "group");
+      dropdownBtn.setAttribute("data-bs-toggle", "dropdown");
+      dropdownBtn.setAttribute("aria-expanded", "false");
+      dropdownBtn.textContent = "Foto";
+
+      let dropdownMenu = document.createElement("ul");
+      dropdownMenu.classList.add("dropdown-menu");
+
+      // Loop through categories to create list items
+      gara.foto.category.forEach((fotoItem) => {
+        let listItem = document.createElement("li");
+        let linkItem = document.createElement("a");
+        linkItem.classList.add("dropdown-item");
+        linkItem.target = "_blank";
+        linkItem.href = fotoItem.link;
+        linkItem.textContent = fotoItem.name;
+
+        listItem.appendChild(linkItem);
+        dropdownMenu.appendChild(listItem);
+      });
+
+      btnGroup.appendChild(dropdownBtn);
+      btnGroup.appendChild(dropdownMenu);
+
+      // Append the button group to the desired location
+      tempElement.querySelector("#card-media").appendChild(btnGroup);
+    }
+
+    return tempElement.querySelector("#card-media");
+  });
+
+  // Wait for all fetch and population operations to complete
+  const cards = await Promise.all(fetchPromises);
+
+  // Append all cards to the card container in the correct order
+  cards.forEach((card) => {
+    if (card) {
+      cardContainer.appendChild(card);
+    }
+  });
+}

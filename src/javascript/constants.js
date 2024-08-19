@@ -66,6 +66,16 @@ const tappe = [
           classifiche: "https://api.endu.net/r/r/86643",
         },
         regolamento: "public/files/regulations/2024_rovetta.pdf",
+        foto: {
+          description: "Foto a cura di Carlo G.",
+          copertina: "public/media/2024/rovetta/2024_rovetta.jpg",
+          category: [
+            {
+              name: "",
+              link: "https://www.facebook.com/share/p/L2JwgsoUjv8g3BWk/",
+            },
+          ],
+        },
       },
       {
         name: "Verto..va Run Night",
@@ -125,6 +135,16 @@ const tappe = [
           classifiche: "https://api.endu.net/r/r/86682",
         },
         regolamento: "public/files/regulations/2024_vertova.pdf",
+        foto: {
+          description: "",
+          copertina: "public/media/2024/vertova/2024_vertova.jpg",
+          category: [
+            {
+              name: "",
+              link: "https://www.facebook.com/share/p/SpurQBcanzCyufx6/",
+            },
+          ],
+        },
       },
       {
         name: "CorrinCentro",
@@ -185,6 +205,24 @@ const tappe = [
           classifiche: "https://api.endu.net/r/r/86720",
         },
         regolamento: "public/files/regulations/2024_clusone.pdf",
+        foto: {
+          description: "Foto a cura di Armin H.",
+          copertina: "public/media/2024/clusone/2024_clusone.jpg",
+          category: [
+            {
+              name: "Non competitiva",
+              link: "https://www.facebook.com/share/p/hTyRjVVH2v7yj4ji/",
+            },
+            {
+              name: "Competitiva femminile",
+              link: "https://www.facebook.com/share/p/c4sdW5qnAZpMeRVh/",
+            },
+            {
+              name: "Competitiva maschile",
+              link: "https://www.facebook.com/share/p/SubwnpsxdaH6cwxZ/",
+            },
+          ],
+        },
       },
       {
         name: "Bèch to Run",
@@ -244,6 +282,32 @@ const tappe = [
           classifiche: "https://api.endu.net/r/ec/86765",
         },
         regolamento: "public/files/regulations/2024_gromo.pdf",
+        foto: {
+          description: "Foto a cura di Cristian Riva e Marco Pendezza",
+          copertina: "public/media/2024/gromo/2024_gromo.jpg",
+          category: [
+            {
+              name: "Baby e allievi",
+              link: "https://www.facebook.com/permalink.php?story_fbid=pfbid0zk7y4oPGsfzXnR97RgTRje2rXPpybZimJ2sVVv8Ao24cuAMvJH5rPRuyKtBYHsbpl&id=100063918698801",
+            },
+            {
+              name: "Non competitiva",
+              link: "https://www.facebook.com/permalink.php?story_fbid=pfbid037gZPEQgcUzpt6uzAm5WGwvR2xXXUhTzCK2XLBsfzhxrggSxNDzaM5eRL93Z6mvEzl&id=100063918698801",
+            },
+            {
+              name: "Competitiva femminile",
+              link: "https://www.facebook.com/permalink.php?story_fbid=pfbid0i8T8dhF4n8ESF3XezXntNM6a8SZczjYGdeKiLyFfVHyvuTZjdWmEYPARAsHKHtxSl&id=100063918698801",
+            },
+            {
+              name: "Competitiva maschile",
+              link: "https://www.facebook.com/permalink.php?story_fbid=pfbid02cVNAEFGo3HFYd2PF5dUDgZuZvGfumVvB5r8MBLVAkbTfgWzd1BPvYLXir72gHFR6l&id=100063918698801",
+            },
+            {
+              name: "Premiazioni",
+              link: "https://www.facebook.com/permalink.php?story_fbid=pfbid02kR97GiM5KMrnH69m46cZYHoSigyz1Vrsg1YvJ5SFUQDiPPwYE3yewLDfHxsQWH2El&id=100063918698801",
+            },
+          ],
+        },
       },
       {
         name: "1a sulle strade del Moroni",
@@ -305,6 +369,11 @@ const tappe = [
           classifiche: "https://api.endu.net/r/r/92117",
         },
         regolamento: "public/files/regulations/2024_albino.pdf",
+        foto: {
+          description: "",
+          copertina: "public/media/2024/albino/2024_albino.jpg",
+          category: [{ name: "", link: "" }],
+        },
       },
       {
         name: "Corri Ardesio corri",
@@ -366,6 +435,11 @@ const tappe = [
           classifiche: "https://api.endu.net/r/r/86823",
         },
         regolamento: "public/files/regulations/2024_ardesio.pdf",
+        foto: {
+          description: "",
+          copertina: "public/media/2024/ardesion/2024_ardesio.jpg",
+          category: [{ name: "", link: "" }],
+        },
       },
       {
         name: "RUN PAR Correndo nel Borgo di Parre",
@@ -425,6 +499,11 @@ const tappe = [
           classifiche: "https://api.endu.net/r/r/86806",
         },
         regolamento: "public/files/regulations/2024_parre.pdf",
+        foto: {
+          description: "",
+          copertina: "public/media/2024/parre/2024_parre.jpg",
+          category: [{ name: "", link: "" }],
+        },
       },
       {
         name: "4 PASS SÖ E ZO PER OL PAIS",
@@ -486,6 +565,11 @@ const tappe = [
           classifiche: "https://api.endu.net/r/r/86837",
         },
         regolamento: "public/files/regulations/2024_cerete.pdf",
+        foto: {
+          description: "",
+          copertina: "public/media/2024/cerete/2024_cerete.jpg",
+          category: [{ name: "", link: "" }],
+        },
       },
     ],
     trofeo: {
