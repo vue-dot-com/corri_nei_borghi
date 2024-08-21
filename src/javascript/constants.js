@@ -370,9 +370,14 @@ const tappe = [
         },
         regolamento: "public/files/regulations/2024_albino.pdf",
         foto: {
-          description: "",
+          description: "Foto a cura di Monachino",
           copertina: "public/media/2024/albino/2024_albino.jpg",
-          category: [{ name: "", link: "" }],
+          category: [
+            {
+              name: "",
+              link: "https://www.facebook.com/permalink.php?story_fbid=pfbid02mbj2YTbk1ggcYjKLobd6XZUDwHSSdLGqfxGHqGHDgYXRygyf97MFLhptDBPE4tZBl&id=100063918698801",
+            },
+          ],
         },
       },
       {
@@ -436,9 +441,14 @@ const tappe = [
         },
         regolamento: "public/files/regulations/2024_ardesio.pdf",
         foto: {
-          description: "",
-          copertina: "public/media/2024/ardesion/2024_ardesio.jpg",
-          category: [{ name: "", link: "" }],
+          description: "Foto a cura di Ph_iliset",
+          copertina: "public/media/2024/ardesio/2024_ardesio.jpg",
+          category: [
+            {
+              name: "",
+              link: "https://www.facebook.com/permalink.php?story_fbid=pfbid02QZCAKSgWZ17e9znacBSmUjNBKvDkQ6HS8iNnTngHpLSFBPB8QxoBhz62MkhNja3Yl&id=100063918698801",
+            },
+          ],
         },
       },
       {
