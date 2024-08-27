@@ -512,7 +512,12 @@ const tappe = [
         foto: {
           description: "",
           copertina: "public/media/2024/parre/2024_parre.jpg",
-          category: [{ name: "", link: "" }],
+          category: [
+            {
+              name: "",
+              link: "https://www.facebook.com/permalink.php?story_fbid=pfbid02RhAD1jfC1M4RJbL8jQdamUFsRyL3m6FP9dAyokWHMPRRCUKD5b5MRuKcDowZhsZxl&id=100063918698801",
+            },
+          ],
         },
       },
       {
@@ -576,9 +581,14 @@ const tappe = [
         },
         regolamento: "public/files/regulations/2024_cerete.pdf",
         foto: {
-          description: "",
+          description: "Foto a cura di Carlo G.",
           copertina: "public/media/2024/cerete/2024_cerete.jpg",
-          category: [{ name: "", link: "" }],
+          category: [
+            {
+              name: "",
+              link: "https://www.facebook.com/permalink.php?story_fbid=pfbid02pjLydNqkc5Fa4w4NriPrK9sM124oj7jqoNfEnFXKgQ1TUnNeM84LQgVc3uWVJrU3l&id=100063918698801",
+            },
+          ],
         },
       },
     ],
