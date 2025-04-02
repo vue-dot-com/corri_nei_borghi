@@ -32,14 +32,14 @@
                 class="display-5 fw-bold text-body-emphasis lh-1 mb-3"
                 style="color: #7f2b2b !important"
               >
-                <b>Corri nei Borghi 2024</b>
+                <b>Corri nei Borghi 2025</b>
               </h1>
               <h2
                 class="display-10 text-body-emphasis lh-3 mb-3"
                 ,
                 style="color: #ef8a16 !important"
               >
-                XVII^ Edizione <i>- una tappa tira l'altra...</i>
+                XVIII^ Edizione <i>- una tappa tira l'altra...</i>
               </h2>
             </div>
             <div class="card" id="lead-text">
@@ -47,20 +47,20 @@
                 <p class="lead" id="text">
                   La
                   <strong style="color: #ef8a16; font-weight: bold"
-                    >XVII edizione</strong
+                    >XVIII edizione</strong
                   >
                   del
                   <strong style="color: #7f2b2b; font-weight: bold"
-                    >Circuito Corri nei Borghi 2024</strong
+                    >Circuito Corri nei Borghi 2025</strong
                   >
                   ha definito il proprio calendario. Ben
-                  <strong>otto eventi</strong> scandiranno il periodo dal
+                  <strong>otto eventi</strong> scandiranno il periodo dall'
                   <strong
                     style="
                       background-color: rgba(255, 255, 0, 0.5);
                       font-weight: bold;
                     "
-                    >5 luglio al 24 agosto</strong
+                    >11 luglio al 23 agosto</strong
                   >, abbracciando il suggestivo scenario della
                   <strong
                     style="
@@ -69,14 +69,10 @@
                     "
                     >medio-alta Val Seriana</strong
                   >
-                  durante la stagione turistica più vivace. Cosa c'è di meglio
-                  per celebrare l'anno olimpico se non con un ricco circuito
-                  podistico che attraversa i nostri incantevoli
-                  <strong style="color: #7f2b2b; font-weight: bold"
-                    >Borghi Storici</strong
-                  >...La continuità del progetto, la collaborazione e il
-                  sostegno della nostra comunità mantengono vivo l'entusiasmo,
-                  spingendo sempre più borghi ad unirsi al
+                  durante la stagione turistica più vivace. La continuità del
+                  progetto, la collaborazione e il sostegno della nostra
+                  comunità mantengono vivo l'entusiasmo, spingendo sempre più
+                  borghi ad unirsi al
                   <strong style="color: #7f2b2b; font-weight: bold"
                     >Circuito Corri nei Borghi</strong
                   >. Ancora una volta, a Cerete spetta il merito di ospitare il
@@ -87,7 +83,7 @@
                     "
                     >Trofeo Danilo Fiorina</strong
                   >, consegnandolo alle squadre meritevoli durante il gran
-                  finale del <strong>24 agosto 2024</strong>.
+                  finale del <strong>23 agosto 2025</strong>.
                   <br />
                   <i>Il direttivo</i>
                 </p>
@@ -114,22 +110,22 @@
             <div
               class="d-grid gap-2 d-md-flex justify-content-center mb-5 align-items-center"
             >
-              <!-- Now enrollments are open <span
+              <span
                 class="d-flex justify-content-center"
                 tabindex="0"
                 data-bs-toggle="popover"
                 data-bs-trigger="hover focus"
                 data-bs-title="Iscrizioni chiuse"
                 data-bs-content="Al momento le iscrizioni sono chiuse. Quando le apriremo, sarai reindirizzato al sito Endu per completare la tua iscrizione alla tappa selezionata. Grazie!"
-              > -->
-              <button
-                type="button"
-                class="btn btn-primary btn-lg px-4 me-md-2 bouncing-text"
-                id="button-color"
               >
-                <b>ISCRIVITI</b>
-              </button>
-              <!-- </span> -->
+                <button
+                  type="button"
+                  class="btn btn-primary btn-lg px-4 me-md-2 bouncing-text"
+                  id="button-color"
+                >
+                  <b>ISCRIVITI</b>
+                </button>
+              </span>
               <!-- <span
                 class="d-inline-block"
                 tabindex="0"
@@ -153,8 +149,8 @@
             <div class="container-tappe-tile">
               <img
                 class="tappe-tile"
-                src="public/images/2024_tappe_tile.png"
-                alt="Tappe 2024"
+                src="public/images/2025_tappe_tile.png"
+                alt="Tappe 2025"
               />
               <div class="middle-tappe-tile">
                 <button
@@ -189,23 +185,32 @@
       // Call other functions to insert components
       fetchAndInsertComponent("src/components/sponsor.html", "sponsor");
       fetchAndInsertComponent("src/components/footer.html", "footer");
-      fetchAndInsertComponent("src/components/countdown.html", "countdown");
-      fetchAndInsertComponent("src/components/news.html", "news").then(() => {
-        // Count news to show correct number inside accordion
-        countNews();
+      fetchAndInsertComponent(
+        "src/components/countdown.html",
+        "countdown"
+      ).then(() => {
+        // Start the timer
+        startTimer(constants.tappe, 2025, "countdown");
       });
-      // Start the timer
-      startTimer(constants.tappe, 2024, "countdown");
+      fetchAndInsertComponent("src/components/news.html", "news").then(
+        async () => {
+          // Add news
+          await generateNewsAccordionItems(constants.news, "news");
+          // Count news to show correct number inside accordion
+          await countNews();
+        }
+      );
+
       // Call to enable popovers on the page
       enablePopovers();
       // Redirect to tappe page on button Iscriviti click
       document.getElementById("button-color").onclick = function () {
         location.href = "tappe.html";
       };
-      // Redirect to Edndu classifiche
+      // Redirect to Endu classifiche
       document.getElementById("button-classifiche").onclick = function () {
         location.href = "classifiche.html";
-        // window.open(constants.tappe[0].trofeo.links.classifiche, "_blank");
+        window.open(constants.tappe[0].trofeo.links.classifiche, "_blank");
       };
       // Show/hide text in mobile website
       document.getElementById("show-more-btn").onclick = showMoreText;

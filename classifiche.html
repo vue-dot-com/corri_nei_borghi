@@ -29,18 +29,6 @@
         <nav>
           <div class="nav nav-tabs" id="nav-tab" role="tablist">
             <button
-              class="nav-link active"
-              id="nav-home-tab"
-              data-bs-toggle="tab"
-              data-bs-target="#nav-home"
-              type="button"
-              role="tab"
-              aria-controls="nav-home"
-              aria-selected="true"
-            >
-              2024
-            </button>
-            <button
               class="nav-link"
               id="nav-profile-tab"
               data-bs-toggle="tab"
@@ -153,10 +141,29 @@
       fetchAndInsertComponent("src/components/sponsor.html", "sponsor");
       fetchAndInsertComponent("src/components/footer.html", "footer");
       // Call function to generate classifiche table
-      generateClassificheHTML(constants.tappe, {
+      generateClassificheHTML(constants.tappe, 2025, {
         yearId: "classifiche-year",
         tableId: "classifiche-table",
         trophyId: "classifiche-trophy",
+      });
+      // Call function to generate year tabs
+      generateYearsNavTabs(constants.tappe, 2025, "nav-tab").then(() => {
+        // Onclick event to generate classifiche table when changing tab
+        const tabYearsArray = document.querySelectorAll("button.nav-link");
+        tabYearsArray.forEach((tab) => {
+          if (tab.id.includes("nav-home-tab-")) {
+            tab.addEventListener("click", (e) => {
+              generate(e.target.innerText);
+            });
+          }
+        });
+        function generate(year) {
+          generateClassificheHTML(constants.tappe, year, {
+            yearId: "classifiche-year",
+            tableId: "classifiche-table",
+            trophyId: "classifiche-trophy",
+          });
+        }
       });
     </script>
   </body>

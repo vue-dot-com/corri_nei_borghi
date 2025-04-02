@@ -27,22 +27,24 @@
     <main role="main" class="container container-main mt-2">
       <div class="container col-xxl-10 px-3">
         <nav>
-          <div class="nav nav-tabs" id="nav-tab" role="tablist">
-            <button
-              class="nav-link active"
-              id="nav-home-tab"
-              data-bs-toggle="tab"
-              data-bs-target="#nav-home"
-              type="button"
-              role="tab"
-              aria-controls="nav-home"
-              aria-selected="true"
-            >
-              2024
-            </button>
-          </div>
+          <div class="nav nav-tabs" id="nav-tab" role="tablist"></div>
         </nav>
 
+        <div class="tab-content" id="nav-tabContent">
+          <div
+            class="tab-pane fade show active"
+            id="nav-home"
+            role="tabpanel"
+            aria-labelledby="nav-home-tab"
+            tabindex="0"
+          >
+            <div
+              id="cardContainer"
+              class="card-container-media"
+              style="display: flex"
+            ></div>
+          </div>
+        </div>
         <!-- <div
           class="progress mt-5"
           role="progressbar"
@@ -60,11 +62,6 @@
             >
           </div>
         </div> -->
-        <div
-          id="cardContainer"
-          class="card-container-media"
-          style="display: flex"
-        ></div>
       </div>
     </main>
 
@@ -85,8 +82,23 @@
       // Call other functions to insert components
       fetchAndInsertComponent("src/components/sponsor.html", "sponsor");
       fetchAndInsertComponent("src/components/footer.html", "footer");
+      // Call function to generate year tabs
+      generateYearsNavTabs(constants.tappe, 2025, "nav-tab").then(() => {
+        // Onclick event to generate media cards when changing tab
+        const tabYearsArray = document.querySelectorAll("button.nav-link");
+        tabYearsArray.forEach((tab) => {
+          if (tab.id.includes("nav-home-tab-")) {
+            tab.addEventListener("click", (e) => {
+              generate(e.target.innerText);
+            });
+          }
+        });
+        function generate(year) {
+          generateMediaCards(constants.tappe, year, "cardContainer");
+        }
+      });
       // Call function to generate media cards
-      generateMediaCards(constants.tappe, 2024, "cardContainer");
+      generateMediaCards(constants.tappe, 2025, "cardContainer");
     </script>
   </body>
 </html>

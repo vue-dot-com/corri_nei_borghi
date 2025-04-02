@@ -1,3 +1,12 @@
+/**
+ * Adjusts the width of the header logo dynamically based on the scroll position of the window.
+ * The function only runs if the window width is greater than 1200 pixels.
+ *
+ * - When the scroll position is greater than 20 pixels, the logo width is set to 35%.
+ * - When the scroll position is less than or equal to 20 pixels, the logo width is set to 60%.
+ *
+ * The function adds a scroll event listener to the window to handle the resizing logic.
+ */
 function resizeHeaderLogo() {
   // Check window size
   if (window.innerWidth <= 1200) {
@@ -20,6 +29,11 @@ function resizeHeaderLogo() {
   });
 }
 
+/**
+ * Sets the active page in the navigation bar by adding the 'active' class to the corresponding link.
+ * Removes the 'active' class from all other links.
+ * @param {string} page - The ID of the page to set as active.
+ */
 function setActivePage(page) {
   // Remove 'active' class from all anchor tags
   const anchorTags = document.querySelectorAll("#navbar .nav-link");
@@ -34,6 +48,11 @@ function setActivePage(page) {
   }
 }
 
+/**
+ * Fetches and inserts the appropriate navbar HTML content based on the window width.
+ * Dynamically adjusts the navbar on window resize and initializes other related functions.
+ * @param {string} page - The current page to set as active in the navbar.
+ */
 async function fetchAndInsertNavbar(page) {
   try {
     let response;
@@ -67,6 +86,11 @@ async function fetchAndInsertNavbar(page) {
   }
 }
 
+/**
+ * Fetches and inserts a specific HTML component into the DOM.
+ * @param {string} componentFilePath - The file path of the component to fetch.
+ * @param {string} componentId - The ID of the DOM element to insert the component into.
+ */
 async function fetchAndInsertComponent(componentFilePath, componentId) {
   try {
     // Fetch HTML content
@@ -83,60 +107,69 @@ async function fetchAndInsertComponent(componentFilePath, componentId) {
   }
 }
 
-function generateClassificheHTML(tappe, componentsIds) {
+/**
+ * Generates the HTML content for the "classifiche" section based on the provided data.
+ * Inserts the generated content into the specified DOM elements.
+ * @param {Array} tappe - Array of race data.
+ * @param {number} year - The year to filter the races.
+ * @param {Object} componentsIds - Object containing the IDs of the DOM elements to update.
+ */
+function generateClassificheHTML(tappe, year, componentsIds) {
+  const tappeFilteredOnYear = tappe.filter((elem) => elem.year == year)[0];
   const { yearId, tableId, trophyId } = componentsIds;
   // Function to generate HTML for the classifiche data
-  let html_year = "";
   let html_table = "";
   let html_trophy = "";
 
-  // Iterate over each year
-  tappe.forEach((yearData) => {
-    html_year += `<h2>${yearData.year}</h2>`;
+  // Create table for each year
+  html_table += "<table class='classifiche-table'>";
+  html_table +=
+    "<thead><tr><th colspan='3' class='location-header'>Location</th><th colspan='2' class='non-competitiva-header'>Non Competitiva</th><th colspan='2' class='competitiva-header'>Competitiva</th></tr></thead>";
+  html_table += "<tbody>";
 
-    // Create table for each year
-    html_table += "<table class='classifiche-table'>";
-    html_table +=
-      "<thead><tr><th colspan='3' class='location-header'>Location</th><th colspan='2' class='non-competitiva-header'>Non Competitiva</th><th colspan='2' class='competitiva-header'>Competitiva</th></tr></thead>";
-    html_table += "<tbody>";
-
-    // Iterate over each location
-    yearData.gare.forEach((gara) => {
-      html_table += "<tr>";
-      html_table += `<td colspan='3' class='location-cell'><b>${gara.location}</b></td>`;
-      html_table += `<td class='non-competitiva-f-cell'><a href="${
-        gara.nonCompetitiva.f || gara.links.classifiche
-      }" target="_blank">Non Comp. Femminile</a></td>`;
-      html_table += `<td class='non-competitiva-m-cell'><a href="${
-        gara.nonCompetitiva.m || gara.links.classifiche
-      }" target="_blank">Non Comp. Maschile</a></td>`;
-      html_table += `<td class='competitiva-f-cell'><a href="${
-        gara.competitiva.f || gara.links.classifiche
-      }" target="_blank">Comp. Femminile</a></td>`;
-      html_table += `<td class='competitiva-m-cell'><a href="${
-        gara.competitiva.m || gara.links.classifiche
-      }" target="_blank">Comp. Maschile</a></td>`;
-      html_table += "</tr>";
-    });
-
-    html_table += "</tbody>";
-    html_table += "</table>";
-
-    // Add trofeo information
-    html_trophy += `<p><a href="${
-      yearData.trofeo.individuale || yearData.trofeo.links.classifiche
-    }" target="_blank">Trofeo Individuale</a> (Competitiva e Non Competitiva)</p>`;
-    html_trophy += `<p><a href="${
-      yearData.trofeo.squadre || yearData.trofeo.links.classifiche
-    }" target="_blank">Trofeo Squadre</a></p>`;
+  // Iterate over each location and generate table rows
+  tappeFilteredOnYear.gare.forEach((gara) => {
+    html_table += "<tr>";
+    html_table += `<td colspan='3' class='location-cell'><b>${gara.location}</b></td>`;
+    html_table += `<td class='non-competitiva-f-cell'><a href="${
+      gara.nonCompetitiva.f || gara.links.classifiche
+    }" target="_blank">Non Comp. Femminile</a></td>`;
+    html_table += `<td class='non-competitiva-m-cell'><a href="${
+      gara.nonCompetitiva.m || gara.links.classifiche
+    }" target="_blank">Non Comp. Maschile</a></td>`;
+    html_table += `<td class='competitiva-f-cell'><a href="${
+      gara.competitiva.f || gara.links.classifiche
+    }" target="_blank">Comp. Femminile</a></td>`;
+    html_table += `<td class='competitiva-m-cell'><a href="${
+      gara.competitiva.m || gara.links.classifiche
+    }" target="_blank">Comp. Maschile</a></td>`;
+    html_table += "</tr>";
   });
 
+  html_table += "</tbody>";
+  html_table += "</table>";
+
+  // Add trofeo information
+  html_trophy += `<p><a href="${
+    tappeFilteredOnYear.trofeo.individuale ||
+    tappeFilteredOnYear.trofeo.links.classifiche
+  }" target="_blank">Trofeo Individuale</a> (Competitiva e Non Competitiva)</p>`;
+  html_trophy += `<p><a href="${
+    tappeFilteredOnYear.trofeo.squadre ||
+    tappeFilteredOnYear.trofeo.links.classifiche
+  }" target="_blank">Trofeo Squadre</a></p>`;
+
   // Insert HTML content into the DOM
-  document.getElementById(yearId).innerHTML = html_year;
+  document.getElementById(yearId).innerHTML = `<h2>${year}</h2>`;
   document.getElementById(tableId).innerHTML = html_table;
   document.getElementById(trophyId).innerHTML = html_trophy;
 }
 
+/**
+ * Validates a form and sends an email if the form is valid.
+ * Applies Bootstrap validation styles to the form.
+ * @param {string} formClass - The class of the form to validate.
+ */
 function validateFormAndSend(formClass) {
   // Fetch all the forms we want to apply custom Bootstrap validation styles to
   const forms = document.querySelectorAll(formClass);
@@ -159,6 +192,9 @@ function validateFormAndSend(formClass) {
   });
 }
 
+/**
+ * Sends an email using the form data by constructing a mailto link.
+ */
 function sendEmail() {
   // Get form data
   var name = document.getElementById("name").value;
@@ -186,15 +222,26 @@ function sendEmail() {
   window.open(mailtoLink, "_blank");
 }
 
-// Function to dynamically change data-bs-target and id attribute
+/**
+ * Dynamically sets attributes for a given DOM element.
+ * @param {HTMLElement} element - The DOM element to update.
+ * @param {Object} attributes - An object containing attribute key-value pairs.
+ */
 function setElementAttibutes(element, attributes = {}) {
   for (const property in attributes) {
     element.setAttribute(property, attributes[property]);
   }
 }
 
+/**
+ * Generates cards for the "tappe" section based on the provided data.
+ * Dynamically populates and appends the cards to the specified container.
+ * @param {Array} tappe - Array of race data.
+ * @param {number} year - The year to filter the races.
+ * @param {string} componentId - The ID of the container element for the cards.
+ */
 async function generateTappeCards(tappe, year, componentId) {
-  const tappeFilteredOnYear = tappe.filter((elem) => elem.year === year)[0];
+  const tappeFilteredOnYear = tappe.filter((elem) => elem.year == year)[0];
 
   // Get the container element for the cards
   const cardContainer = document.getElementById(componentId);
@@ -301,8 +348,15 @@ async function generateTappeCards(tappe, year, componentId) {
   window.addEventListener("resize", resizeButtonGroup);
 }
 
+/**
+ * Generates modals for the "tappe" cards based on the provided data.
+ * Dynamically populates and replaces the modals in the DOM.
+ * @param {Array} tappe - Array of race data.
+ * @param {number} year - The year to filter the races.
+ * @param {string} componentName - The name of the modal component to generate.
+ */
 async function generateModalsForCards(tappe, year, componentName) {
-  const tappeFilteredOnYear = tappe.filter((elem) => elem.year === year)[0];
+  const tappeFilteredOnYear = tappe.filter((elem) => elem.year == year)[0];
 
   // Loop through each location and load card.html, then populate and append it
   tappeFilteredOnYear.gare.forEach(async (gara) => {
@@ -355,7 +409,11 @@ async function generateModalsForCards(tappe, year, componentName) {
   });
 }
 
-// Function to generate modal body content for each tappa
+/**
+ * Generates the modal body content for the "programma" section of a race.
+ * @param {Object} tappa - The race data for a specific location.
+ * @returns {string} - The HTML content for the modal body.
+ */
 function generateProgrammaModalBodyContent(tappa) {
   const { programma } = tappa;
   return `
@@ -370,6 +428,11 @@ function generateProgrammaModalBodyContent(tappa) {
   `;
 }
 
+/**
+ * Generates the modal body content for the "percorso" section of a race.
+ * @param {Object} tappa - The race data for a specific location.
+ * @returns {string} - The HTML content for the modal body.
+ */
 function generatePercorsoModalBodyContent(tappa) {
   const { percorso } = tappa;
   const { baby, nonCompetitiva, competitiva } = percorso;
@@ -407,12 +470,22 @@ function generatePercorsoModalBodyContent(tappa) {
   return html;
 }
 
+/**
+ * Generates the modal body content for the "regolamento" section of a race.
+ * @param {Object} tappa - The race data for a specific location.
+ * @returns {string} - The HTML content for the modal body.
+ */
 function generateRegolamentoModalBodyContent(tappa) {
   return `
       <p><a href="${tappa.regolamento}">Regolamento ${tappa.name}</a></p>
   `;
 }
 
+/**
+ * Generates the modal body content for the "classifica" section of a race.
+ * @param {Object} tappa - The race data for a specific location.
+ * @returns {string} - The HTML content for the modal body.
+ */
 function generateClassificaModalBodyContent(tappa) {
   // TODO: Include baby run?
   // Links are disabled if no Endu link is found
@@ -440,6 +513,12 @@ function generateClassificaModalBodyContent(tappa) {
   return html;
 }
 
+/**
+ * Generates the content for the "tappe" page, including cards and modals.
+ * @param {Array} tappe - Array of race data.
+ * @param {number} year - The year to filter the races.
+ * @param {Object} componentsIds - Object containing the IDs of the DOM elements to update.
+ */
 function generateTappePageContent(tappe, year, componentsIds) {
   // We use then and not async await in order to support old mobile browsers like my Safari on iPhone 6
   generateTappeCards(tappe, year, componentsIds.cardContainerId)
@@ -453,6 +532,9 @@ function generateTappePageContent(tappe, year, componentsIds) {
     });
 }
 
+/**
+ * Enables Bootstrap popovers for elements with the appropriate data attributes.
+ */
 function enablePopovers() {
   const popoverTriggerList = document.querySelectorAll(
     '[data-bs-toggle="popover"]'
@@ -462,8 +544,14 @@ function enablePopovers() {
   );
 }
 
+/**
+ * Converts race dates into timestamps for easier comparison and manipulation.
+ * @param {Array} tappe - Array of race data.
+ * @param {number} year - The year to filter the races.
+ * @returns {Array} - Array of timestamps for the race dates.
+ */
 function convertDates(tappe, year) {
-  const tappeFilteredOnYear = tappe.filter((elem) => elem.year === year)[0];
+  const tappeFilteredOnYear = tappe.filter((elem) => elem.year == year)[0];
   const dates = tappeFilteredOnYear.gare.map((gara) => {
     let tmpDate = gara.date.split(" ");
     if (tmpDate[1] === "Luglio") {
@@ -481,8 +569,14 @@ function convertDates(tappe, year) {
   return dates;
 }
 
+/**
+ * Starts a countdown timer for the next race and updates the UI component with the remaining time.
+ * @param {Array} tappe - Array of race data.
+ * @param {number} year - The year to filter the races.
+ * @param {string} componentName - The ID of the UI component to update.
+ */
 function startTimer(tappe, year, componentName) {
-  const tappeFilteredOnYear = tappe.filter((elem) => elem.year === year)[0];
+  const tappeFilteredOnYear = tappe.filter((elem) => elem.year == year)[0];
   // Set start date
   const start = new Date();
   start.setUTCHours(0, 0, 0, 0);
@@ -547,11 +641,13 @@ function startTimer(tappe, year, componentName) {
     document
       .getElementById(componentName)
       .getElementsByClassName("countdown-content")[0].innerText =
-      "Ci vediamo l'anno prossimo! Grazie a tutti...";
+      "🏃‍♀️🏃‍♂️Stiamo lavorando per la prossima edizione...stay tuned!";
   }
 }
 
-// Function to show/hide text in the first page, specifically designed for mobile website
+/**
+ * Toggles the visibility of text on the first page for mobile devices.
+ */
 function showMoreText() {
   const textElement = document.querySelectorAll("#lead-text .card-body")[0];
   const button = document.getElementById("show-more-btn");
@@ -594,8 +690,10 @@ function showMoreText() {
   }
 }
 
-// Function to count news inside news accordion in index page and update badge
-function countNews() {
+/**
+ * Counts the number of news items in the news accordion and updates the badge with the count.
+ */
+async function countNews() {
   const news = document.getElementById("news");
   const newsAccordion = news.querySelector("#news-accordion-flush");
   const newsArray = newsAccordion.getElementsByClassName("accordion-item");
@@ -604,8 +702,15 @@ function countNews() {
   badge.textContent = nNews;
 }
 
+/**
+ * Generates cards for the media page based on the provided data.
+ * Dynamically populates and appends the cards to the specified container.
+ * @param {Array} tappe - Array of race data.
+ * @param {number} year - The year to filter the races.
+ * @param {string} componentId - The ID of the container element for the cards.
+ */
 async function generateMediaCards(tappe, year, componentId) {
-  const tappeFilteredOnYear = tappe.filter((elem) => elem.year === year)[0];
+  const tappeFilteredOnYear = tappe.filter((elem) => elem.year == year)[0];
 
   // Get the container element for the cards
   const cardContainer = document.getElementById(componentId);
@@ -690,10 +795,167 @@ async function generateMediaCards(tappe, year, componentId) {
   // Wait for all fetch and population operations to complete
   const cards = await Promise.all(fetchPromises);
 
-  // Append all cards to the card container in the correct order
-  cards.forEach((card) => {
-    if (card) {
-      cardContainer.appendChild(card);
+  if (cards.length === 0 || cards.every((card) => card === null)) {
+    cardContainer.innerHTML = `
+    <div
+          class="progress mt-5"
+          role="progressbar"
+          aria-label="Animated striped example"
+          aria-valuenow="100"
+          aria-valuemin="0"
+          aria-valuemax="100"
+        >
+          <div
+            class="progress-bar progress-bar-striped progress-bar-animated"
+            style="width: 100%"
+          >
+            <span style="color: white"
+              >Siamo quasi pronti...le foto le caricheremo qui!</span
+            >
+          </div>
+        </div>
+    `;
+  } else {
+    cardContainer.innerHTML = "";
+    // Append all cards to the card container in the correct order
+    cards.forEach((card) => {
+      if (card) {
+        cardContainer.appendChild(card);
+      }
+    });
+  }
+}
+
+/**
+ * Generates accordion items for the news section based on the provided data.
+ * Dynamically populates and appends the items to the specified container.
+ * @param {Array} news - Array of news data.
+ * @param {string} componentId - The ID of the container element for the accordion items.
+ */
+async function generateNewsAccordionItems(news, componentId) {
+  // Get the container element for the cards
+  const newsAccordion = document.getElementById(componentId);
+  const newsAccordionFlush = newsAccordion.querySelector(
+    "#news-accordion-flush"
+  );
+
+  // Loop through each news and create an accordion item, then populate and append it
+  // Array to store promises for fetching HTML content, in this way news items are ordered by appearance.
+  const fetchPromises = news.map(async (item, index) => {
+    // Fetch card.html content
+    const response = await fetch("src/components/accordion_news_item.html");
+    const html = await response.text();
+
+    // Create a temporary element to parse the HTML string
+    tempElement = document.createElement("div");
+    tempElement.innerHTML = html.trim();
+
+    // Populate card with data
+
+    // Add title and data-bs-target / aria-controls attributes
+    button = tempElement.querySelector("button.accordion-button");
+    button.innerHTML = `${item.title}`;
+    button.setAttribute("data-bs-target", `#flush-collapse-${index}`);
+    button.setAttribute("aria-controls", `flush-collapse-${index}`);
+
+    // Set container div id attribute
+    collapse = tempElement.querySelector("div.accordion-collapse.collapse");
+    collapse.setAttribute("id", `flush-collapse-${index}`);
+    // Add body
+    const body = document.createElement("div");
+    body.innerHTML = item.body;
+    tempElement.querySelector(".accordion-body").appendChild(body);
+
+    // Add image
+    if (item.image) {
+      tempElement.querySelector(
+        ".accordion-news-image"
+      ).innerHTML = `<img src=${item.image} class="img-thumbnail" />`;
+    } else {
+      tempElement.querySelector(".accordion-news-image").remove();
     }
+
+    return tempElement.querySelector(".accordion-item");
   });
+
+  // Wait for all fetch and population operations to complete
+  const accordionItems = await Promise.all(fetchPromises);
+
+  if (
+    accordionItems.length === 0 ||
+    accordionItems.every((card) => card === null)
+  ) {
+    newsAccordionFlush.innerHTML = "";
+  } else {
+    // Append all accordion items to the news accordion in the correct order
+    accordionItems.forEach((item) => {
+      if (item) {
+        newsAccordionFlush.appendChild(item);
+      }
+    });
+  }
+}
+
+/**
+ * Generates navigation tabs for years based on the provided data and appends them to a specified component.
+ *
+ * This function fetches an HTML template for each year, populates it with the year data, and appends the resulting
+ * tabs to the navigation container. It also highlights the current year tab as active.
+ *
+ * @async
+ * @function generateYearsNavTabs
+ * @param {Array<Object>} tappe - An array of objects representing the data for each year. Each object must have a `year` property.
+ * @param {number} curYear - The current year to be highlighted as active in the navigation tabs.
+ * @param {string} componentId - The ID of the DOM element where the navigation tabs will be appended.
+ * @returns {Promise<void>} A promise that resolves when the navigation tabs have been generated and appended.
+ *
+ * @throws {Error} Throws an error if the HTML template cannot be fetched or if there is an issue with DOM manipulation.
+ */
+async function generateYearsNavTabs(tappe, curYear, componentId) {
+  const years = tappe.map((tappa) => tappa.year);
+  years.sort((a, b) => b - a);
+  const navTab = document.getElementById(componentId);
+
+  const fetchPromises = years.map(async (year) => {
+    // Fetch year_tab_button.html content
+    const response = await fetch("src/components/year_tab_button.html");
+    const html = await response.text();
+
+    // Create a temporary element to parse the HTML string
+    tempElement = document.createElement("div");
+    tempElement.innerHTML = html.trim();
+
+    // Populate button with data
+
+    // Add title and attributes
+    button = tempElement.querySelector("button.nav-link");
+    button.innerText = year;
+    button.setAttribute("id", `nav-home-tab-${year}`);
+    if (year == curYear) {
+      button.classList.add("active");
+    }
+
+    return tempElement.querySelector(".nav-link");
+  });
+
+  // Wait for all fetch and population operations to complete
+  const buttonTabs = await Promise.all(fetchPromises);
+
+  if (
+    buttonTabs.length === 0 ||
+    buttonTabs.every((button) => button === null)
+  ) {
+    navTab.innerHTML = "";
+  } else {
+    // Merge existing tabs with new tabs
+    navTab.childNodes?.forEach((child) => {
+      buttonTabs.push(child);
+    });
+    // Append all year tabs to the nav tabs div in the correct order
+    buttonTabs.forEach((tab) => {
+      if (tab) {
+        navTab.appendChild(tab);
+      }
+    });
+  }
 }
