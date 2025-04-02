@@ -267,14 +267,20 @@ async function generateTappeCards(tappe, year, componentId) {
       <p class="card-text">${gara.description}</p>
     `;
 
-    // Dynamically set external link for the Iscriviti button
+    // Dynamically set external link for the Iscriviti button otherwise set button to disabled
     const iscrivitiButton = tempElement.querySelector("#button-iscriviti");
 
-    setElementAttibutes(iscrivitiButton, {
-      id: `button-iscriviti-${gara.location.toLowerCase()}`,
-      onclick: `window.open('${gara.links.iscrizioni}', '_blank');`,
-    });
-
+    if (gara.links.iscrizioni === "") {
+      setElementAttibutes(iscrivitiButton, {
+        class: "btn btn-primary disabled",
+        disabled: true,
+      });
+    } else {
+      setElementAttibutes(iscrivitiButton, {
+        id: `button-iscriviti-${gara.location.toLowerCase()}`,
+        onclick: `window.open('${gara.links.iscrizioni}', '_blank');`,
+      });
+    }
     // Replace modal buttons to point to the correct programma/percorso/regolamento
     // Get all radio buttons with class 'btn-check' and related labels
     const radioButtons = tempElement.querySelectorAll(".btn-check");
