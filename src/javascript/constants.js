@@ -770,7 +770,7 @@ const tappe = [
           iscrizioni: "",
           classifiche: "",
         },
-        regolamento: "public/files/regulations/2024_vertova.pdf",
+        regolamento: "public/files/regulations/2025_vertova.pdf",
         foto: {
           description: "",
           copertina: "",
@@ -835,7 +835,7 @@ const tappe = [
           iscrizioni: "",
           classifiche: "",
         },
-        regolamento: "public/files/regulations/2024_clusone.pdf",
+        regolamento: "public/files/regulations/2025_clusone.pdf",
         foto: {
           description: "",
           copertina: "",
@@ -964,7 +964,7 @@ const tappe = [
           iscrizioni: "",
           classifiche: "",
         },
-        regolamento: "public/files/regulations/2024_albino.pdf",
+        regolamento: "public/files/regulations/2025_albino.pdf",
         foto: {
           description: "",
           copertina: "",
@@ -1028,7 +1028,7 @@ const tappe = [
           iscrizioni: "",
           classifiche: "",
         },
-        regolamento: "public/files/regulations/2024_parre.pdf",
+        regolamento: "public/files/regulations/2025_parre.pdf",
         foto: {
           description: "",
           copertina: "public/media/2024/parre/2024_parre.jpg",
@@ -1092,7 +1092,7 @@ const tappe = [
           iscrizioni: "",
           classifiche: "",
         },
-        regolamento: "public/files/regulations/2024_gromo.pdf",
+        regolamento: "public/files/regulations/2025_gromo.pdf",
         foto: {
           description: "",
           copertina: "",
@@ -1158,7 +1158,7 @@ const tappe = [
           iscrizioni: "",
           classifiche: "",
         },
-        regolamento: "public/files/regulations/2024_cerete.pdf",
+        regolamento: "public/files/regulations/2025_cerete.pdf",
         foto: {
           description: "",
           copertina: "",
