@@ -843,7 +843,7 @@ const tappe = [
         },
       },
       {
-        name: "",
+        name: "SEMPER DE CORSA",
         location: "Gandino",
         date: "25 Luglio",
         logo: "/public/images/logos/gandino.jpg",
@@ -854,35 +854,37 @@ const tappe = [
           partenzaBaby: "18:45",
           partenzaNonCompetitiva: "19:30",
           partenzaCompetitiva: { m: "20:45", f: "20:15" },
-          ritrovo: "",
-          parcheggi: "",
-          docce: "",
-          ristoro: "",
-          altro: "",
+          ritrovo: "Piazza Vittorio Veneto, Gandino",
+          parcheggi:
+            "Via Vittorio Veneto (adiacenti a scuola materna), Via S.G. Bosco (adiacenti a Oratorio Sacro Cuore)",
+          docce: "Sì, presso Gandinese Stadium",
+          ristoro: "Sì, presso Piazza Santa Croce a cura del Bar Lù",
+          altro:
+            "Per info ed eventuali domande su iscrizioni: Aldo Bernardi cel.3487462047",
         },
         percorso: {
           baby: {
-            km: "",
+            km: "Categoria 0-5 anni: 450 mt (1 giro percorso azzurro); Categoria 6-9 anni: 900 mt (2 giri percorso azzurro); Categoria 10-13 anni: 1100 mt (1 giro percorso arancio)",
             dislivello: "",
-            img: "",
+            img: "public/images/courses/gandino_baby.png",
             gpx: "",
           },
           nonCompetitiva: {
-            km: "",
+            km: "4.8 km (3 giri percorso rosso)",
             dislivello: "",
-            img: "",
+            img: "public/images/courses/gandino_nc_c.png",
             gpx: "",
           },
           competitiva: {
             m: {
-              km: "",
+              km: "6.4 km (4 giri percorso rosso)",
               dislivello: "",
             },
             f: {
-              km: "",
+              km: "4.8 km (3 giri percorso rosso)",
               dislivello: "",
             },
-            img: "",
+            img: "public/images/courses/gandino_nc_c.png",
             gpx: "",
           },
         },
@@ -898,7 +900,7 @@ const tappe = [
           iscrizioni: "",
           classifiche: "",
         },
-        regolamento: "",
+        regolamento: "public/files/regulations/2025_gandino.pdf",
         foto: {
           description: "",
           copertina: "",
@@ -1045,14 +1047,14 @@ const tappe = [
           "https://upload.wikimedia.org/wikipedia/commons/1/1d/Borgo_di_Gromo.jpg",
         programma: {
           partenzaBaby: "18:45",
-          partenzaNonCompetitiva: "19:30",
-          partenzaCompetitiva: { m: "20:45", f: "20:15" },
-          ritrovo: "Piazza Dante",
+          partenzaNonCompetitiva: "19:15",
+          partenzaCompetitiva: { m: "20:30", f: "20:00" },
+          ritrovo: "Piazza Dante, Gromo",
           parcheggi: "Presso il piazzale del borgo, su via papa Giovanni XXIII",
           docce: "No",
-          ristoro: "Pasta party a fine competizione in piazza Dante",
+          ristoro: "Sì, a fine competizione in piazza Dante",
           altro:
-            "Iscrizioni presso ufficio turistico in piazza Dante. Contatti: prolocogromo@gmail.com / Matteo 3922442636",
+            "Iscrizioni presso ufficio turistico in piazza Dante. Contatti: prolocogromo@gmail.com / Matteo 3922442636 / Francesca 3514324308",
         },
         percorso: {
           baby: {
