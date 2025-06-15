@@ -450,7 +450,10 @@ function generatePercorsoModalBodyContent(tappa) {
     let compDisl;
     if (index === 2) {
       compLength = `<ul><li>Femminile: ${e.f.km}</li><li>Maschile: ${e.m.km}</li></ul>`;
-      compDisl = `<ul><li>Femminile: ${e.f.dislivello}</li><li>Maschile: ${e.m.dislivello}</li></ul>`;
+      compDisl =
+        e?.f?.dislivello && e?.m?.dislivello
+          ? `<ul><li>Femminile: ${e.f.dislivello}</li><li>Maschile: ${e.m.dislivello}</li></ul>`
+          : false;
     }
     html += `<h4 class="modal-titles">
     ${index === 0 ? "Baby" : index === 1 ? "Non competitiva" : "Competitiva"}
@@ -467,7 +470,7 @@ function generatePercorsoModalBodyContent(tappa) {
     ${e.gpx ? `<li><strong>Gpx file:</strong> ${e.gpx}</li>` : ""}
     ${
       e.img
-        ? `<li><strong>Immagine percorso:</strong> <img src="${e.img}" class="img-fluid"/></li>`
+        ? `<li><strong>Immagine percorso:</strong> <div> <img src="${e.img}" class="img-fluid"/> </div> </li>`
         : ""
     }
     </ul>
