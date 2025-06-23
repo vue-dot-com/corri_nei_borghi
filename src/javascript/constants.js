@@ -767,8 +767,9 @@ const tappe = [
           m: "",
         },
         links: {
-          iscrizioni: "",
-          classifiche: "",
+          iscrizioni: "https://api.endu.net/r/i/93881",
+          classifiche:
+            "https://www.endu.net/en/events/corri-nei-borghi-vertova-2/results",
         },
         regolamento: "public/files/regulations/2025_vertova.pdf",
         foto: {
@@ -832,8 +833,9 @@ const tappe = [
           m: "",
         },
         links: {
-          iscrizioni: "",
-          classifiche: "",
+          iscrizioni: "https://api.endu.net/r/i/93940",
+          classifiche:
+            "https://www.endu.net/it/events/corri-nei-borghi-clusone-corri-in-centro/results",
         },
         regolamento: "public/files/regulations/2025_clusone.pdf",
         foto: {
@@ -1181,6 +1183,35 @@ const tappe = [
 const news = [
   {
     title: `
+    📣 Iscrizioni aperte! Manca poco 🏃‍♂️🏃‍♀️`,
+    image: "",
+    body: `
+    <p>
+  <strong>🏁 Sono ufficialmente aperte le iscrizioni per la Corri nei Borghi 2025!</strong>
+</p>
+<p>
+  Puoi già registrarti alle prime due tappe:<br>
+  <ul>
+    <li><strong>Vertova</strong> (11 luglio) <a href="https://api.endu.net/r/i/93881" target="_blank">qui</a></li>
+    <li><strong>Corrincentro Clusone</strong> (18 luglio) <a href="https://api.endu.net/r/i/93940" target="_blank">qui</a> </li>
+  </ul>
+</p>
+<p>
+  <strong>Novità 2025:</strong> <br>
+  Premio speciale <b>UNO DI NOI</b> riservato alle sole categorie Senior: chi risulterà in classifica in tutte le 7 tappe, indipendentemente dagli scarti obbligatori, riceverà una <b>Ledlenser MH-5, Torcia Frontale Ricaricabile</b> da ritirare all’ultima tappa di Cerete!
+  <div class="accordion-news-image">
+  <img src="public/images/2025_premio_uno_di_noi.png" alt="Ledlenser MH-5" class="img-thumbnail"/>
+  </div>
+</p>
+<p>
+  Ti invitiamo a prendere visione del <a href="public/files/regulations/2025_circuito.pdf" target="_blank">regolamento</a> per tutti i dettagli.<br>
+  Per qualsiasi domanda puoi consultare la <a href="/contatti.html" target="_blank">sezione contatti</a> o rivolgerti direttamente ai contatti indicati per ciascuna tappa.
+</p>
+    `,
+  },
+
+  {
+    title: `
     📱 Seguici sui nostri social&nbsp;
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -1208,6 +1239,7 @@ const news = [
                   />
                 </svg>
     `,
+    image: "",
     body: `
      Corri a seguire le nostre pagine social per le ultime news,
                 foto, stories e molto altro! Le icone social sono sempre a
