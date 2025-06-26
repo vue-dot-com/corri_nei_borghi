@@ -899,7 +899,7 @@ const tappe = [
           m: "",
         },
         links: {
-          iscrizioni: "",
+          iscrizioni: "https://api.endu.net/r/i/100954",
           classifiche: "",
         },
         regolamento: "public/files/regulations/2025_gandino.pdf",
@@ -965,7 +965,7 @@ const tappe = [
           m: "",
         },
         links: {
-          iscrizioni: "",
+          iscrizioni: "https://api.endu.net/r/i/94019",
           classifiche: "",
         },
         regolamento: "public/files/regulations/2025_albino.pdf",
@@ -1029,7 +1029,7 @@ const tappe = [
           m: "",
         },
         links: {
-          iscrizioni: "",
+          iscrizioni: "https://api.endu.net/r/i/94059",
           classifiche: "",
         },
         regolamento: "public/files/regulations/2025_parre.pdf",
@@ -1093,7 +1093,7 @@ const tappe = [
           m: "",
         },
         links: {
-          iscrizioni: "",
+          iscrizioni: "https://api.endu.net/r/i/93986",
           classifiche: "",
         },
         regolamento: "public/files/regulations/2025_gromo.pdf",
@@ -1159,7 +1159,7 @@ const tappe = [
           m: "",
         },
         links: {
-          iscrizioni: "",
+          iscrizioni: "https://api.endu.net/r/i/94075",
           classifiche: "",
         },
         regolamento: "public/files/regulations/2025_cerete.pdf",
@@ -1174,7 +1174,8 @@ const tappe = [
       individuale: "",
       squadre: "",
       links: {
-        classifiche: "",
+        classifiche:
+          "https://www.endu.net/en/events/corri-nei-borghi-circuito-2/results",
       },
     },
   },
@@ -1190,11 +1191,7 @@ const news = [
   <strong>🏁 Sono ufficialmente aperte le iscrizioni per la Corri nei Borghi 2025!</strong>
 </p>
 <p>
-  Puoi già registrarti alle prime due tappe:<br>
-  <ul>
-    <li><strong>Vertova</strong> (11 luglio) <a href="https://api.endu.net/r/i/93881" target="_blank">qui</a></li>
-    <li><strong>Corrincentro Clusone</strong> (18 luglio) <a href="https://api.endu.net/r/i/93940" target="_blank">qui</a> </li>
-  </ul>
+  👉 Puoi registrati alle tappe tramite Endu, accedi all'iscrizione per ogni singola tappa dalla pagina <a href="/tappe.html" target="_blank">tappe</a>!<br>
 </p>
 <p>
   <strong>Novità 2025:</strong> <br>
