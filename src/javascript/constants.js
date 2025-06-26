@@ -120,7 +120,7 @@ const tappe = [
         location: "Rovetta",
         name: "Rooster Run",
         date: "5 Luglio",
-        logo: "/public/images/logos/rovetta.webp",
+        logo: "/public/images/logos/rovetta.jpg",
         description: "",
         imgCopertina:
           "https://mycity.s3.sbg.io.cloud.ovh.net/3509926/IMG_6559-(2).jpg",
@@ -178,7 +178,7 @@ const tappe = [
         regolamento: "public/files/regulations/2024_rovetta.pdf",
         foto: {
           description: "Foto a cura di Carlo G.",
-          copertina: "public/media/2024/rovetta/2024_rovetta.webp",
+          copertina: "public/media/2024/rovetta/2024_rovetta.jpg",
           category: [
             {
               name: "",
@@ -191,7 +191,7 @@ const tappe = [
         name: "Verto..va Run Night",
         location: "Vertova",
         date: "12 Luglio",
-        logo: "/public/images/logos/vertova.webp",
+        logo: "/public/images/logos/vertova.png",
         description:
           "Gara di corsa su strada che si snoda tra le principali vie del centro storico. Nervosa e divertente allo stesso tempo. Il divertimento è assicurato!",
         imgCopertina:
@@ -211,13 +211,13 @@ const tappe = [
           baby: {
             km: "Under 8: 350 mt. | Under 14: 900 mt. (possibilità di n.2 categorie in base agli iscritti)",
             dislivello: "",
-            img: "public/images/courses/vertova_baby.webp",
+            img: "public/images/courses/vertova_baby.png",
             gpx: "",
           },
           nonCompetitiva: {
             km: "4,5 km",
             dislivello: "75m circa",
-            img: "public/images/courses/vertova_nc_c.webp",
+            img: "public/images/courses/vertova_nc_c.png",
             gpx: "",
           },
           competitiva: {
@@ -229,7 +229,7 @@ const tappe = [
               km: "4,5 km",
               dislivello: "75m circa",
             },
-            img: "public/images/courses/vertova_nc_c.webp",
+            img: "public/images/courses/vertova_nc_c.png",
           },
         },
         nonCompetitiva: {
@@ -247,7 +247,7 @@ const tappe = [
         regolamento: "public/files/regulations/2024_vertova.pdf",
         foto: {
           description: "",
-          copertina: "public/media/2024/vertova/2024_vertova.webp",
+          copertina: "public/media/2024/vertova/2024_vertova.jpg",
           category: [
             {
               name: "",
@@ -260,7 +260,7 @@ const tappe = [
         name: "CorrinCentro",
         location: "Clusone",
         date: "19 Luglio",
-        logo: "/public/images/logos/clusone.webp",
+        logo: "/public/images/logos/clusone.jpg",
         description:
           "La XVII edizione della corsa nel centro di uno dei Borghi Più Belli d'Italia",
         imgCopertina:
@@ -280,13 +280,13 @@ const tappe = [
           baby: {
             km: "Under 5: 320 mt | 6-14 anni: 750 mt",
             dislivello: "Under 5: 9 mt | 6-14 anni: 18 mt",
-            img: "public/images/courses/clusone_baby.webp",
+            img: "public/images/courses/clusone_baby.png",
             gpx: "",
           },
           nonCompetitiva: {
             km: "4,5 km",
             dislivello: "99 mt",
-            img: "public/images/courses/clusone_nc_c.webp",
+            img: "public/images/courses/clusone_nc_c.png",
             gpx: "",
           },
           competitiva: {
@@ -298,7 +298,7 @@ const tappe = [
               km: "4,5 km",
               dislivello: "99 mt",
             },
-            img: "public/images/courses/clusone_nc_c.webp",
+            img: "public/images/courses/clusone_nc_c.png",
             gpx: "",
           },
         },
@@ -317,7 +317,7 @@ const tappe = [
         regolamento: "public/files/regulations/2024_clusone.pdf",
         foto: {
           description: "Foto a cura di Armin H.",
-          copertina: "public/media/2024/clusone/2024_clusone.webp",
+          copertina: "public/media/2024/clusone/2024_clusone.jpg",
           category: [
             {
               name: "Non competitiva",
@@ -338,7 +338,7 @@ const tappe = [
         name: "Bèch to Run",
         location: "Gromo",
         date: "26 Luglio",
-        logo: "/public/images/logos/gromo.webp",
+        logo: "/public/images/logos/gromo.png",
         description: "Gara podistica per le vie del borgo medievale di Gromo",
         imgCopertina:
           "https://upload.wikimedia.org/wikipedia/commons/1/1d/Borgo_di_Gromo.jpg",
@@ -357,13 +357,13 @@ const tappe = [
           baby: {
             km: "Under 8: 700 mt | 9-11 anni: 700 mt | 12-13 anni: 2,5 km",
             dislivello: "",
-            img: "public/images/courses/gromo_baby.webp",
+            img: "public/images/courses/gromo_baby.png",
             gpx: "",
           },
           nonCompetitiva: {
             km: "4 km",
             dislivello: "",
-            img: "public/images/courses/gromo_nc_c.webp",
+            img: "public/images/courses/gromo_nc_c.png",
             gpx: "",
           },
           competitiva: {
@@ -375,7 +375,7 @@ const tappe = [
               km: "4 km",
               dislivello: "150 mt",
             },
-            img: "public/images/courses/gromo_nc_c.webp",
+            img: "public/images/courses/gromo_nc_c.png",
             gpx: "",
           },
         },
@@ -394,7 +394,7 @@ const tappe = [
         regolamento: "public/files/regulations/2024_gromo.pdf",
         foto: {
           description: "Foto a cura di Cristian Riva e Marco Pendezza",
-          copertina: "public/media/2024/gromo/2024_gromo.webp",
+          copertina: "public/media/2024/gromo/2024_gromo.jpg",
           category: [
             {
               name: "Baby e allievi",
@@ -481,7 +481,7 @@ const tappe = [
         regolamento: "public/files/regulations/2024_albino.pdf",
         foto: {
           description: "Foto a cura di Monachino",
-          copertina: "public/media/2024/albino/2024_albino.webp",
+          copertina: "public/media/2024/albino/2024_albino.jpg",
           category: [
             {
               name: "",
@@ -494,7 +494,7 @@ const tappe = [
         name: "Corri Ardesio corri",
         location: "Ardesio",
         date: "9 Agosto",
-        logo: "/public/images/logos/ardesio.webp",
+        logo: "/public/images/logos/ardesio.jpg",
         description: "",
         imgCopertina:
           "https://upload.wikimedia.org/wikipedia/commons/1/11/Ardesio_Landscape_01.JPG",
@@ -552,7 +552,7 @@ const tappe = [
         regolamento: "public/files/regulations/2024_ardesio.pdf",
         foto: {
           description: "Foto a cura di Ph_iliset",
-          copertina: "public/media/2024/ardesio/2024_ardesio.webp",
+          copertina: "public/media/2024/ardesio/2024_ardesio.jpg",
           category: [
             {
               name: "",
@@ -565,7 +565,7 @@ const tappe = [
         name: "RUN PAR Correndo nel Borgo di Parre",
         location: "Parre",
         date: "17 Agosto",
-        logo: "/public/images/logos/parre.webp",
+        logo: "/public/images/logos/parre.jpg",
         description: "RUN PAR la corsa per tutti!",
         imgCopertina:
           "https://upload.wikimedia.org/wikipedia/commons/f/f8/Parre_landscape_01.JPG",
@@ -584,13 +584,13 @@ const tappe = [
           baby: {
             km: "R1 300m | R2 600 m | R3 1500 m",
             dislivello: "",
-            img: "public/images/courses/parre_baby.webp",
+            img: "public/images/courses/parre_baby.png",
             gpx: "",
           },
           nonCompetitiva: {
             km: "3 km",
             dislivello: "100m",
-            img: "public/images/courses/parre_nc_c.webp",
+            img: "public/images/courses/parre_nc_c.png",
             gpx: "",
           },
           competitiva: {
@@ -602,7 +602,7 @@ const tappe = [
               km: "4,5 km",
               dislivello: "150m",
             },
-            img: "public/images/courses/parre_nc_c.webp",
+            img: "public/images/courses/parre_nc_c.png",
             gpx: "",
           },
         },
@@ -621,7 +621,7 @@ const tappe = [
         regolamento: "public/files/regulations/2024_parre.pdf",
         foto: {
           description: "",
-          copertina: "public/media/2024/parre/2024_parre.webp",
+          copertina: "public/media/2024/parre/2024_parre.jpg",
           category: [
             {
               name: "",
@@ -634,7 +634,7 @@ const tappe = [
         name: "4 PASS SÖ E ZO PER OL PAIS",
         location: "Cerete",
         date: "24 Agosto",
-        logo: "/public/images/logos/cerete.webp",
+        logo: "/public/images/logos/cerete.png",
         description:
           "XXVII° Memorial “Paolo Zambetti” 1° assoluto maschile VIII° Trofeo “Luigi Loda” 1° assoluta femminile VI° MEMORIAL DANILO FIORINA Trofeo per società",
         imgCopertina:
@@ -655,13 +655,13 @@ const tappe = [
           baby: {
             km: "1 km",
             dislivello: "15m",
-            img: "public/images/courses/cerete_baby.webp",
+            img: "public/images/courses/cerete_baby.png",
             gpx: "",
           },
           nonCompetitiva: {
             km: "4 km",
             dislivello: "120m",
-            img: "public/images/courses/cerete_nc_c.webp",
+            img: "public/images/courses/cerete_nc_c.png",
             gpx: "",
           },
           competitiva: {
@@ -673,7 +673,7 @@ const tappe = [
               km: "4 km",
               dislivello: "120m",
             },
-            img: "public/images/courses/cerete_nc_c.webp",
+            img: "public/images/courses/cerete_nc_c.png",
             gpx: "",
           },
         },
@@ -692,7 +692,7 @@ const tappe = [
         regolamento: "public/files/regulations/2024_cerete.pdf",
         foto: {
           description: "Foto a cura di Carlo G.",
-          copertina: "public/media/2024/cerete/2024_cerete.webp",
+          copertina: "public/media/2024/cerete/2024_cerete.jpg",
           category: [
             {
               name: "",
@@ -717,7 +717,7 @@ const tappe = [
         name: "Verto..va Run Night",
         location: "Vertova",
         date: "11 Luglio",
-        logo: "/public/images/logos/vertova.webp",
+        logo: "/public/images/logos/vertova.png",
         description:
           "Gara di corsa su strada che si snoda tra le principali vie del centro storico. Nervosa e divertente allo stesso tempo. Il divertimento è assicurato!",
         imgCopertina:
@@ -737,13 +737,13 @@ const tappe = [
           baby: {
             km: "Under 8: 350 mt. | Under 14: 900 mt. (possibilità di n.2 categorie in base agli iscritti)",
             dislivello: "",
-            img: "public/images/courses/vertova_baby.webp",
+            img: "public/images/courses/vertova_baby.png",
             gpx: "",
           },
           nonCompetitiva: {
             km: "4,5 km",
             dislivello: "75m circa",
-            img: "public/images/courses/vertova_nc_c.webp",
+            img: "public/images/courses/vertova_nc_c.png",
             gpx: "",
           },
           competitiva: {
@@ -755,7 +755,7 @@ const tappe = [
               km: "4,5 km",
               dislivello: "75m circa",
             },
-            img: "public/images/courses/vertova_nc_c.webp",
+            img: "public/images/courses/vertova_nc_c.png",
           },
         },
         nonCompetitiva: {
@@ -782,7 +782,7 @@ const tappe = [
         name: "CorrinCentro",
         location: "Clusone",
         date: "18 Luglio",
-        logo: "/public/images/logos/clusone.webp",
+        logo: "/public/images/logos/clusone.jpg",
         description:
           "La XVIII edizione della corsa nel centro di uno dei Borghi Più Belli d'Italia",
         imgCopertina:
@@ -802,13 +802,13 @@ const tappe = [
           baby: {
             km: "Under 5: 320 mt | 6-14 anni: 750 mt",
             dislivello: "Under 5: 9 mt | 6-14 anni: 18 mt",
-            img: "public/images/courses/clusone_baby.webp",
+            img: "public/images/courses/clusone_baby.png",
             gpx: "",
           },
           nonCompetitiva: {
             km: "4,5 km",
             dislivello: "99 mt",
-            img: "public/images/courses/clusone_nc_c.webp",
+            img: "public/images/courses/clusone_nc_c.png",
             gpx: "",
           },
           competitiva: {
@@ -820,7 +820,7 @@ const tappe = [
               km: "4,5 km",
               dislivello: "99 mt",
             },
-            img: "public/images/courses/clusone_nc_c.webp",
+            img: "public/images/courses/clusone_nc_c.png",
             gpx: "",
           },
         },
@@ -848,7 +848,7 @@ const tappe = [
         name: "SEMPER DE CORSA",
         location: "Gandino",
         date: "25 Luglio",
-        logo: "/public/images/logos/gandino.webp",
+        logo: "/public/images/logos/gandino.jpg",
         description: "Corsa podistica per le vie del paese",
         imgCopertina:
           "https://www.valseriana.eu/wp-content/uploads/2016/10/Gandino.jpg",
@@ -868,13 +868,13 @@ const tappe = [
           baby: {
             km: "Categoria 0-5 anni: 450 mt (1 giro percorso azzurro); Categoria 6-9 anni: 900 mt (2 giri percorso azzurro); Categoria 10-13 anni: 1100 mt (1 giro percorso arancio)",
             dislivello: "",
-            img: "public/images/courses/gandino_baby.webp",
+            img: "public/images/courses/gandino_baby.png",
             gpx: "",
           },
           nonCompetitiva: {
             km: "4.8 km (3 giri percorso rosso)",
             dislivello: "",
-            img: "public/images/courses/gandino_nc_c.webp",
+            img: "public/images/courses/gandino_nc_c.png",
             gpx: "",
           },
           competitiva: {
@@ -886,7 +886,7 @@ const tappe = [
               km: "4.8 km (3 giri percorso rosso)",
               dislivello: "",
             },
-            img: "public/images/courses/gandino_nc_c.webp",
+            img: "public/images/courses/gandino_nc_c.png",
             gpx: "",
           },
         },
@@ -979,7 +979,7 @@ const tappe = [
         name: "RUN PAR Correndo nel Borgo di Parre",
         location: "Parre",
         date: "9 Agosto",
-        logo: "/public/images/logos/parre.webp",
+        logo: "/public/images/logos/parre.jpg",
         description: "RUN PAR la corsa per tutti!",
         imgCopertina:
           "https://upload.wikimedia.org/wikipedia/commons/f/f8/Parre_landscape_01.JPG",
@@ -998,13 +998,13 @@ const tappe = [
           baby: {
             km: "R1 300m | R2 600 m | R3 1500 m",
             dislivello: "",
-            img: "public/images/courses/parre_baby.webp",
+            img: "public/images/courses/parre_baby.png",
             gpx: "",
           },
           nonCompetitiva: {
             km: "3 km",
             dislivello: "100m",
-            img: "public/images/courses/parre_nc_c.webp",
+            img: "public/images/courses/parre_nc_c.png",
             gpx: "",
           },
           competitiva: {
@@ -1016,7 +1016,7 @@ const tappe = [
               km: "4,5 km",
               dislivello: "150m",
             },
-            img: "public/images/courses/parre_nc_c.webp",
+            img: "public/images/courses/parre_nc_c.png",
             gpx: "",
           },
         },
@@ -1035,7 +1035,7 @@ const tappe = [
         regolamento: "public/files/regulations/2025_parre.pdf",
         foto: {
           description: "",
-          copertina: "public/media/2024/parre/2024_parre.webp",
+          copertina: "public/media/2024/parre/2024_parre.jpg",
           category: [{ name: "", link: "" }],
         },
       },
@@ -1043,7 +1043,7 @@ const tappe = [
         name: "Bèch to Run",
         location: "Gromo",
         date: "13 agosto",
-        logo: "/public/images/logos/gromo.webp",
+        logo: "/public/images/logos/gromo.png",
         description: "Gara podistica per le vie del borgo medievale di Gromo",
         imgCopertina:
           "https://upload.wikimedia.org/wikipedia/commons/1/1d/Borgo_di_Gromo.jpg",
@@ -1062,13 +1062,13 @@ const tappe = [
           baby: {
             km: "Under 8: 700 mt | 9-11 anni: 700 mt | 12-13 anni: 2,5 km",
             dislivello: "",
-            img: "public/images/courses/gromo_baby.webp",
+            img: "public/images/courses/gromo_baby.png",
             gpx: "",
           },
           nonCompetitiva: {
             km: "4 km",
             dislivello: "",
-            img: "public/images/courses/gromo_nc_c.webp",
+            img: "public/images/courses/gromo_nc_c.png",
             gpx: "",
           },
           competitiva: {
@@ -1080,7 +1080,7 @@ const tappe = [
               km: "4 km",
               dislivello: "150 mt",
             },
-            img: "public/images/courses/gromo_nc_c.webp",
+            img: "public/images/courses/gromo_nc_c.png",
             gpx: "",
           },
         },
@@ -1107,7 +1107,7 @@ const tappe = [
         name: "4 PASS SÖ E ZO PER OL PAIS",
         location: "Cerete",
         date: "23 Agosto",
-        logo: "/public/images/logos/cerete.webp",
+        logo: "/public/images/logos/cerete.png",
         description:
           "XXVIII° Memorial “Paolo Zambetti” 1° assoluto maschile IX° Trofeo “Luigi Loda” 1° assoluta femminile VII° MEMORIAL DANILO FIORINA Trofeo per società",
         imgCopertina:
@@ -1128,13 +1128,13 @@ const tappe = [
           baby: {
             km: "1 km",
             dislivello: "15m",
-            img: "public/images/courses/cerete_baby.webp",
+            img: "public/images/courses/cerete_baby.png",
             gpx: "",
           },
           nonCompetitiva: {
             km: "4 km",
             dislivello: "120m",
-            img: "public/images/courses/cerete_nc_c.webp",
+            img: "public/images/courses/cerete_nc_c.png",
             gpx: "",
           },
           competitiva: {
@@ -1146,7 +1146,7 @@ const tappe = [
               km: "4 km",
               dislivello: "120m",
             },
-            img: "public/images/courses/cerete_nc_c.webp",
+            img: "public/images/courses/cerete_nc_c.png",
             gpx: "",
           },
         },
@@ -1197,7 +1197,7 @@ const news = [
   <strong>Novità 2025:</strong> <br>
   Premio speciale <b>UNO DI NOI</b> riservato alle sole categorie Senior: chi risulterà in classifica in tutte le 7 tappe, indipendentemente dagli scarti obbligatori, riceverà una <b>Ledlenser MH-5, Torcia Frontale Ricaricabile</b> da ritirare all’ultima tappa di Cerete!
   <div class="accordion-news-image">
-  <img src="public/images/2025_premio_uno_di_noi.webp" alt="Ledlenser MH-5" class="img-thumbnail"/>
+  <img src="public/images/2025_premio_uno_di_noi.png" alt="Ledlenser MH-5" class="img-thumbnail"/>
   </div>
 </p>
 <p>
