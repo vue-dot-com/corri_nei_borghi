@@ -1201,6 +1201,196 @@ const tappe = [
 const news = [
   {
     title: `
+    ✨ Vertova corre sotto le stelle! 🏃‍♀️🏃‍♂️`,
+    image: "/public/media/2025/vertova/2025_vertova.webp",
+    body: `
+   <html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <style>
+      
+      .article-table {
+        border-collapse: collapse;
+        width: 100%;
+        margin-bottom: 30px;
+      }
+      th,
+      td {
+        border: 1px solid #ccc;
+        padding: 8px;
+        text-align: left;
+      }
+      th {
+        background-color: #e0ffe0;
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+      Venerdì 11 luglio Vertova si è trasformata in una pista, tra applausi e
+      sorrisi 😄. La prima tappa del circuito <strong>Corri nei Borghi</strong> ha
+      visto sfidarsi atleti di livello ed appassionati. Un mix perfetto per
+      iniziare bene il Circuito! 🍻🎉
+    </p>
+
+    <p>📸 I link alle foto le trovate alla pagina <a href="media.html">Media</a> del sito. </p>
+
+    <p> Mettiamo qui le top 3 di ogni categoria, ma potete trovare tutte le classifiche nella pagina dedicata <a href="https://www.endu.net/it/events/corri-nei-borghi-vertova-2/results">qui</a>.</p>
+
+    <h5>🥇 Classifica Donne</h5>
+    <table class="article-table">
+      <tr>
+        <th>Pos</th>
+        <th>Pett.</th>
+        <th>Nome</th>
+        <th>Società</th>
+        <th>Tempo</th>
+        <th>Distacco</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>175</td>
+        <td>ANNONI FRANCESCA</td>
+        <td>PRO SESTO ATL. CERNUSCO</td>
+        <td>16:12</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>177</td>
+        <td>GHISALBERTI MARTINA</td>
+        <td>ATL. VALLE BREMBANA</td>
+        <td>16:38</td>
+        <td>+26s</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>186</td>
+        <td>PREVITALI CLAUDIA</td>
+        <td>LA RECASTELLO RADICI GROUP</td>
+        <td>16:43</td>
+        <td>+31s</td>
+      </tr>
+    </table>
+
+    <h5>🏃‍♂️ Classifica Uomini</h5>
+    <table class="article-table">
+      <tr>
+        <th>Pos</th>
+        <th>Pett.</th>
+        <th>Nome</th>
+        <th>Società</th>
+        <th>Tempo</th>
+        <th>Distacco</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>74</td>
+        <td>AMADORI RICCARDO</td>
+        <td>PRO SESTO ATL. CERNUSCO</td>
+        <td>18:48</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>8</td>
+        <td>MAGRI LUCA</td>
+        <td>LA RECASTELLO RADICI GROUP</td>
+        <td>18:51</td>
+        <td>+3s</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>59</td>
+        <td>BONZI NICOLA</td>
+        <td>ATL. VALLE BREMBANA</td>
+        <td>18:54</td>
+        <td>+6s</td>
+      </tr>
+    </table>
+
+    <h5>👟 Non Competitiva Uomini</h5>
+    <table class="article-table">
+      <tr>
+        <th>Pos</th>
+        <th>Pett.</th>
+        <th>Nome</th>
+        <th>Tempo</th>
+        <th>Distacco</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>260</td>
+        <td>GUARDIANO ALESSIO</td>
+        <td>10:16.80</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>266</td>
+        <td>GHILARDI DANIELE</td>
+        <td>10:16.85</td>
+        <td>+0.05s</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>277</td>
+        <td>UCCELLI STEFANO</td>
+        <td>10:18.45</td>
+        <td>+1.65s</td>
+      </tr>
+    </table>
+
+    <p>Menzione speciale per Stefano, che a soli 14 anni ha raggiunto il podio
+    nella non competitiva! Lo aspettiamo presto tra i migliori 🥉
+</p>
+    
+
+    <h5>🌸 Non Competitiva Donne</h5>
+    <table class="article-table">
+      <tr>
+        <th>Pos</th>
+        <th>Pett.</th>
+        <th>Nome</th>
+        <th>Tempo</th>
+        <th>Distacco</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>309</td>
+        <td>BIGONI SERENA</td>
+        <td>12:01.30</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>282</td>
+        <td>ORLANDI ELISA ANGELICA</td>
+        <td>12:04.70</td>
+        <td>+3.40s</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>305</td>
+        <td>AZZOLA CHIARA</td>
+        <td>12:25.40</td>
+        <td>+24.10s</td>
+      </tr>
+    </table>
+
+    <p>
+      👏 Complimenti a tutti i partecipanti! L’appuntamento ora è per la
+      prossima tappa A Clusone... sempre con le scarpette ai piedi e il sorriso
+      sul volto! 😎
+    </p>
+  </body>
+</html>
+
+  `,
+  },
+
+  {
+    title: `
     📣 Iscrizioni aperte! Manca poco 🏃‍♂️🏃‍♀️`,
     image: "",
     body: `
