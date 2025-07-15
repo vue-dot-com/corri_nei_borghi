@@ -773,9 +773,26 @@ const tappe = [
         },
         regolamento: "public/files/regulations/2025_vertova.pdf",
         foto: {
-          description: "",
-          copertina: "",
-          category: [{ name: "", link: "" }],
+          description: "Foto a cura di Alessio Gualdi",
+          copertina: "public/media/2025/vertova/2025_vertova.webp",
+          category: [
+            {
+              name: "Competitva M",
+              link: "https://www.facebook.com/groups/gav.vertova/permalink/24131267199845651/",
+            },
+            {
+              name: "Competitva F",
+              link: "https://www.facebook.com/groups/gav.vertova/permalink/24135975246041513/",
+            },
+            {
+              name: "Non competitiva",
+              link: "https://www.facebook.com/groups/gav.vertova/permalink/24137324979239873/",
+            },
+            {
+              name: "Baby",
+              link: "https://www.facebook.com/groups/gav.vertova/permalink/24137252499247121/",
+            },
+          ],
         },
       },
       {
