@@ -856,9 +856,14 @@ const tappe = [
         },
         regolamento: "public/files/regulations/2025_clusone.pdf",
         foto: {
-          description: "",
-          copertina: "",
-          category: [{ name: "", link: "" }],
+          description: "Foto a cura di Marco Pendezza DRfotografia",
+          copertina: "/public/media/2025/clusone/2025_clusone.webp",
+          category: [
+            {
+              name: "Tutte le foto",
+              link: "https://photos.app.goo.gl/ztQFaVapB6tpf55U6",
+            },
+          ],
         },
       },
       {
@@ -1199,6 +1204,203 @@ const tappe = [
 ];
 
 const news = [
+  {
+    title: `
+    💚 Corrincentro una grande festa! 🏃‍♀️🏃‍♂️`,
+    image: "/public/media/2025/clusone/2025_clusone.webp",
+    body: `
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <style>
+      .article-table {
+        border-collapse: collapse;
+        width: 100%;
+        margin-bottom: 30px;
+      }
+      th,
+      td {
+        border: 1px solid #ccc;
+        padding: 8px;
+        text-align: left;
+      }
+      th {
+        background-color: #e0ffe0;
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+      Una serata da incorniciare quella di venerdì <strong>18 luglio</strong> a
+      Clusone, dove si è corsa la storica tappa del circuito
+      <em>Corri nei Borghi</em> 🎽. Le strade del centro storico si sono animate
+      di applausi, fatica, sorrisi e tanto tifo! 🥳
+    </p>
+
+    <p>
+      L’evento è stato organizzato in modo impeccabile dal
+      <strong>Gruppo Amici Mirage</strong>, che quest’anno festeggia con
+      orgoglio i suoi <strong>20 anni di attività</strong> 🎉🎈. Un traguardo
+      importante per un gruppo che continua a unire sport, comunità e passione.
+      Grazie di cuore a loro ❤️
+    </p>
+
+    <h2>🏃‍♀️ Competitiva Femminile</h2>
+    <table class="article-table">
+      <tr>
+        <th>Pos</th>
+        <th>Pett.</th>
+        <th>Nome</th>
+        <th>Società</th>
+        <th>Tempo</th>
+        <th>Distacco</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>182</td>
+        <td>GHISALBERTI MARTINA</td>
+        <td>ATL. VALLE BREMBANA</td>
+        <td>16:15</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>155</td>
+        <td>FACCANONI IRENE</td>
+        <td>POOL ATL. ALTA VALSERIANA</td>
+        <td>16:24</td>
+        <td>+10s</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>162</td>
+        <td>PREVITALI CLAUDIA</td>
+        <td>LA RECASTELLO RADICI GROUP</td>
+        <td>16:33</td>
+        <td>+19s</td>
+      </tr>
+    </table>
+
+    <h2>🏃‍♂️ Competitiva Maschile</h2>
+    <table class="article-table">
+      <tr>
+        <th>Pos</th>
+        <th>Pett.</th>
+        <th>Nome</th>
+        <th>Società</th>
+        <th>Tempo</th>
+        <th>Distacco</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>26</td>
+        <td>CAVAGNA ALAIN</td>
+        <td>ATL. VALLE BREMBANA</td>
+        <td>18:05</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>10</td>
+        <td>BELGHITI MUSTAFA'</td>
+        <td>ASD SICILIA RUNNING TEAM</td>
+        <td>18:29</td>
+        <td>+24s</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>79</td>
+        <td>BONZI NICOLA</td>
+        <td>ATL. VALLE BREMBANA</td>
+        <td>18:38</td>
+        <td>+34s</td>
+      </tr>
+    </table>
+
+    <h2>👟 Non Competitiva Maschile</h2>
+    <table class="article-table">
+      <tr>
+        <th>Pos</th>
+        <th>Pett.</th>
+        <th>Nome</th>
+        <th>Tempo</th>
+        <th>Distacco</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>318</td>
+        <td>EL AZZOUZI RAYAN</td>
+        <td>15:06.70</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>320</td>
+        <td>DELLA ROSA DAVID</td>
+        <td>15:15.75</td>
+        <td>+9.05s</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>278</td>
+        <td>GHILARDI DANIELE</td>
+        <td>16:12.85</td>
+        <td>+1:06.15</td>
+      </tr>
+    </table>
+
+    <h2>🌸 Non Competitiva Femminile</h2>
+    <table class="article-table">
+      <tr>
+        <th>Pos</th>
+        <th>Pett.</th>
+        <th>Nome</th>
+        <th>Tempo</th>
+        <th>Distacco</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>293</td>
+        <td>ZENONI GIADA</td>
+        <td>18:38.80</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>263</td>
+        <td>BIGONI SERENA</td>
+        <td>18:45.10</td>
+        <td>+6.30s</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>300</td>
+        <td>ORLANDI ELISA ANGELICA</td>
+        <td>19:13.95</td>
+        <td>+35.15s</td>
+      </tr>
+    </table>
+
+    <p>
+      👏 Un enorme <strong>grazie a tutti i partecipanti</strong>, avete reso la
+      Corrincentro bellissima come sempre! 💪
+    </p>
+
+    <p>
+      📸 Le foto ufficiali dell’evento sono disponibili nella
+      <a href="media.html" target="_blank">pagina media</a>, mentre tutte le
+      classifiche complete le trovate
+      <a
+        href="https://www.endu.net/it/events/corri-nei-borghi-clusone-corri-in-centro/results"
+        target="_blank"
+        >qui</a
+      >.
+    </p>
+  </body>
+</html>
+`,
+  },
   {
     title: `
     ✨ Vertova corre sotto le stelle! 🏃‍♀️🏃‍♂️`,
