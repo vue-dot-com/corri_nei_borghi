@@ -922,13 +922,36 @@ const tappe = [
         },
         links: {
           iscrizioni: "https://api.endu.net/r/i/100954",
-          classifiche: "",
+          classifiche:
+            "https://www.endu.net/it/events/corri-nei-borghi-gandino/results",
         },
         regolamento: "public/files/regulations/2025_gandino.pdf",
         foto: {
-          description: "",
-          copertina: "",
-          category: [{ name: "", link: "" }],
+          description: "Foto a cura di Marino Cuccato",
+          copertina: "/public/media/2025/gandino/2025_gandino.webp",
+          category: [
+            { name: "Baby run", link: "https://ibb.co/album/3vP9bt" },
+            {
+              name: "Premiazione baby run",
+              link: "https://ibb.co/album/fQKrCJ",
+            },
+            {
+              name: "Non competitiva",
+              link: "https://ibb.co/album/Lz4LqJ",
+            },
+            {
+              name: "Competitiva femminile",
+              link: "https://ibb.co/album/Kj4sCd",
+            },
+            {
+              name: "Competitiva maschile",
+              link: "https://ibb.co/album/6rTb9N",
+            },
+            {
+              name: "Premiazioni",
+              link: "https://ibb.co/album/Z1d8HD",
+            },
+          ],
         },
       },
       {
@@ -1204,6 +1227,190 @@ const tappe = [
 ];
 
 const news = [
+  {
+    title: "🧷 Gandino – Una ritorno da ricordare 🏁",
+    image: "/public/media/2025/gandino/2025_gandino.webp",
+    body: `
+    <!DOCTYPE html>
+  <html lang="it">
+    <head>
+      <meta charset="UTF-8" />
+      <style>
+        .article-table {
+          border-collapse: collapse;
+          width: 100%;
+          margin-bottom: 30px;
+        }
+        th,
+        td {
+          border: 1px solid #ccc;
+          padding: 8px;
+          text-align: left;
+        }
+        th {
+          background-color: #e0ffe0;
+        }
+      </style>
+    </head>
+    <body>
+
+      <p>
+        Ritorno con il botto per la gara di <strong>Gandino</strong>, new entry
+        del circuito <em>Corri nei Borghi</em> 2025, che giovedì
+        <strong>25 luglio</strong> ha portato centinaia di atleti a sfidarsi su un
+        percorso tecnico, scenografico e ricco di emozioni! 🏃‍♂️🌄
+      </p>
+
+      <p>
+        Il pubblico caloroso ha reso l’atmosfera ancora più speciale, sostenendo
+        tutti i partecipanti fino all’ultimo metro! 💚
+      </p>
+
+      <h2>🏃‍♂️ Non Competitiva Maschile</h2>
+      <table class="article-table">
+        <tr>
+          <th>Pos</th>
+          <th>Pett.</th>
+          <th>Nome</th>
+          <th>Tempo</th>
+          <th>Distacco</th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>252</td>
+          <td>UCCELLI LORENZO</td>
+          <td>17:11.50</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>270</td>
+          <td>NOZZA MICHELE</td>
+          <td>17:13.15</td>
+          <td>+1.65s</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>251</td>
+          <td>UCCELLI STEFANO</td>
+          <td>17:23.60</td>
+          <td>+12.10s</td>
+        </tr>
+      </table>
+
+      <p>
+        👏 Complimenti ai <strong>fratelli Uccelli</strong>, Lorenzo e
+        Stefano: giovani promesse della corsa sia su strada che in montagna. Ne
+        sentiremo parlare, e non solo a Gandino! 🌟
+      </p>
+
+      <h2>👟 Competitiva Femminile</h2>
+      <table class="article-table">
+        <tr>
+          <th>Pos</th>
+          <th>Pett.</th>
+          <th>Nome</th>
+          <th>Società</th>
+          <th>Tempo</th>
+          <th>Distacco</th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>187</td>
+          <td>BOTTARELLI SARA</td>
+          <td>FREE-ZONE</td>
+          <td>17:05</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>159</td>
+          <td>ANNONI FRANCESCA</td>
+          <td>PRO SESTO ATL. CERNUSCO</td>
+          <td>17:16</td>
+          <td>+11s</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>164</td>
+          <td>MERELLI ANNA</td>
+          <td>G. ALPINISTICO VERTOVESE</td>
+          <td>17:39</td>
+          <td>+34s</td>
+        </tr>
+      </table>
+
+      <p>
+        Da notare la costanza di <strong>Francesca Annoni</strong>, già sul podio
+        a Vertova: una stagione in gran forma per lei! 💪
+      </p>
+
+      <h2>🏁 Competitiva Maschile</h2>
+      <table class="article-table">
+        <tr>
+          <th>Pos</th>
+          <th>Pett.</th>
+          <th>Nome</th>
+          <th>Società</th>
+          <th>Tempo</th>
+          <th>Distacco</th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>73</td>
+          <td>BELGHITI MUSTAFA'</td>
+          <td>ASD SICILIA RUNNING TEAM</td>
+          <td>20:15</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>28</td>
+          <td>AMADORI RICCARDO</td>
+          <td>PRO SESTO ATL. CERNUSCO</td>
+          <td>20:31</td>
+          <td>+16s</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>31</td>
+          <td>BA FILIPPO</td>
+          <td>G. ALPINISTICO VERTOVESE</td>
+          <td>20:50</td>
+          <td>+35s</td>
+        </tr>
+      </table>
+
+      <p>
+        🔁 Anche in questa tappa si confermano tra i protagonisti
+        <strong>Mustafa' Belghiti</strong> e <strong>Riccardo Amadori</strong>,
+        presenti già sul podio in altre gare del circuito — segno di una sfida che
+        continua tappa dopo tappa! 🥇🥈
+      </p>
+
+      <p>
+        Un enorme <strong>grazie a tutti i partecipanti</strong> che hanno reso
+        questa serata speciale: dai corridori più esperti ai più giovani, lo sport
+        ha vinto ancora una volta! 💥👏
+      </p>
+
+      <p>
+        📸 Le foto ufficiali dell’evento sono disponibili nella
+        <a
+          href="media.html"
+          target="_blank"
+          >pagina media</a
+        >, mentre le classifiche complete sono consultabili su
+        <a
+          href="https://www.endu.net/it/events/corri-nei-borghi-gandino/results"
+          target="_blank"
+          >endu.net</a
+        >.
+      </p>
+    </body>
+  </html>
+  `,
+  },
   {
     title: `
     💚 Corrincentro una grande festa! 🏃‍♀️🏃‍♂️`,
