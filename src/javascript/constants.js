@@ -963,11 +963,11 @@ const tappe = [
         imgCopertina:
           "https://www.valseriana.eu/wp-content/uploads/2016/04/albino_chiesa_IMG_1596-20-800-600-80.jpg",
         programma: {
-          partenzaBaby: "19:15",
-          partenzaNonCompetitiva: "Esordienti: 19:30 | Liberi: 19:40",
-          partenzaCompetitiva: { m: "20:45", f: "20:15" },
+          partenzaBaby: "19:00",
+          partenzaNonCompetitiva: "Esordienti: 19:10 | Liberi: 19:30",
+          partenzaCompetitiva: { m: "20:30", f: "20:10" },
           ritrovo:
-            "Per le ore 18:30 Albino ( BG ) nei pressi dell'Oratorio Papa Giovanni XXIII in Via Don Cristoforo Rossi n.10",
+            "Per le ore 18:00 Albino ( BG ) nei pressi dell'Oratorio Papa Giovanni XXIII in Via Don Cristoforo Rossi n.10",
           parcheggi: "",
           docce: "",
           ristoro: "",
