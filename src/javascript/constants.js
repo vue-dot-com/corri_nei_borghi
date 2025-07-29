@@ -969,9 +969,10 @@ const tappe = [
           ritrovo:
             "Per le ore 18:00 Albino ( BG ) nei pressi dell'Oratorio Papa Giovanni XXIII in Via Don Cristoforo Rossi n.10",
           parcheggi: "Scoperti, limitrofi",
-          docce: "",
-          ristoro: "",
-          altro: "",
+          docce: "Sì, presso l'oratorio",
+          ristoro:
+            "Sì, possibilità di cenare presso la tensostruttura dell'oratorio",
+          altro: "Segreteria all'interno dell'oratorio",
         },
         percorso: {
           baby: {
