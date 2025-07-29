@@ -968,7 +968,7 @@ const tappe = [
           partenzaCompetitiva: { m: "20:30", f: "20:10" },
           ritrovo:
             "Per le ore 18:00 Albino ( BG ) nei pressi dell'Oratorio Papa Giovanni XXIII in Via Don Cristoforo Rossi n.10",
-          parcheggi: "",
+          parcheggi: "Scoperti, limitrofi",
           docce: "",
           ristoro: "",
           altro: "",
@@ -1228,6 +1228,55 @@ const tappe = [
 
 const news = [
   {
+    title: "📣 Novità! Pre-iscrizioni Baby Run 🐤",
+    image: "/public/media/2024/albino/2024_albino.webp",
+    body: `
+    <!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <style>
+      .article-table {
+        border-collapse: collapse;
+        width: 100%;
+        margin-bottom: 30px;
+      }
+      th,
+      td {
+        border: 1px solid #ccc;
+        padding: 8px;
+        text-align: left;
+      }
+      th {
+        background-color: #e0ffe0;
+      }
+    </style>
+  </head>
+  <body>
+
+    <p>
+      Per i più piccoli partecipanti del circuito <em>Corri nei Borghi</em> 2025, ogni settimana verranno aperte le pre-iscrizioni! 🏃‍♂️🌄
+      Stiamo provando per alcune tappe così da migliorare l'esperienza per tutti! 🎉
+    </p>
+
+    
+    <p>
+      Alla pagina <a href="iscrizioni.html", target="_blank">Iscrizioni</a> potete iscrivere i più piccoli! 💚
+    </p>
+    
+    <p> 🙏 Vi invitiamo a pre-iscrivere i vostri atleti, specialmente per i gruppi più numerosi, per facilitare l'organizzazione e garantire un'esperienza fluida per tutti. 
+      Le pre-iscrizioni sono aperte fino alle 12:00 del giorno della gara. <strong>In loco potrete pagare e ritirare il cartellino </strong>. 
+      
+    </p>
+      
+    <p>📝 Le iscrizioni in loco sono comunque disponibili, anche un attimo prima della partenza!</p>
+
+    <p>Grazie della collaborazione! 😄</p>
+
+  </body>
+</html>`,
+  },
+  {
     title: "🧷 Gandino – Una ritorno da ricordare 🏁",
     image: "/public/media/2025/gandino/2025_gandino.webp",
     body: `
@@ -1256,7 +1305,7 @@ const news = [
 
       <p>
         Ritorno con il botto per la gara di <strong>Gandino</strong>, new entry
-        del circuito <em>Corri nei Borghi</em> 2025, che giovedì
+        del circuito <em>Corri nei Borghi</em> 2025, che venerdì
         <strong>25 luglio</strong> ha portato centinaia di atleti a sfidarsi su un
         percorso tecnico, scenografico e ricco di emozioni! 🏃‍♂️🌄
       </p>
