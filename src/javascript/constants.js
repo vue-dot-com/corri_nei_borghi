@@ -982,7 +982,7 @@ const tappe = [
             gpx: "",
           },
           nonCompetitiva: {
-            km: "Esordienti: 1000 mt | Liberi: 1000 mt | Liberi: 4,8 km",
+            km: "Esordienti: 1000 mt | Ragazzi: 1000 mt | Liberi: 4,8 km",
             dislivello: "",
             img: "",
             gpx: "",
@@ -995,7 +995,7 @@ const tappe = [
               gpx: "",
             },
             f: {
-              km: "4,8 km",
+              km: "3,2 km",
               dislivello: "",
               img: "",
               gpx: "",
