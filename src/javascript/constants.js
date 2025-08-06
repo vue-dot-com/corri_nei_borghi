@@ -120,7 +120,7 @@ const tappe = [
         location: "Rovetta",
         name: "Rooster Run",
         date: "5 Luglio",
-        logo: "/public/images/logos/rovetta.webp",
+        logo: "public/images/logos/rovetta.webp",
         description: "",
         imgCopertina:
           "https://mycity.s3.sbg.io.cloud.ovh.net/3509926/IMG_6559-(2).jpg",
@@ -191,7 +191,7 @@ const tappe = [
         name: "Verto..va Run Night",
         location: "Vertova",
         date: "12 Luglio",
-        logo: "/public/images/logos/vertova.webp",
+        logo: "public/images/logos/vertova.webp",
         description:
           "Gara di corsa su strada che si snoda tra le principali vie del centro storico. Nervosa e divertente allo stesso tempo. Il divertimento è assicurato!",
         imgCopertina:
@@ -260,7 +260,7 @@ const tappe = [
         name: "CorrinCentro",
         location: "Clusone",
         date: "19 Luglio",
-        logo: "/public/images/logos/clusone.webp",
+        logo: "public/images/logos/clusone.webp",
         description:
           "La XVII edizione della corsa nel centro di uno dei Borghi Più Belli d'Italia",
         imgCopertina:
@@ -338,7 +338,7 @@ const tappe = [
         name: "Bèch to Run",
         location: "Gromo",
         date: "26 Luglio",
-        logo: "/public/images/logos/gromo.webp",
+        logo: "public/images/logos/gromo.webp",
         description: "Gara podistica per le vie del borgo medievale di Gromo",
         imgCopertina:
           "https://upload.wikimedia.org/wikipedia/commons/1/1d/Borgo_di_Gromo.jpg",
@@ -494,7 +494,7 @@ const tappe = [
         name: "Corri Ardesio corri",
         location: "Ardesio",
         date: "9 Agosto",
-        logo: "/public/images/logos/ardesio.webp",
+        logo: "public/images/logos/ardesio.webp",
         description: "",
         imgCopertina:
           "https://upload.wikimedia.org/wikipedia/commons/1/11/Ardesio_Landscape_01.JPG",
@@ -565,7 +565,7 @@ const tappe = [
         name: "RUN PAR Correndo nel Borgo di Parre",
         location: "Parre",
         date: "17 Agosto",
-        logo: "/public/images/logos/parre.webp",
+        logo: "public/images/logos/parre.webp",
         description: "RUN PAR la corsa per tutti!",
         imgCopertina:
           "https://upload.wikimedia.org/wikipedia/commons/f/f8/Parre_landscape_01.JPG",
@@ -634,7 +634,7 @@ const tappe = [
         name: "4 PASS SÖ E ZO PER OL PAIS",
         location: "Cerete",
         date: "24 Agosto",
-        logo: "/public/images/logos/cerete.webp",
+        logo: "public/images/logos/cerete.webp",
         description:
           "XXVII° Memorial “Paolo Zambetti” 1° assoluto maschile VIII° Trofeo “Luigi Loda” 1° assoluta femminile VI° MEMORIAL DANILO FIORINA Trofeo per società",
         imgCopertina:
@@ -717,7 +717,7 @@ const tappe = [
         name: "Verto..va Run Night",
         location: "Vertova",
         date: "11 Luglio",
-        logo: "/public/images/logos/vertova.webp",
+        logo: "public/images/logos/vertova.webp",
         description:
           "Gara di corsa su strada che si snoda tra le principali vie del centro storico. Nervosa e divertente allo stesso tempo. Il divertimento è assicurato!",
         imgCopertina:
@@ -799,7 +799,7 @@ const tappe = [
         name: "CorrinCentro",
         location: "Clusone",
         date: "18 Luglio",
-        logo: "/public/images/logos/clusone.webp",
+        logo: "public/images/logos/clusone.webp",
         description:
           "La XVIII edizione della corsa nel centro di uno dei Borghi Più Belli d'Italia",
         imgCopertina:
@@ -857,7 +857,7 @@ const tappe = [
         regolamento: "public/files/regulations/2025_clusone.pdf",
         foto: {
           description: "Foto a cura di Marco Pendezza DRfotografia",
-          copertina: "/public/media/2025/clusone/2025_clusone.webp",
+          copertina: "public/media/2025/clusone/2025_clusone.webp",
           category: [
             {
               name: "Tutte le foto",
@@ -870,7 +870,7 @@ const tappe = [
         name: "SEMPER DE CORSA",
         location: "Gandino",
         date: "25 Luglio",
-        logo: "/public/images/logos/gandino.webp",
+        logo: "public/images/logos/gandino.webp",
         description: "Corsa podistica per le vie del paese",
         imgCopertina:
           "https://www.valseriana.eu/wp-content/uploads/2016/10/Gandino.jpg",
@@ -928,7 +928,7 @@ const tappe = [
         regolamento: "public/files/regulations/2025_gandino.pdf",
         foto: {
           description: "Foto a cura di Marino Cuccato",
-          copertina: "/public/media/2025/gandino/2025_gandino.webp",
+          copertina: "public/media/2025/gandino/2025_gandino.webp",
           category: [
             { name: "Baby run", link: "https://ibb.co/album/3vP9bt" },
             {
@@ -1018,7 +1018,7 @@ const tappe = [
         regolamento: "public/files/regulations/2025_albino.pdf",
         foto: {
           description: "Foto a cura di Mauro Monachino e Riccardo Amadori",
-          copertina: "/public/media/2025/albino/2025_albino.webp",
+          copertina: "public/media/2025/albino/2025_albino.webp",
           category: [
             {
               name: "Non competitiva",
@@ -1039,7 +1039,7 @@ const tappe = [
         name: "RUN PAR Correndo nel Borgo di Parre",
         location: "Parre",
         date: "9 Agosto",
-        logo: "/public/images/logos/parre.webp",
+        logo: "public/images/logos/parre.webp",
         description: "RUN PAR la corsa per tutti!",
         imgCopertina:
           "https://upload.wikimedia.org/wikipedia/commons/f/f8/Parre_landscape_01.JPG",
@@ -1103,7 +1103,7 @@ const tappe = [
         name: "Bèch to Run",
         location: "Gromo",
         date: "13 agosto",
-        logo: "/public/images/logos/gromo.webp",
+        logo: "public/images/logos/gromo.webp",
         description: "Gara podistica per le vie del borgo medievale di Gromo",
         imgCopertina:
           "https://upload.wikimedia.org/wikipedia/commons/1/1d/Borgo_di_Gromo.jpg",
@@ -1167,7 +1167,7 @@ const tappe = [
         name: "4 PASS SÖ E ZO PER OL PAIS",
         location: "Cerete",
         date: "23 Agosto",
-        logo: "/public/images/logos/cerete.webp",
+        logo: "public/images/logos/cerete.webp",
         description:
           "XXVIII° Memorial “Paolo Zambetti” 1° assoluto maschile IX° Trofeo “Luigi Loda” 1° assoluta femminile VII° MEMORIAL DANILO FIORINA Trofeo per società",
         imgCopertina:
@@ -1244,7 +1244,7 @@ const tappe = [
 const news = [
   {
     title: "🎽 Albino – Emozioni sotto le stelle! 🌟",
-    image: "/public/media/2025/albino/2025_albino.webp",
+    image: "public/media/2025/albino/2025_albino.webp",
     body: `
     <!DOCTYPE html>
 <html lang="it">
@@ -1373,7 +1373,7 @@ const news = [
 
   {
     title: "📣 Novità! Pre-iscrizioni Baby Run 🐤",
-    image: "/public/media/2024/albino/2024_albino.webp",
+    image: "public/media/2024/albino/2024_albino.webp",
     body: `
     <!DOCTYPE html>
 <html lang="it">
@@ -1422,7 +1422,7 @@ const news = [
   },
   {
     title: "🧷 Gandino – Una ritorno da ricordare 🏁",
-    image: "/public/media/2025/gandino/2025_gandino.webp",
+    image: "public/media/2025/gandino/2025_gandino.webp",
     body: `
     <!DOCTYPE html>
   <html lang="it">
@@ -1607,7 +1607,7 @@ const news = [
   {
     title: `
     💚 Corrincentro una grande festa! 🏃‍♀️🏃‍♂️`,
-    image: "/public/media/2025/clusone/2025_clusone.webp",
+    image: "public/media/2025/clusone/2025_clusone.webp",
     body: `
 <!DOCTYPE html>
 <html lang="it">
@@ -1804,7 +1804,7 @@ const news = [
   {
     title: `
     ✨ Vertova corre sotto le stelle! 🏃‍♀️🏃‍♂️`,
-    image: "/public/media/2025/vertova/2025_vertova.webp",
+    image: "public/media/2025/vertova/2025_vertova.webp",
     body: `
    <html lang="it">
   <head>
