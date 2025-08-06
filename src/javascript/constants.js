@@ -1032,7 +1032,7 @@ const tappe = [
         programma: {
           partenzaBaby: "17:30",
           partenzaNonCompetitiva: "19:30",
-          partenzaCompetitiva: { m: "20:15", f: "20:15" },
+          partenzaCompetitiva: { m: "20:45", f: "20:15" },
           ritrovo: "Oratorio G. Bosco via Roma",
           parcheggi: "All'aperto incustoditi",
           docce: "Sì, in oratorio",
