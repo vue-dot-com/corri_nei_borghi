@@ -1012,13 +1012,27 @@ const tappe = [
         },
         links: {
           iscrizioni: "https://api.endu.net/r/i/94019",
-          classifiche: "",
+          classifiche:
+            "https://www.endu.net/it/events/corri-nei-borghi-albino/results",
         },
         regolamento: "public/files/regulations/2025_albino.pdf",
         foto: {
-          description: "",
-          copertina: "",
-          category: [{ name: "", link: "" }],
+          description: "Foto a cura di Mauro Monachino e Riccardo Amadori",
+          copertina: "/public/media/2025/albino/2025_albino.webp",
+          category: [
+            {
+              name: "Non competitiva",
+              link: "https://www.facebook.com/permalink.php?story_fbid=pfbid02unf9BX2z5SHajpriFk7EcpMmL5LmpV6ERzudXSF5zu4hNR3PcY2AArGwcdU5et9hl&id=100063918698801",
+            },
+            {
+              name: "Competitiva femminile",
+              link: "https://www.facebook.com/permalink.php?story_fbid=pfbid027PcUvpFVxoBGrbeyjpchqWwdVTjZ7zjvCq3S52HwqgNvksKHHdHY1yc2JZb7fZxxl&id=100063918698801",
+            },
+            {
+              name: "Competitiva maschile",
+              link: "https://www.facebook.com/permalink.php?story_fbid=pfbid025P5uUZwyPgJMa82oRD7QawmEozg185F6Q9Tsest13A9x7a1stq1KBFpMQ3HuQX4Sl&id=100063918698801",
+            },
+          ],
         },
       },
       {
@@ -1228,6 +1242,135 @@ const tappe = [
 ];
 
 const news = [
+  {
+    title: "🎽 Albino – Emozioni sotto le stelle! 🌟",
+    image: "/public/media/2025/albino/2025_albino.webp",
+    body: `
+    <!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <style>
+    .article-table {
+      border-collapse: collapse;
+      width: 100%;
+      margin-bottom: 30px;
+    }
+    th,
+    td {
+      border: 1px solid #ccc;
+      padding: 8px;
+      text-align: left;
+    }
+    th {
+      background-color: #e0ffe0;
+    }
+  </style>
+</head>
+<body>
+
+  <p>
+    Venerdì <strong>1 agosto</strong> si è corsa ad <strong>Albino</strong> un’altra splendida tappa del circuito <em>Corri nei Borghi</em>, con tantissimi atleti che hanno invaso il centro storico in una serata ricca di entusiasmo, fatica e sorrisi. 💚
+  </p>
+
+  <p>
+    Tra lampioni, tifosi e applausi, anche questa volta l’atletica ha unito sportivi di tutte le età in una grande festa di corsa e condivisione. Grazie di cuore a tutti i partecipanti! 🙌
+  </p>
+
+  <h2>🏃‍♂️ Non Competitiva Maschile</h2>
+  <table class="article-table">
+    <tr>
+      <th>Pos</th><th>Pett.</th><th>Nome</th><th>Tempo</th><th>Distacco</th>
+    </tr>
+    <tr>
+      <td>1</td><td>320</td><td>MAGLI PIETRO</td><td>16:49.95</td><td>-</td>
+    </tr>
+    <tr>
+      <td>2</td><td>271</td><td>GHILARDI DANIELE</td><td>17:04.50</td><td>+14.55s</td>
+    </tr>
+    <tr>
+      <td>3</td><td>274</td><td>UCCELLI STEFANO</td><td>17:07.90</td><td>+17.95s</td>
+    </tr>
+  </table>
+
+  <p>
+    Terzo podio stagionale per <strong>Daniele Ghilardi</strong> dopo Clusone e Gandino — segno di una costanza ammirevole! E bravo anche <strong>Stefano Uccelli</strong>, che continua a farsi notare tra i giovani! 👏
+  </p>
+
+  <h2>👟 Non Competitiva Femminile</h2>
+  <table class="article-table">
+    <tr>
+      <th>Pos</th><th>Pett.</th><th>Nome</th><th>Tempo</th><th>Distacco</th>
+    </tr>
+    <tr>
+      <td>1</td><td>291</td><td>BIGONI SERENA</td><td>20:03.10</td><td>-</td>
+    </tr>
+    <tr>
+      <td>2</td><td>307</td><td>ORLANDI ELISA ANGELICA</td><td>20:46.80</td><td>+43.70s</td>
+    </tr>
+    <tr>
+      <td>3</td><td>266</td><td>BENINTENDI KARIN</td><td>21:08.10</td><td>+1:05.00</td>
+    </tr>
+  </table>
+
+  <p>
+    <strong>Serena Bigoni</strong> conferma il suo stato di forma, dopo i podi già ottenuti a Clusone e Gandino. 👊 Anche <strong>Elisa Orlandi</strong> è ormai una presenza fissa tra le migliori del circuito!
+  </p>
+
+  <h2>🏁 Competitiva Maschile</h2>
+  <table class="article-table">
+    <tr>
+      <th>Pos</th><th>Pett.</th><th>Nome</th><th>Società</th><th>Tempo</th><th>Distacco</th>
+    </tr>
+    <tr>
+      <td>1</td><td>1</td><td>OUHDA AHMED</td><td>C.S. ESERCITO</td><td>19:22</td><td>-</td>
+    </tr>
+    <tr>
+      <td>2</td><td>23</td><td>CAVAGNA ALAIN</td><td>ATL. VALLE BREMBANA</td><td>19:37</td><td>+15s</td>
+    </tr>
+    <tr>
+      <td>3</td><td>97</td><td>BRASI IACOPO</td><td>LA RECASTELLO RADICI GROUP</td><td>19:57</td><td>+35s</td>
+    </tr>
+  </table>
+
+  <p>
+    Grande ritorno per <strong>Ahmed Ouhda</strong>, che si impone con autorità davanti ad un solido <strong>Alain Cavagna</strong>, già vincitore a Clusone. <strong>Iacopo Brasi</strong> conquista un meritato terzo posto, portando punti preziosi al suo team!
+  </p>
+
+  <h2>👟 Competitiva Femminile</h2>
+  <table class="article-table">
+    <tr>
+      <th>Pos</th><th>Pett.</th><th>Nome</th><th>Società</th><th>Tempo</th><th>Distacco</th>
+    </tr>
+    <tr>
+      <td>1</td><td>187</td><td>MOLTENI CRISTINA</td><td>ATL. VALLE BREMBANA</td><td>10:55</td><td>-</td>
+    </tr>
+    <tr>
+      <td>2</td><td>174</td><td>BIANCHI BEATRICE</td><td>LA RECASTELLO RADICI GROUP</td><td>11:03</td><td>+8s</td>
+    </tr>
+    <tr>
+      <td>3</td><td>194</td><td>BOTTARELLI SARA</td><td>FREE-ZONE</td><td>11:05</td><td>+10s</td>
+    </tr>
+  </table>
+
+  <p>
+    Una gara tiratissima! <strong>Cristina Molteni</strong> vince per pochi secondi su <strong>Beatrice Bianchi</strong> e <strong>Sara Bottarelli</strong>, che torna sul podio dopo il trionfo di Gandino. Le posizioni del circuito si fanno sempre più calde! 🔥
+  </p>
+
+  <p>
+    📸 Le <strong>foto ufficiali</strong> dell’evento sono online nella nostra <a href="media.html" target="_blank">pagina media</a>, mentre le classifiche complete sono visibili su <a href="https://www.endu.net/it/events/corri-nei-borghi-albino/results" target="_blank">endu.net</a>.
+  </p>
+
+  <p>
+    Grazie ancora a tutti per la partecipazione, la passione e l’energia. Ci vediamo alla prossima tappa! 🏃‍♀️💥
+  </p>
+
+</body>
+</html>
+
+  `,
+  },
+
   {
     title: "📣 Novità! Pre-iscrizioni Baby Run 🐤",
     image: "/public/media/2024/albino/2024_albino.webp",
