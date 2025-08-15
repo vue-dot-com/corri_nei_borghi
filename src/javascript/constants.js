@@ -1090,7 +1090,8 @@ const tappe = [
         },
         links: {
           iscrizioni: "https://api.endu.net/r/i/94059",
-          classifiche: "",
+          classifiche:
+            "https://www.endu.net/it/events/corri-nei-borghi-vertova/results",
         },
         regolamento: "public/files/regulations/2025_parre.pdf",
         foto: {
@@ -1154,7 +1155,8 @@ const tappe = [
         },
         links: {
           iscrizioni: "https://api.endu.net/r/i/93986",
-          classifiche: "",
+          classifiche:
+            "https://www.endu.net/it/events/corri-nei-borghi-gromo-3/results",
         },
         regolamento: "public/files/regulations/2025_gromo.pdf",
         foto: {
@@ -1220,7 +1222,8 @@ const tappe = [
         },
         links: {
           iscrizioni: "https://api.endu.net/r/i/94075",
-          classifiche: "",
+          classifiche:
+            "https://www.endu.net/it/events/corri-nei-borghi-cerete-4-pass-so-e-so-per-ol-pais/results",
         },
         regolamento: "public/files/regulations/2025_cerete.pdf",
         foto: {
