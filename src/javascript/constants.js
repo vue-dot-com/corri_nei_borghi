@@ -1256,6 +1256,69 @@ const tappe = [
 
 const news = [
   {
+    title: "🌆 Cerete - Cala il sipario sulla Corri nei Borghi!👋",
+    image: "",
+    body: `<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <style>
+    .article-table {
+      border-collapse: collapse;
+      width: 100%;
+      margin-bottom: 30px;
+    }
+    th,
+    td {
+      border: 1px solid #ccc;
+      padding: 8px;
+      text-align: left;
+    }
+    th {
+      background-color: #e0ffe0;
+    }
+  </style>
+</head>
+<body>
+
+  <p>
+    Si chiude il sipario sulla <strong>XVIII^ Edizione del Circuito Corri nei Borghi</strong> proprio in casa Ceretese, 
+    come da tradizione nell’ultimo lustro. L’<strong>USTC Cerete</strong> ha saputo accogliere con calore atleti e ospiti 
+    nel suggestivo borgo di <em>Cerete Alto</em> e nel lussuoso palazzetto intitolato a <strong>Danilo Fiorina</strong>. 🏟️
+  </p>
+
+  <p>
+    Un plauso alle <strong>7 tappe del circuito</strong> che hanno regalato emozioni e spettacolo: eventi capaci di coinvolgere 
+    famiglie, podisti neofiti e atleti di altissimo livello. Non solo sport, ma anche convivialità con 
+    ricchi buffet e pasta party, ognuno con la propria atmosfera e peculiarità. 🍝🥳
+  </p>
+
+  <p>
+    Un ringraziamento speciale va ai <strong>sostenitori, partner e sponsor</strong> che credono in questo progetto 
+    di promozione della corsa e dei nostri borghi montani, ma soprattutto ai <strong>tantissimi partecipanti</strong> 
+    che, settimana dopo settimana, hanno animato le vie della media e alta Val Seriana. 🙌
+  </p>
+
+  <p>
+    <strong>Classifiche di tappa, generali a squadre e di circuito</strong>, insieme a commenti e immagini, 
+    sono disponibili sul portale <a href="https://corrineiborghi.it" target="_blank">corrineiborghi.it</a> e sui canali social ufficiali con l’hashtag <em>#corrineiborghi</em>. 
+    Un grazie anche ai giovani del direttivo che con passione e competenza documentano ogni evento e sognano di portare il circuito 
+    fino alla <strong>capitale Bergamasca</strong> per la XX^ Edizione del 2027. 🌟
+  </p>
+
+  <p>
+    Le <em>facce stanche ma felici</em> degli atleti, l’entusiasmo dei ragazzi con la medaglia al collo 🏅, i sorrisi 
+    e i saluti calorosi di tanti appassionati resteranno come simbolo di questa stagione. 
+    Il direttivo saluta così tutti gli amici del circuito con un grande: <strong>“Arrivederci al prossimo anno!”</strong> 💚
+  </p>
+
+</body>
+</html>
+
+
+    `,
+  },
+  {
     title: "⚔️ Gromo - Battaglia nel borgo medioevale! 🏞️",
     image: "public/media/2025/2025_gromo.webp",
     body: `
