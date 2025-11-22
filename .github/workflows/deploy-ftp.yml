@@ -1,0 +1,28 @@
+on: 
+  push: 
+    branches: 
+      - main
+
+name: Deploy to FTP 
+jobs: 
+  deploy: 
+    runs-on: ubuntu-latest 
+    steps: 
+      - name: Checkout repository 
+        uses: actions/checkout@v4 
+        with: 
+          fetch-depth: 0
+
+      - name: Deploy to FTP server
+        uses: SamKirkland/FTP-Deploy-Action@4
+        with:
+          server: ${{ secrets.FTP_HOST }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: ./
+          server-dir: ./corrineiborghi.it/
+          exclude: |
+            .**/.git*
+            **/.git*/**
+            README.md
+              
