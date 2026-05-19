@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="it-IT">
   <head>
     <meta charset="utf-8" />
@@ -15,6 +15,13 @@
       rel="stylesheet"
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap"
+      rel="stylesheet"
+      type="text/css"
     />
   </head>
   <body id="bootstrap-overrides">
@@ -141,13 +148,13 @@
       fetchAndInsertComponent("src/components/sponsor.html", "sponsor");
       fetchAndInsertComponent("src/components/footer.html", "footer");
       // Call function to generate classifiche table
-      generateClassificheHTML(constants.tappe, 2025, {
+      generateClassificheHTML(constants.tappe, 2026, {
         yearId: "classifiche-year",
         tableId: "classifiche-table",
         trophyId: "classifiche-trophy",
       });
       // Call function to generate year tabs
-      generateYearsNavTabs(constants.tappe, 2025, "nav-tab").then(() => {
+      generateYearsNavTabs(constants.tappe, 2026, "nav-tab").then(() => {
         // Onclick event to generate classifiche table when changing tab
         const tabYearsArray = document.querySelectorAll("button.nav-link");
         tabYearsArray.forEach((tab) => {

@@ -187,7 +187,7 @@ function validateFormAndSend(formClass) {
         }
         form.classList.add("was-validated");
       },
-      false
+      false,
     );
   });
 }
@@ -215,7 +215,7 @@ function sendEmail() {
       ==========
       ${message}
       ==========
-      `
+      `,
     );
 
   // Open mailto link in a new window
@@ -258,9 +258,8 @@ async function generateTappeCards(tappe, year, componentId) {
     tempElement.innerHTML = html.trim();
 
     // Populate card with data
-    tempElement.querySelector(
-      "#card-tappa-image"
-    ).innerHTML = `<img src="${gara.imgCopertina}" class="card-img-top" alt="${gara.name} copertina" />`;
+    tempElement.querySelector("#card-tappa-image").innerHTML =
+      `<img loading="lazy" src="${gara.imgCopertina}" class="card-img-top" alt="${gara.name} copertina" />`;
     tempElement.querySelector("#card-tappa-information").innerHTML = `
       <h5 class="card-title" style="color: #7f2b2b"><b>${gara.location}</b></h5>
       <h6 class="card-subtitle">${gara.date}</h6>
@@ -285,7 +284,7 @@ async function generateTappeCards(tappe, year, componentId) {
     // Get all radio buttons with class 'btn-check' and related labels
     const radioButtons = tempElement.querySelectorAll(".btn-check");
     const labelsForRadioButtons = tempElement.querySelectorAll(
-      "label.btn.btn-outline-primary"
+      "label.btn.btn-outline-primary",
     );
 
     // Dynamically changing data-bs-target for each radio button
@@ -321,7 +320,7 @@ async function generateTappeCards(tappe, year, componentId) {
     // Replace the modal divs with the location
     const modals = tempElement.querySelectorAll('[id^="modal-"]');
     modals.forEach(
-      (modal) => (modal.id = `${modal.id}-${gara.location.toLowerCase()}`)
+      (modal) => (modal.id = `${modal.id}-${gara.location.toLowerCase()}`),
     );
 
     return tempElement.querySelector("#card-tappe");
@@ -379,7 +378,7 @@ async function generateModalsForCards(tappe, year, componentName) {
       .querySelector(`#${componentName}`)
       .setAttribute(
         "id",
-        `modal-${componentName}-${gara.location.toLowerCase()}`
+        `modal-${componentName}-${gara.location.toLowerCase()}`,
       );
 
     // Replace modal content
@@ -403,14 +402,14 @@ async function generateModalsForCards(tappe, year, componentName) {
     // Replace the existing modal in the document with the new HTML
 
     const existingModal = document.getElementById(
-      `modal-${componentName}-${gara.location.toLowerCase()}`
+      `modal-${componentName}-${gara.location.toLowerCase()}`,
     );
 
     existingModal.parentNode.replaceChild(
       tempElement.querySelector(
-        `#modal-${componentName}-${gara.location.toLowerCase()}`
+        `#modal-${componentName}-${gara.location.toLowerCase()}`,
       ),
-      existingModal
+      existingModal,
     );
   });
 }
@@ -470,7 +469,7 @@ function generatePercorsoModalBodyContent(tappa) {
     ${e.gpx ? `<li><strong>Gpx file:</strong> ${e.gpx}</li>` : ""}
     ${
       e.img
-        ? `<li><strong>Immagine percorso:</strong> <div> <img src="${e.img}" class="img-fluid"/> </div> </li>`
+        ? `<li><strong>Immagine percorso:</strong> <div> <img loading="lazy" src="${e.img}" class="img-fluid"/> </div> </li>`
         : ""
     }
     </ul>
@@ -546,10 +545,10 @@ function generateTappePageContent(tappe, year, componentsIds) {
  */
 function enablePopovers() {
   const popoverTriggerList = document.querySelectorAll(
-    '[data-bs-toggle="popover"]'
+    '[data-bs-toggle="popover"]',
   );
   const popoverList = [...popoverTriggerList].map(
-    (popoverTriggerEl) => new bootstrap.Popover(popoverTriggerEl)
+    (popoverTriggerEl) => new bootstrap.Popover(popoverTriggerEl),
   );
 }
 
@@ -570,7 +569,7 @@ function convertDates(tappe, year) {
     }
     tmpDate.push(year);
     const newDate = new Date(
-      Date.UTC(tmpDate[2], tmpDate[1], tmpDate[0], 0, 0, 0)
+      Date.UTC(tmpDate[2], tmpDate[1], tmpDate[0], 0, 0, 0),
     );
     const newTimeStamp = newDate.getTime();
     return newTimeStamp;
@@ -609,15 +608,14 @@ function startTimer(tappe, year, componentName) {
         targetDate.getUTCDate(),
         23,
         59,
-        59
+        59,
       );
 
       if (start >= targetDate && now <= endOfDay) {
         document
           .getElementById(componentName)
-          .getElementsByClassName(
-            "countdown-content"
-          )[0].innerText = `Ci vediamo questa sera a ${tappaName}!`;
+          .getElementsByClassName("countdown-content")[0].innerText =
+          `Ci vediamo questa sera a ${tappaName}!`;
         clearInterval(intervalId); // Clear the interval once the target date is reached
         return;
       }
@@ -727,7 +725,7 @@ async function generateMediaCards(tappe, year, componentId) {
   // Loop through each location and load card.html, then populate and append it
   // Array to store promises for fetching HTML content, in this way tappe cards are ordered by appearance.
   const fetchPromises = tappeFilteredOnYear.gare.map(async (gara) => {
-    if (gara.foto.category[0].link == "") {
+    if (!gara.foto || gara.foto.category[0].link == "") {
       return null;
     }
     // Fetch card.html content
@@ -739,9 +737,8 @@ async function generateMediaCards(tappe, year, componentId) {
     tempElement.innerHTML = html.trim();
 
     // Populate card with data
-    tempElement.querySelector(
-      ".card-tappa-image"
-    ).innerHTML = `<img src="${gara.foto.copertina}" class="card-img-top" alt="${gara.name} copertina" />`;
+    tempElement.querySelector(".card-tappa-image").innerHTML =
+      `<img loading="lazy" src="${gara.foto.copertina}" class="card-img-top" alt="${gara.name} copertina" />`;
     tempElement.querySelector(".card-title").innerHTML = `${gara.location}`;
     tempElement.querySelector(".card-media-description").innerHTML = `${
       gara.foto.description || "&nbsp;"
@@ -845,7 +842,7 @@ async function generateNewsAccordionItems(news, componentId) {
   // Get the container element for the cards
   const newsAccordion = document.getElementById(componentId);
   const newsAccordionFlush = newsAccordion.querySelector(
-    "#news-accordion-flush"
+    "#news-accordion-flush",
   );
 
   // Loop through each news and create an accordion item, then populate and append it
@@ -877,9 +874,8 @@ async function generateNewsAccordionItems(news, componentId) {
 
     // Add image
     if (item.image) {
-      tempElement.querySelector(
-        ".accordion-news-image"
-      ).innerHTML = `<img src=${item.image} class="img-thumbnail" />`;
+      tempElement.querySelector(".accordion-news-image").innerHTML =
+        `<img loading="lazy" src=${item.image} class="img-thumbnail" />`;
     } else {
       tempElement.querySelector(".accordion-news-image").remove();
     }
