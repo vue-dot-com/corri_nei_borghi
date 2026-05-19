@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="it-IT">
   <head>
     <meta charset="utf-8" />
@@ -15,6 +15,13 @@
       rel="stylesheet"
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap"
+      rel="stylesheet"
+      type="text/css"
     />
   </head>
   <body id="bootstrap-overrides">
@@ -83,7 +90,7 @@
       fetchAndInsertComponent("src/components/sponsor.html", "sponsor");
       fetchAndInsertComponent("src/components/footer.html", "footer");
       // Call function to generate year tabs
-      generateYearsNavTabs(constants.tappe, 2025, "nav-tab").then(() => {
+      generateYearsNavTabs(constants.tappe, 2026, "nav-tab").then(() => {
         // Onclick event to generate media cards when changing tab
         const tabYearsArray = document.querySelectorAll("button.nav-link");
         tabYearsArray.forEach((tab) => {
@@ -97,8 +104,8 @@
           generateMediaCards(constants.tappe, year, "cardContainer");
         }
       });
-      // Call function to generate media cards
-      generateMediaCards(constants.tappe, 2025, "cardContainer");
+      // Call function to generate media cards for current year
+      generateMediaCards(constants.tappe, 2026, "cardContainer");
     </script>
   </body>
 </html>

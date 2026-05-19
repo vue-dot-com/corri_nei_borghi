@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="it-IT">
   <head>
     <meta charset="utf-8" />
@@ -16,6 +16,13 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap"
+      rel="stylesheet"
+      type="text/css"
+    />
   </head>
   <body id="bootstrap-overrides">
     <!------>
@@ -32,14 +39,14 @@
                 class="display-5 fw-bold text-body-emphasis lh-1 mb-3"
                 style="color: #7f2b2b !important"
               >
-                <b>Corri nei Borghi 2025</b>
+                <b> Corri nei Borghi 2026</b>
               </h1>
               <h2
                 class="display-10 text-body-emphasis lh-3 mb-3"
                 ,
                 style="color: #ef8a16 !important"
               >
-                XVIII^ Edizione <i>- una tappa tira l'altra...</i>
+                XIX^ Edizione <i>- una tappa tira l'altra...</i>
               </h2>
             </div>
             <div class="card" id="lead-text">
@@ -47,20 +54,20 @@
                 <p class="lead" id="text">
                   La
                   <strong style="color: #ef8a16; font-weight: bold"
-                    >XVIII edizione</strong
+                    >XIX edizione</strong
                   >
                   del
                   <strong style="color: #7f2b2b; font-weight: bold"
-                    >Circuito Corri nei Borghi 2025</strong
+                    >Circuito Corri nei Borghi 2026</strong
                   >
                   ha definito il proprio calendario. Ben
-                  <strong>sette eventi</strong> scandiranno il periodo dall'
+                  <strong>otto eventi</strong> scandiranno il periodo dall'
                   <strong
                     style="
                       background-color: rgba(255, 255, 0, 0.5);
                       font-weight: bold;
                     "
-                    >11 luglio al 23 agosto</strong
+                    >11 luglio al 29 agosto</strong
                   >, abbracciando il suggestivo scenario della
                   <strong
                     style="
@@ -83,7 +90,7 @@
                     "
                     >Trofeo Danilo Fiorina</strong
                   >, consegnandolo alle squadre meritevoli durante il gran
-                  finale del <strong>23 agosto 2025</strong>.
+                  finale del <strong>29 agosto 2026</strong>.
                   <br />
                   <i>Il direttivo</i>
                 </p>
@@ -110,22 +117,22 @@
             <div
               class="d-grid gap-2 d-md-flex justify-content-center mb-5 align-items-center"
             >
-              <!-- <span
+              <span
                 class="d-flex justify-content-center"
                 tabindex="0"
                 data-bs-toggle="popover"
                 data-bs-trigger="hover focus"
                 data-bs-title="Iscrizioni chiuse"
                 data-bs-content="Al momento le iscrizioni sono chiuse. Quando le apriremo, sarai reindirizzato al sito Endu per completare la tua iscrizione alla tappa selezionata. Grazie!"
-              > -->
-              <button
-                type="button"
-                class="btn btn-primary btn-lg px-4 me-md-2 bouncing-text"
-                id="button-color"
               >
-                <b>ISCRIVITI</b>
-              </button>
-              <!-- </span> -->
+                <button
+                  type="button"
+                  class="btn btn-primary btn-lg px-4 me-md-2 bouncing-text"
+                  id="button-color"
+                >
+                  <b>ISCRIVITI</b>
+                </button>
+              </span>
               <!-- <span
                 class="d-inline-block"
                 tabindex="0"
@@ -149,12 +156,12 @@
             <div class="container-tappe-tile">
               <img
                 class="tappe-tile"
-                src="public/images/2025_tappe_tile.webp"
-                alt="Tappe 2025"
+                src="public/images/2026_tappe_tile.webp"
+                alt="Tappe 2026"
               />
               <div class="middle-tappe-tile">
                 <button
-                  onclick="location.href='tappe.html'"
+                  onclick="location.href = 'tappe.html'"
                   type="button"
                   class="btn btn-primary"
                 >
@@ -187,10 +194,10 @@
       fetchAndInsertComponent("src/components/footer.html", "footer");
       fetchAndInsertComponent(
         "src/components/countdown.html",
-        "countdown"
+        "countdown",
       ).then(() => {
         // Start the timer
-        startTimer(constants.tappe, 2025, "countdown");
+        startTimer(constants.tappe, 2026, "countdown");
       });
       fetchAndInsertComponent("src/components/news.html", "news").then(
         async () => {
@@ -198,7 +205,7 @@
           await generateNewsAccordionItems(constants.news, "news");
           // Count news to show correct number inside accordion
           await countNews();
-        }
+        },
       );
 
       // Call to enable popovers on the page
