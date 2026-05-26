@@ -3,7 +3,14 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>CorrineiBorghi</title>
+    <meta name="description" content="Foto e gallerie delle edizioni del circuito podistico Corri nei Borghi." />
+    <meta property="og:title" content="Foto e Media - Corri nei Borghi" />
+    <meta property="og:description" content="Foto e gallerie delle edizioni del circuito podistico Corri nei Borghi." />
+    <meta property="og:image" content="https://corrineiborghi.it/public/images/logos/corri-nei-borghi-oval.webp" />
+    <meta property="og:url" content="https://corrineiborghi.it/media.html" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="it_IT" />
+    <title>Foto e Media - Corri nei Borghi</title>
     <link
       rel="icon"
       type="image/x-icon"
@@ -84,13 +91,14 @@
     <script src="src/javascript/utils.js"></script>
     <script type="module">
       import constants from "./src/javascript/constants.js";
+      const currentYear = constants.config.currentYear;
       // Call the fetch navbar
       fetchAndInsertNavbar("media");
       // Call other functions to insert components
       fetchAndInsertComponent("src/components/sponsor.html", "sponsor");
       fetchAndInsertComponent("src/components/footer.html", "footer");
       // Call function to generate year tabs
-      generateYearsNavTabs(constants.tappe, 2026, "nav-tab").then(() => {
+      generateYearsNavTabs(constants.tappe, currentYear, "nav-tab").then(() => {
         // Onclick event to generate media cards when changing tab
         const tabYearsArray = document.querySelectorAll("button.nav-link");
         tabYearsArray.forEach((tab) => {
@@ -105,7 +113,7 @@
         }
       });
       // Call function to generate media cards for current year
-      generateMediaCards(constants.tappe, 2026, "cardContainer");
+      generateMediaCards(constants.tappe, currentYear, "cardContainer");
     </script>
   </body>
 </html>
