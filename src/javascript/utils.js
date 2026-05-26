@@ -18,7 +18,7 @@ function resizeHeaderLogo() {
   // Add scroll event listener
   window.addEventListener("scroll", function () {
     // Calculate the new width based on scroll position
-    if (this.window.scrollY > 20) {
+    if (window.scrollY > 20) {
       var newWidth = 35; // Adjust the factor as needed
     } else {
       newWidth = 60;
@@ -261,7 +261,7 @@ async function generateTappeCards(tappe, year, componentId) {
     tempElement.querySelector("#card-tappa-image").innerHTML =
       `<img loading="lazy" src="${gara.imgCopertina}" class="card-img-top" alt="${gara.name} copertina" />`;
     tempElement.querySelector("#card-tappa-information").innerHTML = `
-      <h5 class="card-title" style="color: #7f2b2b"><b>${gara.location}</b></h5>
+      <h5 class="card-title text-cnb-red"><b>${gara.location}</b></h5>
       <h6 class="card-subtitle">${gara.date}</h6>
       <p class="card-text">${gara.description}</p>
     `;
@@ -733,7 +733,7 @@ async function generateMediaCards(tappe, year, componentId) {
     const html = await response.text();
 
     // Create a temporary element to parse the HTML string
-    tempElement = document.createElement("div");
+    let tempElement = document.createElement("div");
     tempElement.innerHTML = html.trim();
 
     // Populate card with data
@@ -853,19 +853,19 @@ async function generateNewsAccordionItems(news, componentId) {
     const html = await response.text();
 
     // Create a temporary element to parse the HTML string
-    tempElement = document.createElement("div");
+    let tempElement = document.createElement("div");
     tempElement.innerHTML = html.trim();
 
     // Populate card with data
 
     // Add title and data-bs-target / aria-controls attributes
-    button = tempElement.querySelector("button.accordion-button");
+    let button = tempElement.querySelector("button.accordion-button");
     button.innerHTML = `${item.title}`;
     button.setAttribute("data-bs-target", `#flush-collapse-${index}`);
     button.setAttribute("aria-controls", `flush-collapse-${index}`);
 
     // Set container div id attribute
-    collapse = tempElement.querySelector("div.accordion-collapse.collapse");
+    let collapse = tempElement.querySelector("div.accordion-collapse.collapse");
     collapse.setAttribute("id", `flush-collapse-${index}`);
     // Add body
     const body = document.createElement("div");
@@ -927,13 +927,13 @@ async function generateYearsNavTabs(tappe, curYear, componentId) {
     const html = await response.text();
 
     // Create a temporary element to parse the HTML string
-    tempElement = document.createElement("div");
+    let tempElement = document.createElement("div");
     tempElement.innerHTML = html.trim();
 
     // Populate button with data
 
     // Add title and attributes
-    button = tempElement.querySelector("button.nav-link");
+    let button = tempElement.querySelector("button.nav-link");
     button.innerText = year;
     button.setAttribute("id", `nav-home-tab-${year}`);
     if (year == curYear) {
