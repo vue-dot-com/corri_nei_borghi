@@ -3,10 +3,22 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Corri nei Borghi - Circuito podistico della Val Seriana. Scopri le tappe, le classifiche e le iscrizioni per l'edizione 2026." />
-    <meta property="og:title" content="Corri nei Borghi 2026 - Circuito Podistico Val Seriana" />
-    <meta property="og:description" content="Circuito podistico della Val Seriana. Scopri le tappe, le classifiche e le iscrizioni per l'edizione 2026." />
-    <meta property="og:image" content="https://corrineiborghi.it/public/images/2026_tappe_tile.webp" />
+    <meta
+      name="description"
+      content="Corri nei Borghi - Circuito podistico della Val Seriana. Scopri le tappe, le classifiche e le iscrizioni per l'edizione 2026."
+    />
+    <meta
+      property="og:title"
+      content="Corri nei Borghi 2026 - Circuito Podistico Val Seriana"
+    />
+    <meta
+      property="og:description"
+      content="Circuito podistico della Val Seriana. Scopri le tappe, le classifiche e le iscrizioni per l'edizione 2026."
+    />
+    <meta
+      property="og:image"
+      content="https://corrineiborghi.it/public/images/2026_tappe_tile.webp"
+    />
     <meta property="og:url" content="https://corrineiborghi.it/" />
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="it_IT" />
@@ -43,12 +55,14 @@
           <div class="col-lg-6">
             <div>
               <h1
-                class="display-5 fw-bold text-body-emphasis lh-1 mb-3 text-cnb-red"
+                class="display-5 fw-bold text-body-emphasis lh-1 mb-3"
+                style="color: var(--cnb-red) !important"
               >
                 <b> Corri nei Borghi 2026</b>
               </h1>
               <h2
-                class="display-10 text-body-emphasis lh-3 mb-3 text-cnb-orange"
+                class="display-10 text-body-emphasis lh-3 mb-3"
+                style="color: var(--cnb-orange) !important"
               >
                 XIX^ Edizione <i>- una tappa tira l'altra...</i>
               </h2>
@@ -222,7 +236,9 @@
       // Redirect to Endu classifiche
       document.getElementById("button-classifiche").onclick = function () {
         location.href = "classifiche.html";
-        const currentTappa = constants.tappe.find((t) => t.year === currentYear);
+        const currentTappa = constants.tappe.find(
+          (t) => t.year === currentYear,
+        );
         if (currentTappa) {
           window.open(currentTappa.trofeo.links.classifiche, "_blank");
         }
