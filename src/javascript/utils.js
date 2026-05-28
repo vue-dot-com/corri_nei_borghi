@@ -552,29 +552,12 @@ function enablePopovers() {
   );
 }
 
-/**
- * Converts race dates into timestamps for easier comparison and manipulation.
- * @param {Array} tappe - Array of race data.
- * @param {number} year - The year to filter the races.
- * @returns {Array} - Array of timestamps for the race dates.
- */
 function convertDates(tappe, year) {
   const tappeFilteredOnYear = tappe.filter((elem) => elem.year == year)[0];
-  const dates = tappeFilteredOnYear.gare.map((gara) => {
-    let tmpDate = gara.date.split(" ");
-    if (tmpDate[1] === "Luglio") {
-      tmpDate[1] = parseInt("07", 10) - 1;
-    } else {
-      tmpDate[1] = parseInt("08", 10) - 1;
-    }
-    tmpDate.push(year);
-    const newDate = new Date(
-      Date.UTC(tmpDate[2], tmpDate[1], tmpDate[0], 0, 0, 0),
-    );
-    const newTimeStamp = newDate.getTime();
-    return newTimeStamp;
+  return tappeFilteredOnYear.gare.map((gara) => {
+    const [y, m, d] = gara.isoDate.split("-").map(Number);
+    return new Date(Date.UTC(y, m - 1, d, 0, 0, 0)).getTime();
   });
-  return dates;
 }
 
 /**
