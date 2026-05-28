@@ -852,7 +852,13 @@ async function generateNewsAccordionItems(news, componentId) {
     collapse.setAttribute("id", `flush-collapse-${index}`);
     // Add body
     const body = document.createElement("div");
-    body.innerHTML = item.body;
+    if (item.bodyFile) {
+      const mdResponse = await fetch(item.bodyFile);
+      const mdText = await mdResponse.text();
+      body.innerHTML = typeof marked !== "undefined" ? marked.parse(mdText) : mdText;
+    } else if (item.body) {
+      body.innerHTML = typeof marked !== "undefined" ? marked.parse(item.body) : item.body;
+    }
     tempElement.querySelector(".accordion-body").appendChild(body);
 
     // Add image
