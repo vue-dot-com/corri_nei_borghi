@@ -1309,8 +1309,9 @@ const tappe = [
           m: "",
         },
         links: {
-          iscrizioni: "",
-          classifiche: "",
+          iscrizioni: "https://join.endu.net/entry?edition=101283",
+          classifiche:
+            "https://www.endu.net/it/events/corri-nei-borghi-vertova-2/results",
         },
         regolamento: "public/files/regulations/2025_vertova.pdf",
         foto: {
@@ -1391,8 +1392,9 @@ const tappe = [
           m: "",
         },
         links: {
-          iscrizioni: "",
-          classifiche: "",
+          iscrizioni: "https://join.endu.net/entry?edition=101385",
+          classifiche:
+            "https://www.endu.net/it/events/corri-nei-borghi-clusone-corri-in-centro/results",
         },
         regolamento: "public/files/regulations/2025_clusone.pdf",
         foto: {
@@ -1461,8 +1463,9 @@ const tappe = [
           m: "",
         },
         links: {
-          iscrizioni: "",
-          classifiche: "",
+          iscrizioni: "https://join.endu.net/entry?edition=101458",
+          classifiche:
+            "https://www.endu.net/it/events/corri-nei-borghi-gandino/results",
         },
         regolamento: "public/files/regulations/2025_gandino.pdf",
         foto: {
@@ -1550,8 +1553,9 @@ const tappe = [
           m: "",
         },
         links: {
-          iscrizioni: "",
-          classifiche: "",
+          iscrizioni: "https://join.endu.net/entry?edition=101514",
+          classifiche:
+            "https://www.endu.net/it/events/corri-nei-borghi-albino/results",
         },
         regolamento: "public/files/regulations/2025_albino.pdf",
         foto: {
@@ -1627,8 +1631,9 @@ const tappe = [
           m: "",
         },
         links: {
-          iscrizioni: "",
-          classifiche: "",
+          iscrizioni: "https://join.endu.net/entry?edition=101571",
+          classifiche:
+            "https://www.endu.net/it/events/corri-nei-borghi-gromo-3/results",
         },
         regolamento: "public/files/regulations/2025_gromo.pdf",
         foto: {
@@ -1696,8 +1701,9 @@ const tappe = [
           m: "",
         },
         links: {
-          iscrizioni: "",
-          classifiche: "",
+          iscrizioni: "https://join.endu.net/entry?edition=101552",
+          classifiche:
+            "https://www.endu.net/it/events/corri-nei-borghi-vertova/results",
         },
         regolamento: "public/files/regulations/2025_parre.pdf",
         foto: {
@@ -1767,8 +1773,9 @@ const tappe = [
           m: "",
         },
         links: {
-          iscrizioni: "",
-          classifiche: "",
+          iscrizioni: "https://join.endu.net/entry?edition=106824",
+          classifiche:
+            "https://www.endu.net/it/events/corri-nei-borghi-ardesio/results",
         },
         regolamento: "public/files/regulations/2024_ardesio.pdf",
         foto: {
@@ -1838,8 +1845,9 @@ const tappe = [
           m: "",
         },
         links: {
-          iscrizioni: "",
-          classifiche: "",
+          iscrizioni: "https://join.endu.net/entry?edition=101617",
+          classifiche:
+            "https://www.endu.net/it/events/corri-nei-borghi-cerete-4-pass-so-e-so-per-ol-pais/results",
         },
         regolamento: "public/files/regulations/2025_cerete.pdf",
         foto: {
@@ -1862,1097 +1870,1093 @@ const tappe = [
 
 const news = [
   {
-    title: "🌆 Cerete - Cala il sipario sulla Corri nei Borghi!👋",
-    image: "",
-    body: `<!DOCTYPE html>
-<html lang="it">
-<head>
-  <meta charset="UTF-8">
-  <style>
-    .article-table {
-      border-collapse: collapse;
-      width: 100%;
-      margin-bottom: 30px;
-    }
-    th,
-    td {
-      border: 1px solid #ccc;
-      padding: 8px;
-      text-align: left;
-    }
-    th {
-      background-color: #e0ffe0;
-    }
-  </style>
-</head>
-<body>
-
-  <p>
-    Si chiude il sipario sulla <strong>XVIII^ Edizione del Circuito Corri nei Borghi</strong> proprio in casa Ceretese, 
-    come da tradizione nell’ultimo lustro. L’<strong>USTC Cerete</strong> ha saputo accogliere con calore atleti e ospiti 
-    nel suggestivo borgo di <em>Cerete Alto</em> e nel lussuoso palazzetto intitolato a <strong>Danilo Fiorina</strong>. 🏟️
-  </p>
-
-  <p>
-    Un plauso alle <strong>7 tappe del circuito</strong> che hanno regalato emozioni e spettacolo: eventi capaci di coinvolgere 
-    famiglie, podisti neofiti e atleti di altissimo livello. Non solo sport, ma anche convivialità con 
-    ricchi buffet e pasta party, ognuno con la propria atmosfera e peculiarità. 🍝🥳
-  </p>
-
-  <p>
-    Un ringraziamento speciale va ai <strong>sostenitori, partner e sponsor</strong> che credono in questo progetto 
-    di promozione della corsa e dei nostri borghi montani, ma soprattutto ai <strong>tantissimi partecipanti</strong> 
-    che, settimana dopo settimana, hanno animato le vie della media e alta Val Seriana. 🙌
-  </p>
-
-  <p>
-    <strong>Classifiche di tappa, generali a squadre e di circuito</strong>, insieme a commenti e immagini, 
-    sono disponibili sul portale <a href="https://corrineiborghi.it" target="_blank">corrineiborghi.it</a> e sui canali social ufficiali con l’hashtag <em>#corrineiborghi</em>. 
-    Un grazie anche ai giovani del direttivo che con passione e competenza documentano ogni evento e sognano di portare il circuito 
-    fino alla <strong>capitale Bergamasca</strong> per la XX^ Edizione del 2027. 🌟
-  </p>
-
-  <p>
-    Le <em>facce stanche ma felici</em> degli atleti, l’entusiasmo dei ragazzi con la medaglia al collo 🏅, i sorrisi 
-    e i saluti calorosi di tanti appassionati resteranno come simbolo di questa stagione. 
-    Il direttivo saluta così tutti gli amici del circuito con un grande: <strong>“Arrivederci al prossimo anno!”</strong> 💚
-  </p>
-
-</body>
-</html>
-
-
-    `,
-  },
-  {
-    title: "⚔️ Gromo - Battaglia nel borgo medioevale! 🏞️",
-    image: "public/media/2025/2025_gromo.webp",
-    body: `
-    <!DOCTYPE html>
-<html lang="it">
-<head>
-  <meta charset="UTF-8">
-  <style>
-    .article-table {
-      border-collapse: collapse;
-      width: 100%;
-      margin-bottom: 30px;
-    }
-    th,
-    td {
-      border: 1px solid #ccc;
-      padding: 8px;
-      text-align: left;
-    }
-    th {
-      background-color: #e0ffe0;
-    }
-  </style>
-</head>
-<body>
-
-  <p>
-    Mercoledì <strong>13 agosto</strong> il circuito <em>Corri nei Borghi</em> ha acceso il centro storico di <strong>Gromo</strong>, fra vicoli, archi e saliscendi che hanno esaltato gambe e cuore dei runner. Una serata frizzante, ricca di tifo e di sorpassi fino all’ultimo metro. 💪
-  </p>
-
-  <p>
-    Atmosfera speciale, percorso selettivo e grande partecipazione: grazie a tutti i presenti per l’energia e il sorriso con cui avete reso unica questa tappa! 🙌
-  </p>
-
-  <h2>🏃‍♂️ Non Competitiva Maschile</h2>
-  <table class="article-table">
-    <tr>
-      <th>Pos</th><th>Pett.</th><th>Nome</th><th>Tempo</th><th>Distacco</th>
-    </tr>
-    <tr>
-      <td>1</td><td>247</td><td>UCCELLI STEFANO</td><td>13:49.35</td><td>-</td>
-    </tr>
-    <tr>
-      <td>2</td><td>309</td><td>MAGRI LUCA</td><td>14:12.80</td><td>+23.45s</td>
-    </tr>
-    <tr>
-      <td>3</td><td>282</td><td>BERTOCCHI FEDERICO</td><td>14:15.35</td><td>+26.00s</td>
-    </tr>
-  </table>
-
-  <p>
-    <strong>Stefano Uccelli</strong> centra il successo dopo i podi di Albino e Parre: crescita costante! 👏 <strong>Luca Magri</strong>, protagonista anche nella competitiva di Vertova, firma un solido 2° posto; <strong>Federico Bertocchi</strong> replica il podio di Parre confermandosi tra i più regolari della categoria. 💚
-  </p>
-
-  <h2>👟 Non Competitiva Femminile</h2>
-  <table class="article-table">
-    <tr>
-      <th>Pos</th><th>Pett.</th><th>Nome</th><th>Tempo</th><th>Distacco</th>
-    </tr>
-    <tr>
-      <td>1</td><td>298</td><td>ZENONI GIADA</td><td>16:20.00</td><td>-</td>
-    </tr>
-    <tr>
-      <td>2</td><td>274</td><td>EL OUARDY NADIA</td><td>17:02.85</td><td>+42.85s</td>
-    </tr>
-    <tr>
-      <td>3</td><td>294</td><td>ORLANDI ELISA ANGELICA</td><td>17:28.85</td><td>+1:08.85</td>
-    </tr>
-  </table>
-
-  <p>
-    Riecco <strong>Giada Zenoni</strong> sul gradino più alto, come a Clusone e Gandino! 🎯 <strong>Elisa Orlandi</strong> continua la sua striscia di podi (Clusone, Gandino, Albino e ora Gromo), mentre <strong>Nadia El Ouardy</strong> entra con personalità tra le migliori: benvenuta nella bagarre! ✨
-  </p>
-
-  <h2>🏁 Competitiva Maschile</h2>
-  <table class="article-table">
-    <tr>
-      <th>Pos</th><th>Pett.</th><th>Nome</th><th>Società</th><th>Tempo</th><th>Distacco</th>
-    </tr>
-    <tr>
-      <td>1</td><td>40</td><td>CAVAGNA ALAIN</td><td>ATL. VALLE BREMBANA</td><td>18:02</td><td>-</td>
-    </tr>
-    <tr>
-      <td>2</td><td>23</td><td>BA FILIPPO</td><td>G. ALPINISTICO VERTOVESE</td><td>19:06</td><td>+1:05</td>
-    </tr>
-    <tr>
-      <td>3</td><td>12</td><td>STEFFANONI SAVERIO</td><td>CUS INSUBRIA VARESE COMO</td><td>19:18</td><td>+1:16</td>
-    </tr>
-  </table>
-
-  <p>
-    <strong>Alain Cavagna</strong> torna al successo dopo il 2° posto di Albino e la vittoria di Clusone: leadership da capitano! 💥 <strong>Filippo Ba</strong> sale di un gradino rispetto a Gandino e conquista un ottimo 2°, mentre <strong>Saverio Steffanoni</strong> entra in top3 con una chiusura di grande carattere. ⚡
-  </p>
-
-  <h2>👟 Competitiva Femminile</h2>
-  <table class="article-table">
-    <tr>
-      <th>Pos</th><th>Pett.</th><th>Nome</th><th>Società</th><th>Tempo</th><th>Distacco</th>
-    </tr>
-    <tr>
-      <td>1</td><td>180</td><td>BOTTARELLI SARA</td><td>FREE-ZONE</td><td>14:09</td><td>-</td>
-    </tr>
-    <tr>
-      <td>2</td><td>172</td><td>BIANCHI BEATRICE</td><td>LA RECASTELLO RADICI GROUP</td><td>14:22</td><td>+13s</td>
-    </tr>
-    <tr>
-      <td>3</td><td>174</td><td>FACCANONI IRENE</td><td>POOL SOC. ATL. ALTA VALSERIANA</td><td>14:29</td><td>+20s</td>
-    </tr>
-  </table>
-
-  <p>
-    Podio fotocopia di Parre ma con distacchi ridotti: <strong>Sara Bottarelli</strong> allunga nel tratto centrale e resiste al rientro di <strong>Beatrice Bianchi</strong> (da +42s a +13s rispetto a Parre!), con <strong>Irene Faccanoni</strong> ancora solidamente in terza posizione. Duello apertissimo per il circuito! 🔥
-  </p>
-
-  <p>
-    📸 Le <strong>foto ufficiali</strong> dell’evento sono online nella nostra <a href="media.html" target="_blank">pagina media</a>, mentre le classifiche complete sono visibili su <a href="https://www.endu.net/it/events/corri-nei-borghi-gromo-3/results" target="_blank">endu.net</a>.
-  </p>
-
-  <p>
-    Grazie ancora a tutti per la partecipazione, la passione e l’energia. Ci vediamo alla prossima tappa! 🏃‍♀️💥
-  </p>
-
-</body>
-</html>
-`,
-  },
-  {
-    title: "📈 Parre – Sali scendi di emozioni! ⛰️",
-    image: "public/media/2025/parre/2025_parre.webp",
-    body: `
-   <!DOCTYPE html>
-<html lang="it">
-<head>
-  <meta charset="UTF-8">
-  <style>
-    .article-table {
-      border-collapse: collapse;
-      width: 100%;
-      margin-bottom: 30px;
-    }
-    th,
-    td {
-      border: 1px solid #ccc;
-      padding: 8px;
-      text-align: left;
-    }
-    th {
-      background-color: #e0ffe0;
-    }
-  </style>
-</head>
-<body>
-
-  <p>
-    Sabato <strong>9 agosto</strong> il circuito <em>Corri nei Borghi</em> ha fatto tappa a <strong>Parre</strong>, portando atleti e pubblico tra le stradine in salita del suggestivo borgo orobico. Una serata di grande sport, con sfide serrate e un tifo caloroso che ha spinto tutti fino al traguardo. 💪
-  </p>
-
-  <p>
-    Clima ideale, percorso selettivo e tanta grinta: questi gli ingredienti di una gara che resterà nella memoria di questa stagione. Grazie a tutti i partecipanti per l’energia! 🙌
-  </p>
-
-  <h2>🏃‍♂️ Non Competitiva Maschile</h2>
-  <table class="article-table">
-    <tr>
-      <th>Pos</th><th>Pett.</th><th>Nome</th><th>Tempo</th><th>Distacco</th>
-    </tr>
-    <tr>
-      <td>1</td><td>253</td><td>NOZZA MICHELE</td><td>11:26.30</td><td>-</td>
-    </tr>
-    <tr>
-      <td>2</td><td>278</td><td>UCCELLI STEFANO</td><td>11:34.30</td><td>+8.00s</td>
-    </tr>
-    <tr>
-      <td>3</td><td>331</td><td>BERTOCCHI FEDERICO</td><td>11:59.25</td><td>+32.95s</td>
-    </tr>
-  </table>
-
-  <p>
-    <strong>Michele Nozza</strong> torna al successo dopo il secondo posto di Gandino, mostrando condizione eccellente. <strong>Stefano Uccelli</strong> conferma il podio conquistato ad Albino, mentre <strong>Federico Bertocchi</strong> centra il suo primo podio stagionale! 👏
-  </p>
-
-  <h2>👟 Non Competitiva Femminile</h2>
-  <table class="article-table">
-    <tr>
-      <th>Pos</th><th>Pett.</th><th>Nome</th><th>Tempo</th><th>Distacco</th>
-    </tr>
-    <tr>
-      <td>1</td><td>192</td><td>LOSMA CAMILLA</td><td>13:30.00</td><td>-</td>
-    </tr>
-    <tr>
-      <td>2</td><td>390</td><td>BIGONI SERENA</td><td>13:56.05</td><td>+26.05s</td>
-    </tr>
-    <tr>
-      <td>3</td><td>332</td><td>ORLANDI ELISA ANGELICA</td><td>14:04.00</td><td>+34.00s</td>
-    </tr>
-  </table>
-
-  <p>
-    <strong>Camilla Losma</strong> domina la prova, aggiungendo un’altra vittoria dopo il trionfo di Gandino. <strong>Serena Bigoni</strong> resta solidissima, con il terzo podio consecutivo (Clusone, Albino e ora Parre). <strong>Elisa Orlandi</strong> si conferma presenza costante tra le prime tre! 💚
-  </p>
-
-  <h2>🏁 Competitiva Maschile</h2>
-  <table class="article-table">
-    <tr>
-      <th>Pos</th><th>Pett.</th><th>Nome</th><th>Società</th><th>Tempo</th><th>Distacco</th>
-    </tr>
-    <tr>
-      <td>1</td><td>74</td><td>BELGHITI MUSTAFA</td><td>ASD SICILIA RUNNING TEAM</td><td>20:13</td><td>-</td>
-    </tr>
-    <tr>
-      <td>2</td><td>90</td><td>ZINOUBI SABER</td><td>VALLECAMONICA</td><td>20:27</td><td>+14s</td>
-    </tr>
-    <tr>
-      <td>3</td><td>47</td><td>GUENI ABDELHAFID</td><td>ATLETICA LONATO</td><td>20:27</td><td>+14s</td>
-    </tr>
-  </table>
-
-  <p>
-    Prima vittoria stagionale per <strong>Mustafa Belghiti</strong>, che stacca nel finale <strong>Saber Zinoubi</strong> e <strong>Abdelhafid Gueni</strong> in una volata mozzafiato! Zinoubi torna sul podio dopo Albino, mentre Gueni conferma la brillante gara di Gandino. ⚡
-  </p>
-
-  <h2>👟 Competitiva Femminile</h2>
-  <table class="article-table">
-    <tr>
-      <th>Pos</th><th>Pett.</th><th>Nome</th><th>Società</th><th>Tempo</th><th>Distacco</th>
-    </tr>
-    <tr>
-      <td>1</td><td>165</td><td>BOTTARELLI SARA</td><td>FREE-ZONE</td><td>17:14</td><td>-</td>
-    </tr>
-    <tr>
-      <td>2</td><td>173</td><td>BIANCHI BEATRICE</td><td>LA RECASTELLO RADICI GROUP</td><td>17:56</td><td>+42s</td>
-    </tr>
-    <tr>
-      <td>3</td><td>174</td><td>FACCANONI IRENE</td><td>POOL SOC. ATL. ALTA VALSERIANA</td><td>18:20</td><td>+1:06</td>
-    </tr>
-  </table>
-
-  <p>
-    <strong>Sara Bottarelli</strong> torna a trionfare dopo il podio di Albino, imponendo un ritmo irresistibile. <strong>Beatrice Bianchi</strong> replica il secondo posto di Albino, mentre <strong>Irene Faccanoni</strong> conquista un meritato terzo posto dopo diverse gare in top5. 🔥
-  </p>
-
-  <p>
-    📸 Le <strong>foto ufficiali</strong> dell’evento sono online nella nostra <a href="media.html" target="_blank">pagina media</a>, mentre le classifiche complete sono visibili su <a href="https://www.endu.net/it/events/corri-nei-borghi-vertova/results" target="_blank">endu.net</a>.
-  </p>
-
-  <p>
-    Grazie ancora a tutti per la passione e l’impegno. Ci vediamo alla prossima tappa! 🏃‍♀️💥
-  </p>
-
-</body>
-</html>
-
-    `,
-  },
-
-  {
-    title: "🎽 Albino – Emozioni sotto le stelle! 🌟",
-    image: "public/media/2025/albino/2025_albino.webp",
-    body: `
-    <!DOCTYPE html>
-<html lang="it">
-<head>
-  <meta charset="UTF-8">
-  <style>
-    .article-table {
-      border-collapse: collapse;
-      width: 100%;
-      margin-bottom: 30px;
-    }
-    th,
-    td {
-      border: 1px solid #ccc;
-      padding: 8px;
-      text-align: left;
-    }
-    th {
-      background-color: #e0ffe0;
-    }
-  </style>
-</head>
-<body>
-
-  <p>
-    Venerdì <strong>1 agosto</strong> si è corsa ad <strong>Albino</strong> un’altra splendida tappa del circuito <em>Corri nei Borghi</em>, con tantissimi atleti che hanno invaso il centro storico in una serata ricca di entusiasmo, fatica e sorrisi. 💚
-  </p>
-
-  <p>
-    Tra lampioni, tifosi e applausi, anche questa volta l’atletica ha unito sportivi di tutte le età in una grande festa di corsa e condivisione. Grazie di cuore a tutti i partecipanti! 🙌
-  </p>
-
-  <h2>🏃‍♂️ Non Competitiva Maschile</h2>
-  <table class="article-table">
-    <tr>
-      <th>Pos</th><th>Pett.</th><th>Nome</th><th>Tempo</th><th>Distacco</th>
-    </tr>
-    <tr>
-      <td>1</td><td>320</td><td>MAGLI PIETRO</td><td>16:49.95</td><td>-</td>
-    </tr>
-    <tr>
-      <td>2</td><td>271</td><td>GHILARDI DANIELE</td><td>17:04.50</td><td>+14.55s</td>
-    </tr>
-    <tr>
-      <td>3</td><td>274</td><td>UCCELLI STEFANO</td><td>17:07.90</td><td>+17.95s</td>
-    </tr>
-  </table>
-
-  <p>
-    Terzo podio stagionale per <strong>Daniele Ghilardi</strong> dopo Clusone e Gandino — segno di una costanza ammirevole! E bravo anche <strong>Stefano Uccelli</strong>, che continua a farsi notare tra i giovani! 👏
-  </p>
-
-  <h2>👟 Non Competitiva Femminile</h2>
-  <table class="article-table">
-    <tr>
-      <th>Pos</th><th>Pett.</th><th>Nome</th><th>Tempo</th><th>Distacco</th>
-    </tr>
-    <tr>
-      <td>1</td><td>291</td><td>BIGONI SERENA</td><td>20:03.10</td><td>-</td>
-    </tr>
-    <tr>
-      <td>2</td><td>307</td><td>ORLANDI ELISA ANGELICA</td><td>20:46.80</td><td>+43.70s</td>
-    </tr>
-    <tr>
-      <td>3</td><td>266</td><td>BENINTENDI KARIN</td><td>21:08.10</td><td>+1:05.00</td>
-    </tr>
-  </table>
-
-  <p>
-    <strong>Serena Bigoni</strong> conferma il suo stato di forma, dopo i podi già ottenuti a Clusone e Gandino. 👊 Anche <strong>Elisa Orlandi</strong> è ormai una presenza fissa tra le migliori del circuito!
-  </p>
-
-  <h2>🏁 Competitiva Maschile</h2>
-  <table class="article-table">
-    <tr>
-      <th>Pos</th><th>Pett.</th><th>Nome</th><th>Società</th><th>Tempo</th><th>Distacco</th>
-    </tr>
-    <tr>
-      <td>1</td><td>1</td><td>OUHDA AHMED</td><td>C.S. ESERCITO</td><td>19:22</td><td>-</td>
-    </tr>
-    <tr>
-      <td>2</td><td>23</td><td>CAVAGNA ALAIN</td><td>ATL. VALLE BREMBANA</td><td>19:37</td><td>+15s</td>
-    </tr>
-    <tr>
-      <td>3</td><td>97</td><td>BRASI IACOPO</td><td>LA RECASTELLO RADICI GROUP</td><td>19:57</td><td>+35s</td>
-    </tr>
-  </table>
-
-  <p>
-    Grande ritorno per <strong>Ahmed Ouhda</strong>, che si impone con autorità davanti ad un solido <strong>Alain Cavagna</strong>, già vincitore a Clusone. <strong>Iacopo Brasi</strong> conquista un meritato terzo posto, portando punti preziosi al suo team!
-  </p>
-
-  <h2>👟 Competitiva Femminile</h2>
-  <table class="article-table">
-    <tr>
-      <th>Pos</th><th>Pett.</th><th>Nome</th><th>Società</th><th>Tempo</th><th>Distacco</th>
-    </tr>
-    <tr>
-      <td>1</td><td>187</td><td>MOLTENI CRISTINA</td><td>ATL. VALLE BREMBANA</td><td>10:55</td><td>-</td>
-    </tr>
-    <tr>
-      <td>2</td><td>174</td><td>BIANCHI BEATRICE</td><td>LA RECASTELLO RADICI GROUP</td><td>11:03</td><td>+8s</td>
-    </tr>
-    <tr>
-      <td>3</td><td>194</td><td>BOTTARELLI SARA</td><td>FREE-ZONE</td><td>11:05</td><td>+10s</td>
-    </tr>
-  </table>
-
-  <p>
-    Una gara tiratissima! <strong>Cristina Molteni</strong> vince per pochi secondi su <strong>Beatrice Bianchi</strong> e <strong>Sara Bottarelli</strong>, che torna sul podio dopo il trionfo di Gandino. Le posizioni del circuito si fanno sempre più calde! 🔥
-  </p>
-
-  <p>
-    📸 Le <strong>foto ufficiali</strong> dell’evento sono online nella nostra <a href="media.html" target="_blank">pagina media</a>, mentre le classifiche complete sono visibili su <a href="https://www.endu.net/it/events/corri-nei-borghi-albino/results" target="_blank">endu.net</a>.
-  </p>
-
-  <p>
-    Grazie ancora a tutti per la partecipazione, la passione e l’energia. Ci vediamo alla prossima tappa! 🏃‍♀️💥
-  </p>
-
-</body>
-</html>
-
-  `,
-  },
-
-  {
-    title: "📣 Novità! Pre-iscrizioni Baby Run 🐤",
-    image: "public/media/2024/albino/2024_albino.webp",
-    body: `
-    <!DOCTYPE html>
-<html lang="it">
-  <head>
-    <meta charset="UTF-8" />
-    <style>
-      .article-table {
-        border-collapse: collapse;
-        width: 100%;
-        margin-bottom: 30px;
-      }
-      th,
-      td {
-        border: 1px solid #ccc;
-        padding: 8px;
-        text-align: left;
-      }
-      th {
-        background-color: #e0ffe0;
-      }
-    </style>
-  </head>
-  <body>
-
-    <p>
-      Per i più piccoli partecipanti del circuito <em>Corri nei Borghi</em> 2025, ogni settimana verranno aperte le pre-iscrizioni! 🏃‍♂️🌄
-      Stiamo provando per alcune tappe così da migliorare l'esperienza per tutti! 🎉
-    </p>
-
-    
-    <p>
-      Alla pagina <a href="iscrizioni.html", target="_blank">Iscrizioni</a> potete iscrivere i più piccoli! 💚
-    </p>
-    
-    <p> 🙏 Vi invitiamo a pre-iscrivere i vostri atleti, specialmente per i gruppi più numerosi, per facilitare l'organizzazione e garantire un'esperienza fluida per tutti. 
-      Le pre-iscrizioni sono aperte fino alle 12:00 del giorno della gara. <strong>In loco potrete pagare e ritirare il cartellino </strong>. 
-      
-    </p>
-      
-    <p>📝 Le iscrizioni in loco sono comunque disponibili, anche un attimo prima della partenza!</p>
-
-    <p>Grazie della collaborazione! 😄</p>
-
-  </body>
-</html>`,
-  },
-  {
-    title: "🧷 Gandino – Una ritorno da ricordare 🏁",
-    image: "public/media/2025/gandino/2025_gandino.webp",
-    body: `
-    <!DOCTYPE html>
-  <html lang="it">
-    <head>
-      <meta charset="UTF-8" />
-      <style>
-        .article-table {
-          border-collapse: collapse;
-          width: 100%;
-          margin-bottom: 30px;
-        }
-        th,
-        td {
-          border: 1px solid #ccc;
-          padding: 8px;
-          text-align: left;
-        }
-        th {
-          background-color: #e0ffe0;
-        }
-      </style>
-    </head>
-    <body>
-
-      <p>
-        Ritorno con il botto per la gara di <strong>Gandino</strong>, new entry
-        del circuito <em>Corri nei Borghi</em> 2025, che venerdì
-        <strong>25 luglio</strong> ha portato centinaia di atleti a sfidarsi su un
-        percorso tecnico, scenografico e ricco di emozioni! 🏃‍♂️🌄
-      </p>
-
-      <p>
-        Il pubblico caloroso ha reso l’atmosfera ancora più speciale, sostenendo
-        tutti i partecipanti fino all’ultimo metro! 💚
-      </p>
-
-      <h2>🏃‍♂️ Non Competitiva Maschile</h2>
-      <table class="article-table">
-        <tr>
-          <th>Pos</th>
-          <th>Pett.</th>
-          <th>Nome</th>
-          <th>Tempo</th>
-          <th>Distacco</th>
-        </tr>
-        <tr>
-          <td>1</td>
-          <td>252</td>
-          <td>UCCELLI LORENZO</td>
-          <td>17:11.50</td>
-          <td>-</td>
-        </tr>
-        <tr>
-          <td>2</td>
-          <td>270</td>
-          <td>NOZZA MICHELE</td>
-          <td>17:13.15</td>
-          <td>+1.65s</td>
-        </tr>
-        <tr>
-          <td>3</td>
-          <td>251</td>
-          <td>UCCELLI STEFANO</td>
-          <td>17:23.60</td>
-          <td>+12.10s</td>
-        </tr>
-      </table>
-
-      <p>
-        👏 Complimenti ai <strong>fratelli Uccelli</strong>, Lorenzo e
-        Stefano: giovani promesse della corsa sia su strada che in montagna. Ne
-        sentiremo parlare, e non solo a Gandino! 🌟
-      </p>
-
-      <h2>👟 Competitiva Femminile</h2>
-      <table class="article-table">
-        <tr>
-          <th>Pos</th>
-          <th>Pett.</th>
-          <th>Nome</th>
-          <th>Società</th>
-          <th>Tempo</th>
-          <th>Distacco</th>
-        </tr>
-        <tr>
-          <td>1</td>
-          <td>187</td>
-          <td>BOTTARELLI SARA</td>
-          <td>FREE-ZONE</td>
-          <td>17:05</td>
-          <td>-</td>
-        </tr>
-        <tr>
-          <td>2</td>
-          <td>159</td>
-          <td>ANNONI FRANCESCA</td>
-          <td>PRO SESTO ATL. CERNUSCO</td>
-          <td>17:16</td>
-          <td>+11s</td>
-        </tr>
-        <tr>
-          <td>3</td>
-          <td>164</td>
-          <td>MERELLI ANNA</td>
-          <td>G. ALPINISTICO VERTOVESE</td>
-          <td>17:39</td>
-          <td>+34s</td>
-        </tr>
-      </table>
-
-      <p>
-        Da notare la costanza di <strong>Francesca Annoni</strong>, già sul podio
-        a Vertova: una stagione in gran forma per lei! 💪
-      </p>
-
-      <h2>🏁 Competitiva Maschile</h2>
-      <table class="article-table">
-        <tr>
-          <th>Pos</th>
-          <th>Pett.</th>
-          <th>Nome</th>
-          <th>Società</th>
-          <th>Tempo</th>
-          <th>Distacco</th>
-        </tr>
-        <tr>
-          <td>1</td>
-          <td>73</td>
-          <td>BELGHITI MUSTAFA'</td>
-          <td>ASD SICILIA RUNNING TEAM</td>
-          <td>20:15</td>
-          <td>-</td>
-        </tr>
-        <tr>
-          <td>2</td>
-          <td>28</td>
-          <td>AMADORI RICCARDO</td>
-          <td>PRO SESTO ATL. CERNUSCO</td>
-          <td>20:31</td>
-          <td>+16s</td>
-        </tr>
-        <tr>
-          <td>3</td>
-          <td>31</td>
-          <td>BA FILIPPO</td>
-          <td>G. ALPINISTICO VERTOVESE</td>
-          <td>20:50</td>
-          <td>+35s</td>
-        </tr>
-      </table>
-
-      <p>
-        🔁 Anche in questa tappa si confermano tra i protagonisti
-        <strong>Mustafa' Belghiti</strong> e <strong>Riccardo Amadori</strong>,
-        presenti già sul podio in altre gare del circuito — segno di una sfida che
-        continua tappa dopo tappa! 🥇🥈
-      </p>
-
-      <p>
-        Un enorme <strong>grazie a tutti i partecipanti</strong> che hanno reso
-        questa serata speciale: dai corridori più esperti ai più giovani, lo sport
-        ha vinto ancora una volta! 💥👏
-      </p>
-
-      <p>
-        📸 Le foto ufficiali dell’evento sono disponibili nella
-        <a
-          href="media.html"
-          target="_blank"
-          >pagina media</a
-        >, mentre le classifiche complete sono consultabili su
-        <a
-          href="https://www.endu.net/it/events/corri-nei-borghi-gandino/results"
-          target="_blank"
-          >endu.net</a
-        >.
-      </p>
-    </body>
-  </html>
-  `,
-  },
-  {
-    title: `
-    💚 Corrincentro una grande festa! 🏃‍♀️🏃‍♂️`,
-    image: "public/media/2025/clusone/2025_clusone.webp",
-    body: `
-<!DOCTYPE html>
-<html lang="it">
-  <head>
-    <meta charset="UTF-8" />
-    <style>
-      .article-table {
-        border-collapse: collapse;
-        width: 100%;
-        margin-bottom: 30px;
-      }
-      th,
-      td {
-        border: 1px solid #ccc;
-        padding: 8px;
-        text-align: left;
-      }
-      th {
-        background-color: #e0ffe0;
-      }
-    </style>
-  </head>
-  <body>
-    <p>
-      Una serata da incorniciare quella di venerdì <strong>18 luglio</strong> a
-      Clusone, dove si è corsa la storica tappa del circuito
-      <em>Corri nei Borghi</em> 🎽. Le strade del centro storico si sono animate
-      di applausi, fatica, sorrisi e tanto tifo! 🥳
-    </p>
-
-    <p>
-      L’evento è stato organizzato in modo impeccabile dal
-      <strong>Gruppo Amici Mirage</strong>, che quest’anno festeggia con
-      orgoglio i suoi <strong>20 anni di attività</strong> 🎉🎈. Un traguardo
-      importante per un gruppo che continua a unire sport, comunità e passione.
-      Grazie di cuore a loro ❤️
-    </p>
-
-    <h2>🏃‍♀️ Competitiva Femminile</h2>
-    <table class="article-table">
-      <tr>
-        <th>Pos</th>
-        <th>Pett.</th>
-        <th>Nome</th>
-        <th>Società</th>
-        <th>Tempo</th>
-        <th>Distacco</th>
-      </tr>
-      <tr>
-        <td>1</td>
-        <td>182</td>
-        <td>GHISALBERTI MARTINA</td>
-        <td>ATL. VALLE BREMBANA</td>
-        <td>16:15</td>
-        <td>-</td>
-      </tr>
-      <tr>
-        <td>2</td>
-        <td>155</td>
-        <td>FACCANONI IRENE</td>
-        <td>POOL ATL. ALTA VALSERIANA</td>
-        <td>16:24</td>
-        <td>+10s</td>
-      </tr>
-      <tr>
-        <td>3</td>
-        <td>162</td>
-        <td>PREVITALI CLAUDIA</td>
-        <td>LA RECASTELLO RADICI GROUP</td>
-        <td>16:33</td>
-        <td>+19s</td>
-      </tr>
-    </table>
-
-    <h2>🏃‍♂️ Competitiva Maschile</h2>
-    <table class="article-table">
-      <tr>
-        <th>Pos</th>
-        <th>Pett.</th>
-        <th>Nome</th>
-        <th>Società</th>
-        <th>Tempo</th>
-        <th>Distacco</th>
-      </tr>
-      <tr>
-        <td>1</td>
-        <td>26</td>
-        <td>CAVAGNA ALAIN</td>
-        <td>ATL. VALLE BREMBANA</td>
-        <td>18:05</td>
-        <td>-</td>
-      </tr>
-      <tr>
-        <td>2</td>
-        <td>10</td>
-        <td>BELGHITI MUSTAFA'</td>
-        <td>ASD SICILIA RUNNING TEAM</td>
-        <td>18:29</td>
-        <td>+24s</td>
-      </tr>
-      <tr>
-        <td>3</td>
-        <td>79</td>
-        <td>BONZI NICOLA</td>
-        <td>ATL. VALLE BREMBANA</td>
-        <td>18:38</td>
-        <td>+34s</td>
-      </tr>
-    </table>
-
-    <h2>👟 Non Competitiva Maschile</h2>
-    <table class="article-table">
-      <tr>
-        <th>Pos</th>
-        <th>Pett.</th>
-        <th>Nome</th>
-        <th>Tempo</th>
-        <th>Distacco</th>
-      </tr>
-      <tr>
-        <td>1</td>
-        <td>318</td>
-        <td>EL AZZOUZI RAYAN</td>
-        <td>15:06.70</td>
-        <td>-</td>
-      </tr>
-      <tr>
-        <td>2</td>
-        <td>320</td>
-        <td>DELLA ROSA DAVID</td>
-        <td>15:15.75</td>
-        <td>+9.05s</td>
-      </tr>
-      <tr>
-        <td>3</td>
-        <td>278</td>
-        <td>GHILARDI DANIELE</td>
-        <td>16:12.85</td>
-        <td>+1:06.15</td>
-      </tr>
-    </table>
-
-    <h2>🌸 Non Competitiva Femminile</h2>
-    <table class="article-table">
-      <tr>
-        <th>Pos</th>
-        <th>Pett.</th>
-        <th>Nome</th>
-        <th>Tempo</th>
-        <th>Distacco</th>
-      </tr>
-      <tr>
-        <td>1</td>
-        <td>293</td>
-        <td>ZENONI GIADA</td>
-        <td>18:38.80</td>
-        <td>-</td>
-      </tr>
-      <tr>
-        <td>2</td>
-        <td>263</td>
-        <td>BIGONI SERENA</td>
-        <td>18:45.10</td>
-        <td>+6.30s</td>
-      </tr>
-      <tr>
-        <td>3</td>
-        <td>300</td>
-        <td>ORLANDI ELISA ANGELICA</td>
-        <td>19:13.95</td>
-        <td>+35.15s</td>
-      </tr>
-    </table>
-
-    <p>
-      👏 Un enorme <strong>grazie a tutti i partecipanti</strong>, avete reso la
-      Corrincentro bellissima come sempre! 💪
-    </p>
-
-    <p>
-      📸 Le foto ufficiali dell’evento sono disponibili nella
-      <a href="media.html" target="_blank">pagina media</a>, mentre tutte le
-      classifiche complete le trovate
-      <a
-        href="https://www.endu.net/it/events/corri-nei-borghi-clusone-corri-in-centro/results"
-        target="_blank"
-        >qui</a
-      >.
-    </p>
-  </body>
-</html>
-`,
-  },
-  {
-    title: `
-    ✨ Vertova corre sotto le stelle! 🏃‍♀️🏃‍♂️`,
-    image: "public/media/2025/vertova/2025_vertova.webp",
-    body: `
-   <html lang="it">
-  <head>
-    <meta charset="UTF-8" />
-    <style>
-      
-      .article-table {
-        border-collapse: collapse;
-        width: 100%;
-        margin-bottom: 30px;
-      }
-      th,
-      td {
-        border: 1px solid #ccc;
-        padding: 8px;
-        text-align: left;
-      }
-      th {
-        background-color: #e0ffe0;
-      }
-    </style>
-  </head>
-  <body>
-    <p>
-      Venerdì 11 luglio Vertova si è trasformata in una pista, tra applausi e
-      sorrisi 😄. La prima tappa del circuito <strong>Corri nei Borghi</strong> ha
-      visto sfidarsi atleti di livello ed appassionati. Un mix perfetto per
-      iniziare bene il Circuito! 🍻🎉
-    </p>
-
-    <p>📸 I link alle foto le trovate alla pagina <a href="media.html">Media</a> del sito. </p>
-
-    <p> Mettiamo qui le top 3 di ogni categoria, ma potete trovare tutte le classifiche nella pagina dedicata <a href="https://www.endu.net/it/events/corri-nei-borghi-vertova-2/results">qui</a>.</p>
-
-    <h5>🥇 Classifica Donne</h5>
-    <table class="article-table">
-      <tr>
-        <th>Pos</th>
-        <th>Pett.</th>
-        <th>Nome</th>
-        <th>Società</th>
-        <th>Tempo</th>
-        <th>Distacco</th>
-      </tr>
-      <tr>
-        <td>1</td>
-        <td>175</td>
-        <td>ANNONI FRANCESCA</td>
-        <td>PRO SESTO ATL. CERNUSCO</td>
-        <td>16:12</td>
-        <td>-</td>
-      </tr>
-      <tr>
-        <td>2</td>
-        <td>177</td>
-        <td>GHISALBERTI MARTINA</td>
-        <td>ATL. VALLE BREMBANA</td>
-        <td>16:38</td>
-        <td>+26s</td>
-      </tr>
-      <tr>
-        <td>3</td>
-        <td>186</td>
-        <td>PREVITALI CLAUDIA</td>
-        <td>LA RECASTELLO RADICI GROUP</td>
-        <td>16:43</td>
-        <td>+31s</td>
-      </tr>
-    </table>
-
-    <h5>🏃‍♂️ Classifica Uomini</h5>
-    <table class="article-table">
-      <tr>
-        <th>Pos</th>
-        <th>Pett.</th>
-        <th>Nome</th>
-        <th>Società</th>
-        <th>Tempo</th>
-        <th>Distacco</th>
-      </tr>
-      <tr>
-        <td>1</td>
-        <td>74</td>
-        <td>AMADORI RICCARDO</td>
-        <td>PRO SESTO ATL. CERNUSCO</td>
-        <td>18:48</td>
-        <td>-</td>
-      </tr>
-      <tr>
-        <td>2</td>
-        <td>8</td>
-        <td>MAGRI LUCA</td>
-        <td>LA RECASTELLO RADICI GROUP</td>
-        <td>18:51</td>
-        <td>+3s</td>
-      </tr>
-      <tr>
-        <td>3</td>
-        <td>59</td>
-        <td>BONZI NICOLA</td>
-        <td>ATL. VALLE BREMBANA</td>
-        <td>18:54</td>
-        <td>+6s</td>
-      </tr>
-    </table>
-
-    <h5>👟 Non Competitiva Uomini</h5>
-    <table class="article-table">
-      <tr>
-        <th>Pos</th>
-        <th>Pett.</th>
-        <th>Nome</th>
-        <th>Tempo</th>
-        <th>Distacco</th>
-      </tr>
-      <tr>
-        <td>1</td>
-        <td>260</td>
-        <td>GUARDIANO ALESSIO</td>
-        <td>10:16.80</td>
-        <td>-</td>
-      </tr>
-      <tr>
-        <td>2</td>
-        <td>266</td>
-        <td>GHILARDI DANIELE</td>
-        <td>10:16.85</td>
-        <td>+0.05s</td>
-      </tr>
-      <tr>
-        <td>3</td>
-        <td>277</td>
-        <td>UCCELLI STEFANO</td>
-        <td>10:18.45</td>
-        <td>+1.65s</td>
-      </tr>
-    </table>
-
-    <p>Menzione speciale per Stefano, che a soli 14 anni ha raggiunto il podio
-    nella non competitiva! Lo aspettiamo presto tra i migliori 🥉
-</p>
-    
-
-    <h5>🌸 Non Competitiva Donne</h5>
-    <table class="article-table">
-      <tr>
-        <th>Pos</th>
-        <th>Pett.</th>
-        <th>Nome</th>
-        <th>Tempo</th>
-        <th>Distacco</th>
-      </tr>
-      <tr>
-        <td>1</td>
-        <td>309</td>
-        <td>BIGONI SERENA</td>
-        <td>12:01.30</td>
-        <td>-</td>
-      </tr>
-      <tr>
-        <td>2</td>
-        <td>282</td>
-        <td>ORLANDI ELISA ANGELICA</td>
-        <td>12:04.70</td>
-        <td>+3.40s</td>
-      </tr>
-      <tr>
-        <td>3</td>
-        <td>305</td>
-        <td>AZZOLA CHIARA</td>
-        <td>12:25.40</td>
-        <td>+24.10s</td>
-      </tr>
-    </table>
-
-    <p>
-      👏 Complimenti a tutti i partecipanti! L’appuntamento ora è per la
-      prossima tappa A Clusone... sempre con le scarpette ai piedi e il sorriso
-      sul volto! 😎
-    </p>
-  </body>
-</html>
-
-  `,
-  },
-
-  {
     title: `
     📣 Iscrizioni aperte! Manca poco 🏃‍♂️🏃‍♀️`,
     image: "",
     body: `
     <p>
-  <strong>🏁 Sono ufficialmente aperte le iscrizioni per la Corri nei Borghi 2025!</strong>
+  <strong>🏁 Sono ufficialmente aperte le iscrizioni per la Corri nei Borghi 2026!</strong>
 </p>
 <p>
   👉 Puoi registrati alle tappe tramite Endu, accedi all'iscrizione per ogni singola tappa dalla pagina <a href="/tappe.html" target="_blank">tappe</a>!<br>
 </p>
 <p>
-  <strong>Novità 2025:</strong> <br>
-  Premio speciale <b>UNO DI NOI</b> riservato alle sole categorie Senior: chi risulterà in classifica in tutte le 7 tappe, indipendentemente dagli scarti obbligatori, riceverà una <b>Ledlenser MH-5, Torcia Frontale Ricaricabile</b> da ritirare all’ultima tappa di Cerete!
+  <strong>Novità 2026:</strong> <br>
+  Il Premio speciale <b>UNO DI NOI</b> riservato alle sole categorie Senior: chi risulterà in classifica in tutte le 7 tappe, indipendentemente dagli scarti obbligatori, quest'anno è un oggetto misterioso. Riuscirai ad aggiudicartelo all’ultima tappa di Cerete?
   <div class="accordion-news-image">
-  <img loading="lazy" src="public/images/2025_premio_uno_di_noi.webp" alt="Ledlenser MH-5" class="img-thumbnail"/>
+  <img loading="lazy" src="public/images/2026_premio_uno_di_noi.webp" alt="Mistery box" class="img-thumbnail"/>
   </div>
 </p>
 <p>
-  Ti invitiamo a prendere visione del <a href="public/files/regulations/2025_circuito.pdf" target="_blank">regolamento</a> per tutti i dettagli.<br>
+  Ti invitiamo a prendere visione del <a href="public/files/regulations/2026_circuito.pdf" target="_blank">regolamento</a> per tutti i dettagli.<br>
   Per qualsiasi domanda puoi consultare la <a href="/contatti.html" target="_blank">sezione contatti</a> o rivolgerti direttamente ai contatti indicati per ciascuna tappa.
 </p>
     `,
   },
+  //   {
+  //     title: "🌆 Cerete - Cala il sipario sulla Corri nei Borghi!👋",
+  //     image: "",
+  //     body: `<!DOCTYPE html>
+  // <html lang="it">
+  // <head>
+  //   <meta charset="UTF-8">
+  //   <style>
+  //     .article-table {
+  //       border-collapse: collapse;
+  //       width: 100%;
+  //       margin-bottom: 30px;
+  //     }
+  //     th,
+  //     td {
+  //       border: 1px solid #ccc;
+  //       padding: 8px;
+  //       text-align: left;
+  //     }
+  //     th {
+  //       background-color: #e0ffe0;
+  //     }
+  //   </style>
+  // </head>
+  // <body>
+
+  //   <p>
+  //     Si chiude il sipario sulla <strong>XVIII^ Edizione del Circuito Corri nei Borghi</strong> proprio in casa Ceretese,
+  //     come da tradizione nell’ultimo lustro. L’<strong>USTC Cerete</strong> ha saputo accogliere con calore atleti e ospiti
+  //     nel suggestivo borgo di <em>Cerete Alto</em> e nel lussuoso palazzetto intitolato a <strong>Danilo Fiorina</strong>. 🏟️
+  //   </p>
+
+  //   <p>
+  //     Un plauso alle <strong>7 tappe del circuito</strong> che hanno regalato emozioni e spettacolo: eventi capaci di coinvolgere
+  //     famiglie, podisti neofiti e atleti di altissimo livello. Non solo sport, ma anche convivialità con
+  //     ricchi buffet e pasta party, ognuno con la propria atmosfera e peculiarità. 🍝🥳
+  //   </p>
+
+  //   <p>
+  //     Un ringraziamento speciale va ai <strong>sostenitori, partner e sponsor</strong> che credono in questo progetto
+  //     di promozione della corsa e dei nostri borghi montani, ma soprattutto ai <strong>tantissimi partecipanti</strong>
+  //     che, settimana dopo settimana, hanno animato le vie della media e alta Val Seriana. 🙌
+  //   </p>
+
+  //   <p>
+  //     <strong>Classifiche di tappa, generali a squadre e di circuito</strong>, insieme a commenti e immagini,
+  //     sono disponibili sul portale <a href="https://corrineiborghi.it" target="_blank">corrineiborghi.it</a> e sui canali social ufficiali con l’hashtag <em>#corrineiborghi</em>.
+  //     Un grazie anche ai giovani del direttivo che con passione e competenza documentano ogni evento e sognano di portare il circuito
+  //     fino alla <strong>capitale Bergamasca</strong> per la XX^ Edizione del 2027. 🌟
+  //   </p>
+
+  //   <p>
+  //     Le <em>facce stanche ma felici</em> degli atleti, l’entusiasmo dei ragazzi con la medaglia al collo 🏅, i sorrisi
+  //     e i saluti calorosi di tanti appassionati resteranno come simbolo di questa stagione.
+  //     Il direttivo saluta così tutti gli amici del circuito con un grande: <strong>“Arrivederci al prossimo anno!”</strong> 💚
+  //   </p>
+
+  // </body>
+  // </html>
+
+  //     `,
+  //   },
+  //   {
+  //     title: "⚔️ Gromo - Battaglia nel borgo medioevale! 🏞️",
+  //     image: "public/media/2025/2025_gromo.webp",
+  //     body: `
+  //     <!DOCTYPE html>
+  // <html lang="it">
+  // <head>
+  //   <meta charset="UTF-8">
+  //   <style>
+  //     .article-table {
+  //       border-collapse: collapse;
+  //       width: 100%;
+  //       margin-bottom: 30px;
+  //     }
+  //     th,
+  //     td {
+  //       border: 1px solid #ccc;
+  //       padding: 8px;
+  //       text-align: left;
+  //     }
+  //     th {
+  //       background-color: #e0ffe0;
+  //     }
+  //   </style>
+  // </head>
+  // <body>
+
+  //   <p>
+  //     Mercoledì <strong>13 agosto</strong> il circuito <em>Corri nei Borghi</em> ha acceso il centro storico di <strong>Gromo</strong>, fra vicoli, archi e saliscendi che hanno esaltato gambe e cuore dei runner. Una serata frizzante, ricca di tifo e di sorpassi fino all’ultimo metro. 💪
+  //   </p>
+
+  //   <p>
+  //     Atmosfera speciale, percorso selettivo e grande partecipazione: grazie a tutti i presenti per l’energia e il sorriso con cui avete reso unica questa tappa! 🙌
+  //   </p>
+
+  //   <h2>🏃‍♂️ Non Competitiva Maschile</h2>
+  //   <table class="article-table">
+  //     <tr>
+  //       <th>Pos</th><th>Pett.</th><th>Nome</th><th>Tempo</th><th>Distacco</th>
+  //     </tr>
+  //     <tr>
+  //       <td>1</td><td>247</td><td>UCCELLI STEFANO</td><td>13:49.35</td><td>-</td>
+  //     </tr>
+  //     <tr>
+  //       <td>2</td><td>309</td><td>MAGRI LUCA</td><td>14:12.80</td><td>+23.45s</td>
+  //     </tr>
+  //     <tr>
+  //       <td>3</td><td>282</td><td>BERTOCCHI FEDERICO</td><td>14:15.35</td><td>+26.00s</td>
+  //     </tr>
+  //   </table>
+
+  //   <p>
+  //     <strong>Stefano Uccelli</strong> centra il successo dopo i podi di Albino e Parre: crescita costante! 👏 <strong>Luca Magri</strong>, protagonista anche nella competitiva di Vertova, firma un solido 2° posto; <strong>Federico Bertocchi</strong> replica il podio di Parre confermandosi tra i più regolari della categoria. 💚
+  //   </p>
+
+  //   <h2>👟 Non Competitiva Femminile</h2>
+  //   <table class="article-table">
+  //     <tr>
+  //       <th>Pos</th><th>Pett.</th><th>Nome</th><th>Tempo</th><th>Distacco</th>
+  //     </tr>
+  //     <tr>
+  //       <td>1</td><td>298</td><td>ZENONI GIADA</td><td>16:20.00</td><td>-</td>
+  //     </tr>
+  //     <tr>
+  //       <td>2</td><td>274</td><td>EL OUARDY NADIA</td><td>17:02.85</td><td>+42.85s</td>
+  //     </tr>
+  //     <tr>
+  //       <td>3</td><td>294</td><td>ORLANDI ELISA ANGELICA</td><td>17:28.85</td><td>+1:08.85</td>
+  //     </tr>
+  //   </table>
+
+  //   <p>
+  //     Riecco <strong>Giada Zenoni</strong> sul gradino più alto, come a Clusone e Gandino! 🎯 <strong>Elisa Orlandi</strong> continua la sua striscia di podi (Clusone, Gandino, Albino e ora Gromo), mentre <strong>Nadia El Ouardy</strong> entra con personalità tra le migliori: benvenuta nella bagarre! ✨
+  //   </p>
+
+  //   <h2>🏁 Competitiva Maschile</h2>
+  //   <table class="article-table">
+  //     <tr>
+  //       <th>Pos</th><th>Pett.</th><th>Nome</th><th>Società</th><th>Tempo</th><th>Distacco</th>
+  //     </tr>
+  //     <tr>
+  //       <td>1</td><td>40</td><td>CAVAGNA ALAIN</td><td>ATL. VALLE BREMBANA</td><td>18:02</td><td>-</td>
+  //     </tr>
+  //     <tr>
+  //       <td>2</td><td>23</td><td>BA FILIPPO</td><td>G. ALPINISTICO VERTOVESE</td><td>19:06</td><td>+1:05</td>
+  //     </tr>
+  //     <tr>
+  //       <td>3</td><td>12</td><td>STEFFANONI SAVERIO</td><td>CUS INSUBRIA VARESE COMO</td><td>19:18</td><td>+1:16</td>
+  //     </tr>
+  //   </table>
+
+  //   <p>
+  //     <strong>Alain Cavagna</strong> torna al successo dopo il 2° posto di Albino e la vittoria di Clusone: leadership da capitano! 💥 <strong>Filippo Ba</strong> sale di un gradino rispetto a Gandino e conquista un ottimo 2°, mentre <strong>Saverio Steffanoni</strong> entra in top3 con una chiusura di grande carattere. ⚡
+  //   </p>
+
+  //   <h2>👟 Competitiva Femminile</h2>
+  //   <table class="article-table">
+  //     <tr>
+  //       <th>Pos</th><th>Pett.</th><th>Nome</th><th>Società</th><th>Tempo</th><th>Distacco</th>
+  //     </tr>
+  //     <tr>
+  //       <td>1</td><td>180</td><td>BOTTARELLI SARA</td><td>FREE-ZONE</td><td>14:09</td><td>-</td>
+  //     </tr>
+  //     <tr>
+  //       <td>2</td><td>172</td><td>BIANCHI BEATRICE</td><td>LA RECASTELLO RADICI GROUP</td><td>14:22</td><td>+13s</td>
+  //     </tr>
+  //     <tr>
+  //       <td>3</td><td>174</td><td>FACCANONI IRENE</td><td>POOL SOC. ATL. ALTA VALSERIANA</td><td>14:29</td><td>+20s</td>
+  //     </tr>
+  //   </table>
+
+  //   <p>
+  //     Podio fotocopia di Parre ma con distacchi ridotti: <strong>Sara Bottarelli</strong> allunga nel tratto centrale e resiste al rientro di <strong>Beatrice Bianchi</strong> (da +42s a +13s rispetto a Parre!), con <strong>Irene Faccanoni</strong> ancora solidamente in terza posizione. Duello apertissimo per il circuito! 🔥
+  //   </p>
+
+  //   <p>
+  //     📸 Le <strong>foto ufficiali</strong> dell’evento sono online nella nostra <a href="media.html" target="_blank">pagina media</a>, mentre le classifiche complete sono visibili su <a href="https://www.endu.net/it/events/corri-nei-borghi-gromo-3/results" target="_blank">endu.net</a>.
+  //   </p>
+
+  //   <p>
+  //     Grazie ancora a tutti per la partecipazione, la passione e l’energia. Ci vediamo alla prossima tappa! 🏃‍♀️💥
+  //   </p>
+
+  // </body>
+  // </html>
+  // `,
+  //   },
+  //   {
+  //     title: "📈 Parre – Sali scendi di emozioni! ⛰️",
+  //     image: "public/media/2025/parre/2025_parre.webp",
+  //     body: `
+  //    <!DOCTYPE html>
+  // <html lang="it">
+  // <head>
+  //   <meta charset="UTF-8">
+  //   <style>
+  //     .article-table {
+  //       border-collapse: collapse;
+  //       width: 100%;
+  //       margin-bottom: 30px;
+  //     }
+  //     th,
+  //     td {
+  //       border: 1px solid #ccc;
+  //       padding: 8px;
+  //       text-align: left;
+  //     }
+  //     th {
+  //       background-color: #e0ffe0;
+  //     }
+  //   </style>
+  // </head>
+  // <body>
+
+  //   <p>
+  //     Sabato <strong>9 agosto</strong> il circuito <em>Corri nei Borghi</em> ha fatto tappa a <strong>Parre</strong>, portando atleti e pubblico tra le stradine in salita del suggestivo borgo orobico. Una serata di grande sport, con sfide serrate e un tifo caloroso che ha spinto tutti fino al traguardo. 💪
+  //   </p>
+
+  //   <p>
+  //     Clima ideale, percorso selettivo e tanta grinta: questi gli ingredienti di una gara che resterà nella memoria di questa stagione. Grazie a tutti i partecipanti per l’energia! 🙌
+  //   </p>
+
+  //   <h2>🏃‍♂️ Non Competitiva Maschile</h2>
+  //   <table class="article-table">
+  //     <tr>
+  //       <th>Pos</th><th>Pett.</th><th>Nome</th><th>Tempo</th><th>Distacco</th>
+  //     </tr>
+  //     <tr>
+  //       <td>1</td><td>253</td><td>NOZZA MICHELE</td><td>11:26.30</td><td>-</td>
+  //     </tr>
+  //     <tr>
+  //       <td>2</td><td>278</td><td>UCCELLI STEFANO</td><td>11:34.30</td><td>+8.00s</td>
+  //     </tr>
+  //     <tr>
+  //       <td>3</td><td>331</td><td>BERTOCCHI FEDERICO</td><td>11:59.25</td><td>+32.95s</td>
+  //     </tr>
+  //   </table>
+
+  //   <p>
+  //     <strong>Michele Nozza</strong> torna al successo dopo il secondo posto di Gandino, mostrando condizione eccellente. <strong>Stefano Uccelli</strong> conferma il podio conquistato ad Albino, mentre <strong>Federico Bertocchi</strong> centra il suo primo podio stagionale! 👏
+  //   </p>
+
+  //   <h2>👟 Non Competitiva Femminile</h2>
+  //   <table class="article-table">
+  //     <tr>
+  //       <th>Pos</th><th>Pett.</th><th>Nome</th><th>Tempo</th><th>Distacco</th>
+  //     </tr>
+  //     <tr>
+  //       <td>1</td><td>192</td><td>LOSMA CAMILLA</td><td>13:30.00</td><td>-</td>
+  //     </tr>
+  //     <tr>
+  //       <td>2</td><td>390</td><td>BIGONI SERENA</td><td>13:56.05</td><td>+26.05s</td>
+  //     </tr>
+  //     <tr>
+  //       <td>3</td><td>332</td><td>ORLANDI ELISA ANGELICA</td><td>14:04.00</td><td>+34.00s</td>
+  //     </tr>
+  //   </table>
+
+  //   <p>
+  //     <strong>Camilla Losma</strong> domina la prova, aggiungendo un’altra vittoria dopo il trionfo di Gandino. <strong>Serena Bigoni</strong> resta solidissima, con il terzo podio consecutivo (Clusone, Albino e ora Parre). <strong>Elisa Orlandi</strong> si conferma presenza costante tra le prime tre! 💚
+  //   </p>
+
+  //   <h2>🏁 Competitiva Maschile</h2>
+  //   <table class="article-table">
+  //     <tr>
+  //       <th>Pos</th><th>Pett.</th><th>Nome</th><th>Società</th><th>Tempo</th><th>Distacco</th>
+  //     </tr>
+  //     <tr>
+  //       <td>1</td><td>74</td><td>BELGHITI MUSTAFA</td><td>ASD SICILIA RUNNING TEAM</td><td>20:13</td><td>-</td>
+  //     </tr>
+  //     <tr>
+  //       <td>2</td><td>90</td><td>ZINOUBI SABER</td><td>VALLECAMONICA</td><td>20:27</td><td>+14s</td>
+  //     </tr>
+  //     <tr>
+  //       <td>3</td><td>47</td><td>GUENI ABDELHAFID</td><td>ATLETICA LONATO</td><td>20:27</td><td>+14s</td>
+  //     </tr>
+  //   </table>
+
+  //   <p>
+  //     Prima vittoria stagionale per <strong>Mustafa Belghiti</strong>, che stacca nel finale <strong>Saber Zinoubi</strong> e <strong>Abdelhafid Gueni</strong> in una volata mozzafiato! Zinoubi torna sul podio dopo Albino, mentre Gueni conferma la brillante gara di Gandino. ⚡
+  //   </p>
+
+  //   <h2>👟 Competitiva Femminile</h2>
+  //   <table class="article-table">
+  //     <tr>
+  //       <th>Pos</th><th>Pett.</th><th>Nome</th><th>Società</th><th>Tempo</th><th>Distacco</th>
+  //     </tr>
+  //     <tr>
+  //       <td>1</td><td>165</td><td>BOTTARELLI SARA</td><td>FREE-ZONE</td><td>17:14</td><td>-</td>
+  //     </tr>
+  //     <tr>
+  //       <td>2</td><td>173</td><td>BIANCHI BEATRICE</td><td>LA RECASTELLO RADICI GROUP</td><td>17:56</td><td>+42s</td>
+  //     </tr>
+  //     <tr>
+  //       <td>3</td><td>174</td><td>FACCANONI IRENE</td><td>POOL SOC. ATL. ALTA VALSERIANA</td><td>18:20</td><td>+1:06</td>
+  //     </tr>
+  //   </table>
+
+  //   <p>
+  //     <strong>Sara Bottarelli</strong> torna a trionfare dopo il podio di Albino, imponendo un ritmo irresistibile. <strong>Beatrice Bianchi</strong> replica il secondo posto di Albino, mentre <strong>Irene Faccanoni</strong> conquista un meritato terzo posto dopo diverse gare in top5. 🔥
+  //   </p>
+
+  //   <p>
+  //     📸 Le <strong>foto ufficiali</strong> dell’evento sono online nella nostra <a href="media.html" target="_blank">pagina media</a>, mentre le classifiche complete sono visibili su <a href="https://www.endu.net/it/events/corri-nei-borghi-vertova/results" target="_blank">endu.net</a>.
+  //   </p>
+
+  //   <p>
+  //     Grazie ancora a tutti per la passione e l’impegno. Ci vediamo alla prossima tappa! 🏃‍♀️💥
+  //   </p>
+
+  // </body>
+  // </html>
+
+  //     `,
+  //   },
+
+  //   {
+  //     title: "🎽 Albino – Emozioni sotto le stelle! 🌟",
+  //     image: "public/media/2025/albino/2025_albino.webp",
+  //     body: `
+  //     <!DOCTYPE html>
+  // <html lang="it">
+  // <head>
+  //   <meta charset="UTF-8">
+  //   <style>
+  //     .article-table {
+  //       border-collapse: collapse;
+  //       width: 100%;
+  //       margin-bottom: 30px;
+  //     }
+  //     th,
+  //     td {
+  //       border: 1px solid #ccc;
+  //       padding: 8px;
+  //       text-align: left;
+  //     }
+  //     th {
+  //       background-color: #e0ffe0;
+  //     }
+  //   </style>
+  // </head>
+  // <body>
+
+  //   <p>
+  //     Venerdì <strong>1 agosto</strong> si è corsa ad <strong>Albino</strong> un’altra splendida tappa del circuito <em>Corri nei Borghi</em>, con tantissimi atleti che hanno invaso il centro storico in una serata ricca di entusiasmo, fatica e sorrisi. 💚
+  //   </p>
+
+  //   <p>
+  //     Tra lampioni, tifosi e applausi, anche questa volta l’atletica ha unito sportivi di tutte le età in una grande festa di corsa e condivisione. Grazie di cuore a tutti i partecipanti! 🙌
+  //   </p>
+
+  //   <h2>🏃‍♂️ Non Competitiva Maschile</h2>
+  //   <table class="article-table">
+  //     <tr>
+  //       <th>Pos</th><th>Pett.</th><th>Nome</th><th>Tempo</th><th>Distacco</th>
+  //     </tr>
+  //     <tr>
+  //       <td>1</td><td>320</td><td>MAGLI PIETRO</td><td>16:49.95</td><td>-</td>
+  //     </tr>
+  //     <tr>
+  //       <td>2</td><td>271</td><td>GHILARDI DANIELE</td><td>17:04.50</td><td>+14.55s</td>
+  //     </tr>
+  //     <tr>
+  //       <td>3</td><td>274</td><td>UCCELLI STEFANO</td><td>17:07.90</td><td>+17.95s</td>
+  //     </tr>
+  //   </table>
+
+  //   <p>
+  //     Terzo podio stagionale per <strong>Daniele Ghilardi</strong> dopo Clusone e Gandino — segno di una costanza ammirevole! E bravo anche <strong>Stefano Uccelli</strong>, che continua a farsi notare tra i giovani! 👏
+  //   </p>
+
+  //   <h2>👟 Non Competitiva Femminile</h2>
+  //   <table class="article-table">
+  //     <tr>
+  //       <th>Pos</th><th>Pett.</th><th>Nome</th><th>Tempo</th><th>Distacco</th>
+  //     </tr>
+  //     <tr>
+  //       <td>1</td><td>291</td><td>BIGONI SERENA</td><td>20:03.10</td><td>-</td>
+  //     </tr>
+  //     <tr>
+  //       <td>2</td><td>307</td><td>ORLANDI ELISA ANGELICA</td><td>20:46.80</td><td>+43.70s</td>
+  //     </tr>
+  //     <tr>
+  //       <td>3</td><td>266</td><td>BENINTENDI KARIN</td><td>21:08.10</td><td>+1:05.00</td>
+  //     </tr>
+  //   </table>
+
+  //   <p>
+  //     <strong>Serena Bigoni</strong> conferma il suo stato di forma, dopo i podi già ottenuti a Clusone e Gandino. 👊 Anche <strong>Elisa Orlandi</strong> è ormai una presenza fissa tra le migliori del circuito!
+  //   </p>
+
+  //   <h2>🏁 Competitiva Maschile</h2>
+  //   <table class="article-table">
+  //     <tr>
+  //       <th>Pos</th><th>Pett.</th><th>Nome</th><th>Società</th><th>Tempo</th><th>Distacco</th>
+  //     </tr>
+  //     <tr>
+  //       <td>1</td><td>1</td><td>OUHDA AHMED</td><td>C.S. ESERCITO</td><td>19:22</td><td>-</td>
+  //     </tr>
+  //     <tr>
+  //       <td>2</td><td>23</td><td>CAVAGNA ALAIN</td><td>ATL. VALLE BREMBANA</td><td>19:37</td><td>+15s</td>
+  //     </tr>
+  //     <tr>
+  //       <td>3</td><td>97</td><td>BRASI IACOPO</td><td>LA RECASTELLO RADICI GROUP</td><td>19:57</td><td>+35s</td>
+  //     </tr>
+  //   </table>
+
+  //   <p>
+  //     Grande ritorno per <strong>Ahmed Ouhda</strong>, che si impone con autorità davanti ad un solido <strong>Alain Cavagna</strong>, già vincitore a Clusone. <strong>Iacopo Brasi</strong> conquista un meritato terzo posto, portando punti preziosi al suo team!
+  //   </p>
+
+  //   <h2>👟 Competitiva Femminile</h2>
+  //   <table class="article-table">
+  //     <tr>
+  //       <th>Pos</th><th>Pett.</th><th>Nome</th><th>Società</th><th>Tempo</th><th>Distacco</th>
+  //     </tr>
+  //     <tr>
+  //       <td>1</td><td>187</td><td>MOLTENI CRISTINA</td><td>ATL. VALLE BREMBANA</td><td>10:55</td><td>-</td>
+  //     </tr>
+  //     <tr>
+  //       <td>2</td><td>174</td><td>BIANCHI BEATRICE</td><td>LA RECASTELLO RADICI GROUP</td><td>11:03</td><td>+8s</td>
+  //     </tr>
+  //     <tr>
+  //       <td>3</td><td>194</td><td>BOTTARELLI SARA</td><td>FREE-ZONE</td><td>11:05</td><td>+10s</td>
+  //     </tr>
+  //   </table>
+
+  //   <p>
+  //     Una gara tiratissima! <strong>Cristina Molteni</strong> vince per pochi secondi su <strong>Beatrice Bianchi</strong> e <strong>Sara Bottarelli</strong>, che torna sul podio dopo il trionfo di Gandino. Le posizioni del circuito si fanno sempre più calde! 🔥
+  //   </p>
+
+  //   <p>
+  //     📸 Le <strong>foto ufficiali</strong> dell’evento sono online nella nostra <a href="media.html" target="_blank">pagina media</a>, mentre le classifiche complete sono visibili su <a href="https://www.endu.net/it/events/corri-nei-borghi-albino/results" target="_blank">endu.net</a>.
+  //   </p>
+
+  //   <p>
+  //     Grazie ancora a tutti per la partecipazione, la passione e l’energia. Ci vediamo alla prossima tappa! 🏃‍♀️💥
+  //   </p>
+
+  // </body>
+  // </html>
+
+  //   `,
+  //   },
+
+  //   {
+  //     title: "📣 Novità! Pre-iscrizioni Baby Run 🐤",
+  //     image: "public/media/2024/albino/2024_albino.webp",
+  //     body: `
+  //     <!DOCTYPE html>
+  // <html lang="it">
+  //   <head>
+  //     <meta charset="UTF-8" />
+  //     <style>
+  //       .article-table {
+  //         border-collapse: collapse;
+  //         width: 100%;
+  //         margin-bottom: 30px;
+  //       }
+  //       th,
+  //       td {
+  //         border: 1px solid #ccc;
+  //         padding: 8px;
+  //         text-align: left;
+  //       }
+  //       th {
+  //         background-color: #e0ffe0;
+  //       }
+  //     </style>
+  //   </head>
+  //   <body>
+
+  //     <p>
+  //       Per i più piccoli partecipanti del circuito <em>Corri nei Borghi</em> 2025, ogni settimana verranno aperte le pre-iscrizioni! 🏃‍♂️🌄
+  //       Stiamo provando per alcune tappe così da migliorare l'esperienza per tutti! 🎉
+  //     </p>
+
+  //     <p>
+  //       Alla pagina <a href="iscrizioni.html", target="_blank">Iscrizioni</a> potete iscrivere i più piccoli! 💚
+  //     </p>
+
+  //     <p> 🙏 Vi invitiamo a pre-iscrivere i vostri atleti, specialmente per i gruppi più numerosi, per facilitare l'organizzazione e garantire un'esperienza fluida per tutti.
+  //       Le pre-iscrizioni sono aperte fino alle 12:00 del giorno della gara. <strong>In loco potrete pagare e ritirare il cartellino </strong>.
+
+  //     </p>
+
+  //     <p>📝 Le iscrizioni in loco sono comunque disponibili, anche un attimo prima della partenza!</p>
+
+  //     <p>Grazie della collaborazione! 😄</p>
+
+  //   </body>
+  // </html>`,
+  //   },
+  //   {
+  //     title: "🧷 Gandino – Una ritorno da ricordare 🏁",
+  //     image: "public/media/2025/gandino/2025_gandino.webp",
+  //     body: `
+  //     <!DOCTYPE html>
+  //   <html lang="it">
+  //     <head>
+  //       <meta charset="UTF-8" />
+  //       <style>
+  //         .article-table {
+  //           border-collapse: collapse;
+  //           width: 100%;
+  //           margin-bottom: 30px;
+  //         }
+  //         th,
+  //         td {
+  //           border: 1px solid #ccc;
+  //           padding: 8px;
+  //           text-align: left;
+  //         }
+  //         th {
+  //           background-color: #e0ffe0;
+  //         }
+  //       </style>
+  //     </head>
+  //     <body>
+
+  //       <p>
+  //         Ritorno con il botto per la gara di <strong>Gandino</strong>, new entry
+  //         del circuito <em>Corri nei Borghi</em> 2025, che venerdì
+  //         <strong>25 luglio</strong> ha portato centinaia di atleti a sfidarsi su un
+  //         percorso tecnico, scenografico e ricco di emozioni! 🏃‍♂️🌄
+  //       </p>
+
+  //       <p>
+  //         Il pubblico caloroso ha reso l’atmosfera ancora più speciale, sostenendo
+  //         tutti i partecipanti fino all’ultimo metro! 💚
+  //       </p>
+
+  //       <h2>🏃‍♂️ Non Competitiva Maschile</h2>
+  //       <table class="article-table">
+  //         <tr>
+  //           <th>Pos</th>
+  //           <th>Pett.</th>
+  //           <th>Nome</th>
+  //           <th>Tempo</th>
+  //           <th>Distacco</th>
+  //         </tr>
+  //         <tr>
+  //           <td>1</td>
+  //           <td>252</td>
+  //           <td>UCCELLI LORENZO</td>
+  //           <td>17:11.50</td>
+  //           <td>-</td>
+  //         </tr>
+  //         <tr>
+  //           <td>2</td>
+  //           <td>270</td>
+  //           <td>NOZZA MICHELE</td>
+  //           <td>17:13.15</td>
+  //           <td>+1.65s</td>
+  //         </tr>
+  //         <tr>
+  //           <td>3</td>
+  //           <td>251</td>
+  //           <td>UCCELLI STEFANO</td>
+  //           <td>17:23.60</td>
+  //           <td>+12.10s</td>
+  //         </tr>
+  //       </table>
+
+  //       <p>
+  //         👏 Complimenti ai <strong>fratelli Uccelli</strong>, Lorenzo e
+  //         Stefano: giovani promesse della corsa sia su strada che in montagna. Ne
+  //         sentiremo parlare, e non solo a Gandino! 🌟
+  //       </p>
+
+  //       <h2>👟 Competitiva Femminile</h2>
+  //       <table class="article-table">
+  //         <tr>
+  //           <th>Pos</th>
+  //           <th>Pett.</th>
+  //           <th>Nome</th>
+  //           <th>Società</th>
+  //           <th>Tempo</th>
+  //           <th>Distacco</th>
+  //         </tr>
+  //         <tr>
+  //           <td>1</td>
+  //           <td>187</td>
+  //           <td>BOTTARELLI SARA</td>
+  //           <td>FREE-ZONE</td>
+  //           <td>17:05</td>
+  //           <td>-</td>
+  //         </tr>
+  //         <tr>
+  //           <td>2</td>
+  //           <td>159</td>
+  //           <td>ANNONI FRANCESCA</td>
+  //           <td>PRO SESTO ATL. CERNUSCO</td>
+  //           <td>17:16</td>
+  //           <td>+11s</td>
+  //         </tr>
+  //         <tr>
+  //           <td>3</td>
+  //           <td>164</td>
+  //           <td>MERELLI ANNA</td>
+  //           <td>G. ALPINISTICO VERTOVESE</td>
+  //           <td>17:39</td>
+  //           <td>+34s</td>
+  //         </tr>
+  //       </table>
+
+  //       <p>
+  //         Da notare la costanza di <strong>Francesca Annoni</strong>, già sul podio
+  //         a Vertova: una stagione in gran forma per lei! 💪
+  //       </p>
+
+  //       <h2>🏁 Competitiva Maschile</h2>
+  //       <table class="article-table">
+  //         <tr>
+  //           <th>Pos</th>
+  //           <th>Pett.</th>
+  //           <th>Nome</th>
+  //           <th>Società</th>
+  //           <th>Tempo</th>
+  //           <th>Distacco</th>
+  //         </tr>
+  //         <tr>
+  //           <td>1</td>
+  //           <td>73</td>
+  //           <td>BELGHITI MUSTAFA'</td>
+  //           <td>ASD SICILIA RUNNING TEAM</td>
+  //           <td>20:15</td>
+  //           <td>-</td>
+  //         </tr>
+  //         <tr>
+  //           <td>2</td>
+  //           <td>28</td>
+  //           <td>AMADORI RICCARDO</td>
+  //           <td>PRO SESTO ATL. CERNUSCO</td>
+  //           <td>20:31</td>
+  //           <td>+16s</td>
+  //         </tr>
+  //         <tr>
+  //           <td>3</td>
+  //           <td>31</td>
+  //           <td>BA FILIPPO</td>
+  //           <td>G. ALPINISTICO VERTOVESE</td>
+  //           <td>20:50</td>
+  //           <td>+35s</td>
+  //         </tr>
+  //       </table>
+
+  //       <p>
+  //         🔁 Anche in questa tappa si confermano tra i protagonisti
+  //         <strong>Mustafa' Belghiti</strong> e <strong>Riccardo Amadori</strong>,
+  //         presenti già sul podio in altre gare del circuito — segno di una sfida che
+  //         continua tappa dopo tappa! 🥇🥈
+  //       </p>
+
+  //       <p>
+  //         Un enorme <strong>grazie a tutti i partecipanti</strong> che hanno reso
+  //         questa serata speciale: dai corridori più esperti ai più giovani, lo sport
+  //         ha vinto ancora una volta! 💥👏
+  //       </p>
+
+  //       <p>
+  //         📸 Le foto ufficiali dell’evento sono disponibili nella
+  //         <a
+  //           href="media.html"
+  //           target="_blank"
+  //           >pagina media</a
+  //         >, mentre le classifiche complete sono consultabili su
+  //         <a
+  //           href="https://www.endu.net/it/events/corri-nei-borghi-gandino/results"
+  //           target="_blank"
+  //           >endu.net</a
+  //         >.
+  //       </p>
+  //     </body>
+  //   </html>
+  //   `,
+  //   },
+  //   {
+  //     title: `
+  //     💚 Corrincentro una grande festa! 🏃‍♀️🏃‍♂️`,
+  //     image: "public/media/2025/clusone/2025_clusone.webp",
+  //     body: `
+  // <!DOCTYPE html>
+  // <html lang="it">
+  //   <head>
+  //     <meta charset="UTF-8" />
+  //     <style>
+  //       .article-table {
+  //         border-collapse: collapse;
+  //         width: 100%;
+  //         margin-bottom: 30px;
+  //       }
+  //       th,
+  //       td {
+  //         border: 1px solid #ccc;
+  //         padding: 8px;
+  //         text-align: left;
+  //       }
+  //       th {
+  //         background-color: #e0ffe0;
+  //       }
+  //     </style>
+  //   </head>
+  //   <body>
+  //     <p>
+  //       Una serata da incorniciare quella di venerdì <strong>18 luglio</strong> a
+  //       Clusone, dove si è corsa la storica tappa del circuito
+  //       <em>Corri nei Borghi</em> 🎽. Le strade del centro storico si sono animate
+  //       di applausi, fatica, sorrisi e tanto tifo! 🥳
+  //     </p>
+
+  //     <p>
+  //       L’evento è stato organizzato in modo impeccabile dal
+  //       <strong>Gruppo Amici Mirage</strong>, che quest’anno festeggia con
+  //       orgoglio i suoi <strong>20 anni di attività</strong> 🎉🎈. Un traguardo
+  //       importante per un gruppo che continua a unire sport, comunità e passione.
+  //       Grazie di cuore a loro ❤️
+  //     </p>
+
+  //     <h2>🏃‍♀️ Competitiva Femminile</h2>
+  //     <table class="article-table">
+  //       <tr>
+  //         <th>Pos</th>
+  //         <th>Pett.</th>
+  //         <th>Nome</th>
+  //         <th>Società</th>
+  //         <th>Tempo</th>
+  //         <th>Distacco</th>
+  //       </tr>
+  //       <tr>
+  //         <td>1</td>
+  //         <td>182</td>
+  //         <td>GHISALBERTI MARTINA</td>
+  //         <td>ATL. VALLE BREMBANA</td>
+  //         <td>16:15</td>
+  //         <td>-</td>
+  //       </tr>
+  //       <tr>
+  //         <td>2</td>
+  //         <td>155</td>
+  //         <td>FACCANONI IRENE</td>
+  //         <td>POOL ATL. ALTA VALSERIANA</td>
+  //         <td>16:24</td>
+  //         <td>+10s</td>
+  //       </tr>
+  //       <tr>
+  //         <td>3</td>
+  //         <td>162</td>
+  //         <td>PREVITALI CLAUDIA</td>
+  //         <td>LA RECASTELLO RADICI GROUP</td>
+  //         <td>16:33</td>
+  //         <td>+19s</td>
+  //       </tr>
+  //     </table>
+
+  //     <h2>🏃‍♂️ Competitiva Maschile</h2>
+  //     <table class="article-table">
+  //       <tr>
+  //         <th>Pos</th>
+  //         <th>Pett.</th>
+  //         <th>Nome</th>
+  //         <th>Società</th>
+  //         <th>Tempo</th>
+  //         <th>Distacco</th>
+  //       </tr>
+  //       <tr>
+  //         <td>1</td>
+  //         <td>26</td>
+  //         <td>CAVAGNA ALAIN</td>
+  //         <td>ATL. VALLE BREMBANA</td>
+  //         <td>18:05</td>
+  //         <td>-</td>
+  //       </tr>
+  //       <tr>
+  //         <td>2</td>
+  //         <td>10</td>
+  //         <td>BELGHITI MUSTAFA'</td>
+  //         <td>ASD SICILIA RUNNING TEAM</td>
+  //         <td>18:29</td>
+  //         <td>+24s</td>
+  //       </tr>
+  //       <tr>
+  //         <td>3</td>
+  //         <td>79</td>
+  //         <td>BONZI NICOLA</td>
+  //         <td>ATL. VALLE BREMBANA</td>
+  //         <td>18:38</td>
+  //         <td>+34s</td>
+  //       </tr>
+  //     </table>
+
+  //     <h2>👟 Non Competitiva Maschile</h2>
+  //     <table class="article-table">
+  //       <tr>
+  //         <th>Pos</th>
+  //         <th>Pett.</th>
+  //         <th>Nome</th>
+  //         <th>Tempo</th>
+  //         <th>Distacco</th>
+  //       </tr>
+  //       <tr>
+  //         <td>1</td>
+  //         <td>318</td>
+  //         <td>EL AZZOUZI RAYAN</td>
+  //         <td>15:06.70</td>
+  //         <td>-</td>
+  //       </tr>
+  //       <tr>
+  //         <td>2</td>
+  //         <td>320</td>
+  //         <td>DELLA ROSA DAVID</td>
+  //         <td>15:15.75</td>
+  //         <td>+9.05s</td>
+  //       </tr>
+  //       <tr>
+  //         <td>3</td>
+  //         <td>278</td>
+  //         <td>GHILARDI DANIELE</td>
+  //         <td>16:12.85</td>
+  //         <td>+1:06.15</td>
+  //       </tr>
+  //     </table>
+
+  //     <h2>🌸 Non Competitiva Femminile</h2>
+  //     <table class="article-table">
+  //       <tr>
+  //         <th>Pos</th>
+  //         <th>Pett.</th>
+  //         <th>Nome</th>
+  //         <th>Tempo</th>
+  //         <th>Distacco</th>
+  //       </tr>
+  //       <tr>
+  //         <td>1</td>
+  //         <td>293</td>
+  //         <td>ZENONI GIADA</td>
+  //         <td>18:38.80</td>
+  //         <td>-</td>
+  //       </tr>
+  //       <tr>
+  //         <td>2</td>
+  //         <td>263</td>
+  //         <td>BIGONI SERENA</td>
+  //         <td>18:45.10</td>
+  //         <td>+6.30s</td>
+  //       </tr>
+  //       <tr>
+  //         <td>3</td>
+  //         <td>300</td>
+  //         <td>ORLANDI ELISA ANGELICA</td>
+  //         <td>19:13.95</td>
+  //         <td>+35.15s</td>
+  //       </tr>
+  //     </table>
+
+  //     <p>
+  //       👏 Un enorme <strong>grazie a tutti i partecipanti</strong>, avete reso la
+  //       Corrincentro bellissima come sempre! 💪
+  //     </p>
+
+  //     <p>
+  //       📸 Le foto ufficiali dell’evento sono disponibili nella
+  //       <a href="media.html" target="_blank">pagina media</a>, mentre tutte le
+  //       classifiche complete le trovate
+  //       <a
+  //         href="https://www.endu.net/it/events/corri-nei-borghi-clusone-corri-in-centro/results"
+  //         target="_blank"
+  //         >qui</a
+  //       >.
+  //     </p>
+  //   </body>
+  // </html>
+  // `,
+  //   },
+  //   {
+  //     title: `
+  //     ✨ Vertova corre sotto le stelle! 🏃‍♀️🏃‍♂️`,
+  //     image: "public/media/2025/vertova/2025_vertova.webp",
+  //     body: `
+  //    <html lang="it">
+  //   <head>
+  //     <meta charset="UTF-8" />
+  //     <style>
+
+  //       .article-table {
+  //         border-collapse: collapse;
+  //         width: 100%;
+  //         margin-bottom: 30px;
+  //       }
+  //       th,
+  //       td {
+  //         border: 1px solid #ccc;
+  //         padding: 8px;
+  //         text-align: left;
+  //       }
+  //       th {
+  //         background-color: #e0ffe0;
+  //       }
+  //     </style>
+  //   </head>
+  //   <body>
+  //     <p>
+  //       Venerdì 11 luglio Vertova si è trasformata in una pista, tra applausi e
+  //       sorrisi 😄. La prima tappa del circuito <strong>Corri nei Borghi</strong> ha
+  //       visto sfidarsi atleti di livello ed appassionati. Un mix perfetto per
+  //       iniziare bene il Circuito! 🍻🎉
+  //     </p>
+
+  //     <p>📸 I link alle foto le trovate alla pagina <a href="media.html">Media</a> del sito. </p>
+
+  //     <p> Mettiamo qui le top 3 di ogni categoria, ma potete trovare tutte le classifiche nella pagina dedicata <a href="https://www.endu.net/it/events/corri-nei-borghi-vertova-2/results">qui</a>.</p>
+
+  //     <h5>🥇 Classifica Donne</h5>
+  //     <table class="article-table">
+  //       <tr>
+  //         <th>Pos</th>
+  //         <th>Pett.</th>
+  //         <th>Nome</th>
+  //         <th>Società</th>
+  //         <th>Tempo</th>
+  //         <th>Distacco</th>
+  //       </tr>
+  //       <tr>
+  //         <td>1</td>
+  //         <td>175</td>
+  //         <td>ANNONI FRANCESCA</td>
+  //         <td>PRO SESTO ATL. CERNUSCO</td>
+  //         <td>16:12</td>
+  //         <td>-</td>
+  //       </tr>
+  //       <tr>
+  //         <td>2</td>
+  //         <td>177</td>
+  //         <td>GHISALBERTI MARTINA</td>
+  //         <td>ATL. VALLE BREMBANA</td>
+  //         <td>16:38</td>
+  //         <td>+26s</td>
+  //       </tr>
+  //       <tr>
+  //         <td>3</td>
+  //         <td>186</td>
+  //         <td>PREVITALI CLAUDIA</td>
+  //         <td>LA RECASTELLO RADICI GROUP</td>
+  //         <td>16:43</td>
+  //         <td>+31s</td>
+  //       </tr>
+  //     </table>
+
+  //     <h5>🏃‍♂️ Classifica Uomini</h5>
+  //     <table class="article-table">
+  //       <tr>
+  //         <th>Pos</th>
+  //         <th>Pett.</th>
+  //         <th>Nome</th>
+  //         <th>Società</th>
+  //         <th>Tempo</th>
+  //         <th>Distacco</th>
+  //       </tr>
+  //       <tr>
+  //         <td>1</td>
+  //         <td>74</td>
+  //         <td>AMADORI RICCARDO</td>
+  //         <td>PRO SESTO ATL. CERNUSCO</td>
+  //         <td>18:48</td>
+  //         <td>-</td>
+  //       </tr>
+  //       <tr>
+  //         <td>2</td>
+  //         <td>8</td>
+  //         <td>MAGRI LUCA</td>
+  //         <td>LA RECASTELLO RADICI GROUP</td>
+  //         <td>18:51</td>
+  //         <td>+3s</td>
+  //       </tr>
+  //       <tr>
+  //         <td>3</td>
+  //         <td>59</td>
+  //         <td>BONZI NICOLA</td>
+  //         <td>ATL. VALLE BREMBANA</td>
+  //         <td>18:54</td>
+  //         <td>+6s</td>
+  //       </tr>
+  //     </table>
+
+  //     <h5>👟 Non Competitiva Uomini</h5>
+  //     <table class="article-table">
+  //       <tr>
+  //         <th>Pos</th>
+  //         <th>Pett.</th>
+  //         <th>Nome</th>
+  //         <th>Tempo</th>
+  //         <th>Distacco</th>
+  //       </tr>
+  //       <tr>
+  //         <td>1</td>
+  //         <td>260</td>
+  //         <td>GUARDIANO ALESSIO</td>
+  //         <td>10:16.80</td>
+  //         <td>-</td>
+  //       </tr>
+  //       <tr>
+  //         <td>2</td>
+  //         <td>266</td>
+  //         <td>GHILARDI DANIELE</td>
+  //         <td>10:16.85</td>
+  //         <td>+0.05s</td>
+  //       </tr>
+  //       <tr>
+  //         <td>3</td>
+  //         <td>277</td>
+  //         <td>UCCELLI STEFANO</td>
+  //         <td>10:18.45</td>
+  //         <td>+1.65s</td>
+  //       </tr>
+  //     </table>
+
+  //     <p>Menzione speciale per Stefano, che a soli 14 anni ha raggiunto il podio
+  //     nella non competitiva! Lo aspettiamo presto tra i migliori 🥉
+  // </p>
+
+  //     <h5>🌸 Non Competitiva Donne</h5>
+  //     <table class="article-table">
+  //       <tr>
+  //         <th>Pos</th>
+  //         <th>Pett.</th>
+  //         <th>Nome</th>
+  //         <th>Tempo</th>
+  //         <th>Distacco</th>
+  //       </tr>
+  //       <tr>
+  //         <td>1</td>
+  //         <td>309</td>
+  //         <td>BIGONI SERENA</td>
+  //         <td>12:01.30</td>
+  //         <td>-</td>
+  //       </tr>
+  //       <tr>
+  //         <td>2</td>
+  //         <td>282</td>
+  //         <td>ORLANDI ELISA ANGELICA</td>
+  //         <td>12:04.70</td>
+  //         <td>+3.40s</td>
+  //       </tr>
+  //       <tr>
+  //         <td>3</td>
+  //         <td>305</td>
+  //         <td>AZZOLA CHIARA</td>
+  //         <td>12:25.40</td>
+  //         <td>+24.10s</td>
+  //       </tr>
+  //     </table>
+
+  //     <p>
+  //       👏 Complimenti a tutti i partecipanti! L’appuntamento ora è per la
+  //       prossima tappa A Clusone... sempre con le scarpette ai piedi e il sorriso
+  //       sul volto! 😎
+  //     </p>
+  //   </body>
+  // </html>
+
+  //   `,
+  //   },
 
   {
     title: `
