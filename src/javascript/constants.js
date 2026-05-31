@@ -1313,7 +1313,7 @@ const tappe = [
           classifiche:
             "https://www.endu.net/it/events/corri-nei-borghi-vertova-2/results",
         },
-        regolamento: "public/files/regulations/2025_vertova.pdf",
+        regolamento: "public/files/regulations/2026_vertova.pdf",
         foto: {
           description: "Foto a cura di Alessio Gualdi",
           copertina: "public/media/2025/vertova/2025_vertova.webp",
@@ -1396,7 +1396,7 @@ const tappe = [
           classifiche:
             "https://www.endu.net/it/events/corri-nei-borghi-clusone-corri-in-centro/results",
         },
-        regolamento: "public/files/regulations/2025_clusone.pdf",
+        regolamento: "public/files/regulations/2026_clusone.pdf",
         foto: {
           description: "Foto a cura di Marco Pendezza DRfotografia",
           copertina: "public/media/2025/clusone/2025_clusone.webp",
@@ -1467,7 +1467,7 @@ const tappe = [
           classifiche:
             "https://www.endu.net/it/events/corri-nei-borghi-gandino/results",
         },
-        regolamento: "public/files/regulations/2025_gandino.pdf",
+        regolamento: "public/files/regulations/2026_gandino.pdf",
         foto: {
           description: "Foto a cura di Marino Cuccato",
           copertina: "public/media/2025/gandino/2025_gandino.webp",
@@ -1557,7 +1557,7 @@ const tappe = [
           classifiche:
             "https://www.endu.net/it/events/corri-nei-borghi-albino/results",
         },
-        regolamento: "public/files/regulations/2025_albino.pdf",
+        regolamento: "public/files/regulations/2026_albino.pdf",
         foto: {
           description: "Foto a cura di Mauro Monachino e Riccardo Amadori",
           copertina: "public/media/2025/albino/2025_albino.webp",
@@ -1635,7 +1635,7 @@ const tappe = [
           classifiche:
             "https://www.endu.net/it/events/corri-nei-borghi-gromo-3/results",
         },
-        regolamento: "public/files/regulations/2025_gromo.pdf",
+        regolamento: "public/files/regulations/2026_gromo.pdf",
         foto: {
           description: "Foto a cura di DRfotografia",
           copertina: "public/media/2025/gromo/2025_gromo.webp",
@@ -1705,7 +1705,7 @@ const tappe = [
           classifiche:
             "https://www.endu.net/it/events/corri-nei-borghi-vertova/results",
         },
-        regolamento: "public/files/regulations/2025_parre.pdf",
+        regolamento: "public/files/regulations/2026_parre.pdf",
         foto: {
           description: "",
           copertina: "public/media/2025/parre/2025_parre.webp",
@@ -1849,7 +1849,7 @@ const tappe = [
           classifiche:
             "https://www.endu.net/it/events/corri-nei-borghi-cerete-4-pass-so-e-so-per-ol-pais/results",
         },
-        regolamento: "public/files/regulations/2025_cerete.pdf",
+        regolamento: "public/files/regulations/2026_cerete.pdf",
         foto: {
           description: "",
           copertina: "public/media/2025/cerete/2025_cerete.webp",
@@ -1882,7 +1882,7 @@ const news = [
 </p>
 <p>
   <strong>Novità 2026:</strong> <br>
-  Il Premio speciale <b>UNO DI NOI</b> riservato alle sole categorie Senior: chi risulterà in classifica in tutte le 7 tappe, indipendentemente dagli scarti obbligatori, quest'anno è un oggetto misterioso. Riuscirai ad aggiudicartelo all’ultima tappa di Cerete?
+  Il Premio speciale <b>UNO DI NOI</b> riservato alle sole categorie Senior: assegnato a chi risulterà in classifica in tutte le 7 tappe, indipendentemente dagli scarti obbligatori. Quest'anno verrà svelato solo all'ultima tappa! Riuscirai ad aggiudicartelo a Cerete?
   <div class="accordion-news-image">
   <img loading="lazy" src="public/images/2026_premio_uno_di_noi.webp" alt="Mistery box" class="img-thumbnail"/>
   </div>
