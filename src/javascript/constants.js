@@ -1882,7 +1882,7 @@ const news = [
 </p>
 <p>
   <strong>Novità 2026:</strong> <br>
-  Il Premio speciale <b>UNO DI NOI</b> riservato alle sole categorie Senior: assegnato a chi risulterà in classifica in tutte le 7 tappe, indipendentemente dagli scarti obbligatori. Quest'anno verrà svelato solo all'ultima tappa! Riuscirai ad aggiudicartelo a Cerete?
+  Il Premio speciale <b>UNO DI NOI</b> riservato alle sole categorie Senior: assegnato a chi risulterà in classifica in tutte le 8 tappe, indipendentemente dagli scarti obbligatori. Quest'anno verrà svelato solo all'ultima tappa! Riuscirai ad aggiudicartelo a Cerete?
   <div class="accordion-news-image">
   <img loading="lazy" src="public/images/2026_premio_uno_di_noi.webp" alt="Mistery box" class="img-thumbnail"/>
   </div>
