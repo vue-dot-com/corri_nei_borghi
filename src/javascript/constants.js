@@ -1426,7 +1426,7 @@ const tappe = [
           docce: "Sì, presso Gandinese Stadium",
           ristoro: "Sì, presso Piazza Santa Croce a cura del Bar Lù",
           altro:
-            "Per info ed eventuali domande su iscrizioni: Aldo Bernardi cel.3487462047",
+            "Per info ed eventuali domande su iscrizioni: Loris cel.3407822413",
         },
         percorso: {
           baby: {
