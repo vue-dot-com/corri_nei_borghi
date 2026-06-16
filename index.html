@@ -115,7 +115,7 @@
           </div>
           <div class="col-lg-6">
             <div
-              class="d-grid gap-2 d-md-flex justify-content-center mb-5 align-items-center"
+              class="d-flex flex-column flex-lg-row gap-2 mb-3 justify-content-center justify-content-lg-center"
             >
               <!-- <span
                 class="d-flex justify-content-center"
@@ -127,8 +127,9 @@
               > -->
               <button
                 type="button"
-                class="btn btn-primary btn-lg px-4 me-md-2 bouncing-text"
+                class="btn btn-primary btn-lg bouncing-text flex-lg-grow-1"
                 id="button-color"
+                style="flex-basis: 48%"
               >
                 <b>ISCRIVITI</b>
               </button>
@@ -143,12 +144,25 @@
               > -->
               <button
                 type="button"
-                class="btn btn-outline-secondary btn-lg px-4"
+                class="btn btn-outline-secondary btn-lg flex-lg-grow-1"
                 id="button-classifiche"
+                style="flex-basis: 48%"
               >
                 Classifiche circuito
               </button>
               <!-- </span> -->
+            </div>
+            <div
+              class="d-flex justify-content-center mb-5 flex-column flex-lg-row"
+            >
+              <button
+                type="button"
+                class="btn btn-secondary flex-lg-grow-1"
+                style="flex-basis: 48%"
+                id="button-babyrun"
+              >
+                Iscrizioni Baby Run
+              </button>
             </div>
 
             <div id="countdown"></div>
@@ -218,6 +232,13 @@
       document.getElementById("button-classifiche").onclick = function () {
         location.href = "classifiche.html";
         window.open(constants.tappe[0].trofeo.links.classifiche, "_blank");
+      };
+      // Redirect to Google form
+      document.getElementById("button-babyrun").onclick = function () {
+        window.open(
+          "https://docs.google.com/forms/d/e/1FAIpQLSc3xak4_6z5zLgO8qf3ejk-0ZF8-l-ty91bOBdnK6Z9euDo0Q/viewform?usp=header",
+          "_blank",
+        );
       };
       // Show/hide text in mobile website
       document.getElementById("show-more-btn").onclick = showMoreText;
