@@ -1871,6 +1871,26 @@ const tappe = [
 const news = [
   {
     title: `
+    📣 Novità! Preiscrizioni per baby run disponibili per tutte le tappe 👶`,
+    image: "",
+    body: `
+    <p>
+  <strong>🏁 Sono ufficialmente aperte le pre-iscrizioni per la Corri nei Borghi 2026 riservata ai più piccoli!</strong>
+</p>
+<p>
+  👉 Puoi registrare il tuo bambino o la tua bambina compilando il form <a href="https://docs.google.com/forms/d/e/1FAIpQLSc3xak4_6z5zLgO8qf3ejk-0ZF8-l-ty91bOBdnK6Z9euDo0Q/viewform?usp=header" target="_blank">qui</a>. Seleziona ogni tappa per cui vuoi iscrivere qualcuno ed aggiungi nome, cognome e data di nascita del tuo atleta!<br>
+</p>
+<p>
+  La pre-iscrizione per ogni tappa è aperta fino alle 12 del giorno della gara. Potrai comunque iscrivere il bambino/a il giorno stesso fino a pochi minuti prima della partenza! Per chi avesse fatto la pre-iscrizione invece avrà solo bisogno di pagare i 5€ e ritirare il cartellino al momento dell'arrivo al luogo di ritrovo.
+</p>
+<p>
+  Per qualsiasi domanda puoi consultare la <a href="/contatti.html" target="_blank">sezione contatti</a> o rivolgerti direttamente ai contatti indicati per ciascuna tappa.
+  A presto! 🎽
+</p>
+    `,
+  },
+  {
+    title: `
     📣 Iscrizioni aperte! Manca poco 🏃‍♂️🏃‍♀️`,
     image: "",
     body: `
