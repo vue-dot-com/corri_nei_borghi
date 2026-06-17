@@ -1797,7 +1797,7 @@ const tappe = [
         description:
           "XXIX° Memorial “Paolo Zambetti” 1° assoluto maschile X° Trofeo “Luigi Loda” 1° assoluta femminile VIII° MEMORIAL DANILO FIORINA Trofeo per società",
         imgCopertina:
-          "https://www.valseriana.eu/wp-content/uploads/2016/04/cerete_alto_chiesa_parrocchiale_santi_apostoli_filippo_e_giacomo__IMG_9441-52-800-600-80.jpg",
+          "https://myvalley.it/wp-content/uploads/2018/01/Cerete-Alto-parrocchiale-2.jpg",
         programma: {
           partenzaBaby: "19:00",
           partenzaNonCompetitiva: "Ragazzi - Adolescenti: 19:15. Liberi: 19:30",
