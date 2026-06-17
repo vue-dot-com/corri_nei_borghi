@@ -1415,7 +1415,7 @@ const tappe = [
         logo: "public/images/logos/gandino.webp",
         description: "Corsa podistica per le vie del paese",
         imgCopertina:
-          "https://www.valseriana.eu/wp-content/uploads/2016/10/Gandino.jpg",
+          "https://primabergamo.it/media/2023/02/Gandino-basilica.jpg",
         programma: {
           partenzaBaby: "18:45",
           partenzaNonCompetitiva: "19:30",
@@ -1503,7 +1503,7 @@ const tappe = [
         logo: "",
         description: "La 3a sulle strade del Moroni. Non puoi mancare.",
         imgCopertina:
-          "https://www.valseriana.eu/wp-content/uploads/2016/04/albino_chiesa_IMG_1596-20-800-600-80.jpg",
+          "https://scontent-mxp2-1.xx.fbcdn.net/v/t39.30808-6/484070663_658510443684631_5372807819472795942_n.jpg?stp=dst-jpg_tt6&cstp=mx1280x960&ctp=s1280x960&_nc_cat=109&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=S6zE4VolszwQ7kNvwGA5In1&_nc_oc=Adodu4j51YYTTD41k1qApYvGNa3_mc3I7T2DeGLkHM6Wmfmxwx_zKse2Csxw0_OH95ESHKOau3sUaQZBiISz4oSv&_nc_zt=23&_nc_ht=scontent-mxp2-1.xx&_nc_gid=cjCtXtqnWyrSayDJJ6uzhQ&_nc_ss=7f2a8&oh=00_Af9t-2Bz8tOtUj31cxZsybZtvnwssY-4wgWesZAnWnlOSA&oe=6A38D901",
         programma: {
           partenzaBaby: "19:00",
           partenzaNonCompetitiva: "Esordienti: 19:10 | Liberi: 19:30",
@@ -1584,7 +1584,7 @@ const tappe = [
         logo: "public/images/logos/gromo.webp",
         description: "Gara podistica per le vie del borgo medievale di Gromo",
         imgCopertina:
-          "https://upload.wikimedia.org/wikipedia/commons/1/1d/Borgo_di_Gromo.jpg",
+          "https://media-cdn.tripadvisor.com/media/photo-c/1280x250/0e/6a/ff/15/centro-di-gromo-in-autunno.jpg",
         programma: {
           partenzaBaby: "18:45",
           partenzaNonCompetitiva: "19:15",
