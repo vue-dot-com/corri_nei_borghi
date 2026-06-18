@@ -18,7 +18,7 @@ function resizeHeaderLogo() {
   // Add scroll event listener
   window.addEventListener("scroll", function () {
     // Calculate the new width based on scroll position
-    if (window.scrollY > 20) {
+    if (this.window.scrollY > 20) {
       var newWidth = 35; // Adjust the factor as needed
     } else {
       newWidth = 60;
@@ -261,7 +261,7 @@ async function generateTappeCards(tappe, year, componentId) {
     tempElement.querySelector("#card-tappa-image").innerHTML =
       `<img loading="lazy" src="${gara.imgCopertina}" class="card-img-top" alt="${gara.name} copertina" />`;
     tempElement.querySelector("#card-tappa-information").innerHTML = `
-      <h5 class="card-title text-cnb-red"><b>${gara.location}</b></h5>
+      <h5 class="card-title" style="color: #7f2b2b"><b>${gara.location}</b></h5>
       <h6 class="card-subtitle">${gara.date}</h6>
       <p class="card-text">${gara.description}</p>
     `;
@@ -552,12 +552,29 @@ function enablePopovers() {
   );
 }
 
+/**
+ * Converts race dates into timestamps for easier comparison and manipulation.
+ * @param {Array} tappe - Array of race data.
+ * @param {number} year - The year to filter the races.
+ * @returns {Array} - Array of timestamps for the race dates.
+ */
 function convertDates(tappe, year) {
   const tappeFilteredOnYear = tappe.filter((elem) => elem.year == year)[0];
-  return tappeFilteredOnYear.gare.map((gara) => {
-    const [y, m, d] = gara.isoDate.split("-").map(Number);
-    return new Date(Date.UTC(y, m - 1, d, 0, 0, 0)).getTime();
+  const dates = tappeFilteredOnYear.gare.map((gara) => {
+    let tmpDate = gara.date.split(" ");
+    if (tmpDate[1] === "Luglio") {
+      tmpDate[1] = parseInt("07", 10) - 1;
+    } else {
+      tmpDate[1] = parseInt("08", 10) - 1;
+    }
+    tmpDate.push(year);
+    const newDate = new Date(
+      Date.UTC(tmpDate[2], tmpDate[1], tmpDate[0], 0, 0, 0),
+    );
+    const newTimeStamp = newDate.getTime();
+    return newTimeStamp;
   });
+  return dates;
 }
 
 /**
@@ -716,7 +733,7 @@ async function generateMediaCards(tappe, year, componentId) {
     const html = await response.text();
 
     // Create a temporary element to parse the HTML string
-    let tempElement = document.createElement("div");
+    tempElement = document.createElement("div");
     tempElement.innerHTML = html.trim();
 
     // Populate card with data
@@ -831,37 +848,28 @@ async function generateNewsAccordionItems(news, componentId) {
   // Loop through each news and create an accordion item, then populate and append it
   // Array to store promises for fetching HTML content, in this way news items are ordered by appearance.
   const fetchPromises = news.map(async (item, index) => {
-    if (!item.published) return;
     // Fetch card.html content
     const response = await fetch("src/components/accordion_news_item.html");
     const html = await response.text();
 
     // Create a temporary element to parse the HTML string
-    let tempElement = document.createElement("div");
+    tempElement = document.createElement("div");
     tempElement.innerHTML = html.trim();
 
     // Populate card with data
 
     // Add title and data-bs-target / aria-controls attributes
-    let button = tempElement.querySelector("button.accordion-button");
+    button = tempElement.querySelector("button.accordion-button");
     button.innerHTML = `${item.title}`;
     button.setAttribute("data-bs-target", `#flush-collapse-${index}`);
     button.setAttribute("aria-controls", `flush-collapse-${index}`);
 
     // Set container div id attribute
-    let collapse = tempElement.querySelector("div.accordion-collapse.collapse");
+    collapse = tempElement.querySelector("div.accordion-collapse.collapse");
     collapse.setAttribute("id", `flush-collapse-${index}`);
     // Add body
     const body = document.createElement("div");
-    if (item.bodyFile) {
-      const mdResponse = await fetch(item.bodyFile);
-      const mdText = await mdResponse.text();
-      body.innerHTML =
-        typeof marked !== "undefined" ? marked.parse(mdText) : mdText;
-    } else if (item.body) {
-      body.innerHTML =
-        typeof marked !== "undefined" ? marked.parse(item.body) : item.body;
-    }
+    body.innerHTML = item.body;
     tempElement.querySelector(".accordion-body").appendChild(body);
 
     // Add image
@@ -919,13 +927,13 @@ async function generateYearsNavTabs(tappe, curYear, componentId) {
     const html = await response.text();
 
     // Create a temporary element to parse the HTML string
-    let tempElement = document.createElement("div");
+    tempElement = document.createElement("div");
     tempElement.innerHTML = html.trim();
 
     // Populate button with data
 
     // Add title and attributes
-    let button = tempElement.querySelector("button.nav-link");
+    button = tempElement.querySelector("button.nav-link");
     button.innerText = year;
     button.setAttribute("id", `nav-home-tab-${year}`);
     if (year == curYear) {
