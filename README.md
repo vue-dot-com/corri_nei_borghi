@@ -77,5 +77,4 @@ Il deployment avviene automaticamente tramite **GitHub Actions** ad ogni push su
 
 ## Server
 
-- Hosting: **Aruba** (Windows IIS)
 - Configurazione: `web.config` (MIME type WebP, cache 365 giorni per `/public/`)
