@@ -831,6 +831,7 @@ async function generateNewsAccordionItems(news, componentId) {
   // Loop through each news and create an accordion item, then populate and append it
   // Array to store promises for fetching HTML content, in this way news items are ordered by appearance.
   const fetchPromises = news.map(async (item, index) => {
+    if (!item.published) return;
     // Fetch card.html content
     const response = await fetch("src/components/accordion_news_item.html");
     const html = await response.text();
@@ -855,9 +856,11 @@ async function generateNewsAccordionItems(news, componentId) {
     if (item.bodyFile) {
       const mdResponse = await fetch(item.bodyFile);
       const mdText = await mdResponse.text();
-      body.innerHTML = typeof marked !== "undefined" ? marked.parse(mdText) : mdText;
+      body.innerHTML =
+        typeof marked !== "undefined" ? marked.parse(mdText) : mdText;
     } else if (item.body) {
-      body.innerHTML = typeof marked !== "undefined" ? marked.parse(item.body) : item.body;
+      body.innerHTML =
+        typeof marked !== "undefined" ? marked.parse(item.body) : item.body;
     }
     tempElement.querySelector(".accordion-body").appendChild(body);
 
