@@ -42,21 +42,21 @@
     "published": false
   },
   {
-    "title": "✨ Vertova corre sotto le stelle! 🏃‍♀️🏃‍♂️",
-    "image": "public/media/2025/vertova/2025_vertova.webp",
-    "bodyFile": "src/data/news/vertova-recap.md",
-    "published": false
+    "title": "🌟 Novità! Pre-iscrizioni Baby Run disponibili per ogni tappa 🐤👶",
+    "image": "",
+    "bodyFile": "src/data/news/20260615_preiscrizioni_baby.md",
+    "published": true
   },
   {
     "title": "📣 Iscrizioni aperte! Manca poco 🏃‍♂️🏃‍♀️",
     "image": "",
-    "bodyFile": "src/data/news/iscrizioni-aperte.md",
-    "published": false
+    "bodyFile": "src/data/news/20260101_social.md",
+    "published": true
   },
   {
     "title": "📱 Seguici sui nostri social",
     "image": "",
-    "bodyFile": "src/data/news/seguici-social.md",
+    "bodyFile": "src/data/news/20260101_social.md",
     "published": true
   }
 ]

@@ -53,10 +53,10 @@
         "m": ""
       },
       "links": {
-        "iscrizioni": "",
-        "classifiche": ""
+        "iscrizioni": "https://join.endu.net/entry?edition=101283",
+        "classifiche": "https://www.endu.net/it/events/corri-nei-borghi-vertova-2/results"
       },
-      "regolamento": "public/files/regulations/2025_vertova.pdf",
+      "regolamento": "public/files/regulations/2026_vertova.pdf",
       "foto": {
         "description": "Foto a cura di Alessio Gualdi",
         "copertina": "public/media/2025/vertova/2025_vertova.webp",
@@ -133,10 +133,10 @@
         "m": ""
       },
       "links": {
-        "iscrizioni": "",
-        "classifiche": ""
+        "iscrizioni": "https://join.endu.net/entry?edition=101385",
+        "classifiche": "https://www.endu.net/it/events/corri-nei-borghi-clusone-corri-in-centro/results"
       },
-      "regolamento": "public/files/regulations/2025_clusone.pdf",
+      "regolamento": "public/files/regulations/2026_clusone.pdf",
       "foto": {
         "description": "Foto a cura di Marco Pendezza DRfotografia",
         "copertina": "public/media/2025/clusone/2025_clusone.webp",
@@ -155,7 +155,7 @@
       "isoDate": "2026-07-24",
       "logo": "public/images/logos/gandino.webp",
       "description": "Corsa podistica per le vie del paese",
-      "imgCopertina": "https://www.valseriana.eu/wp-content/uploads/2016/10/Gandino.jpg",
+      "imgCopertina": "https://primabergamo.it/media/2023/02/Gandino-basilica.jpg",
       "programma": {
         "partenzaBaby": "18:45",
         "partenzaNonCompetitiva": "19:30",
@@ -164,7 +164,7 @@
         "parcheggi": "Via Vittorio Veneto (adiacenti a scuola materna), Via S.G. Bosco (adiacenti a Oratorio Sacro Cuore)",
         "docce": "Sì, presso Gandinese Stadium",
         "ristoro": "Sì, presso Piazza Santa Croce a cura del Bar Lù",
-        "altro": "Per info ed eventuali domande su iscrizioni: Aldo Bernardi cel.3487462047"
+        "altro": "Per info ed eventuali domande su iscrizioni: Loris cel.3407822413"
       },
       "percorso": {
         "baby": {
@@ -201,10 +201,10 @@
         "m": ""
       },
       "links": {
-        "iscrizioni": "",
-        "classifiche": ""
+        "iscrizioni": "https://join.endu.net/entry?edition=101458",
+        "classifiche": "https://www.endu.net/it/events/corri-nei-borghi-gandino/results"
       },
-      "regolamento": "public/files/regulations/2025_gandino.pdf",
+      "regolamento": "public/files/regulations/2026_gandino.pdf",
       "foto": {
         "description": "Foto a cura di Marino Cuccato",
         "copertina": "public/media/2025/gandino/2025_gandino.webp",
@@ -240,7 +240,7 @@
       "isoDate": "2026-07-31",
       "logo": "",
       "description": "La 3a sulle strade del Moroni. Non puoi mancare.",
-      "imgCopertina": "https://www.valseriana.eu/wp-content/uploads/2016/04/albino_chiesa_IMG_1596-20-800-600-80.jpg",
+      "imgCopertina": "https://scontent-mxp2-1.xx.fbcdn.net/v/t39.30808-6/484070663_658510443684631_5372807819472795942_n.jpg?stp=dst-jpg_tt6&cstp=mx1280x960&ctp=s1280x960&_nc_cat=109&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=S6zE4VolszwQ7kNvwGA5In1&_nc_oc=Adodu4j51YYTTD41k1qApYvGNa3_mc3I7T2DeGLkHM6Wmfmxwx_zKse2Csxw0_OH95ESHKOau3sUaQZBiISz4oSv&_nc_zt=23&_nc_ht=scontent-mxp2-1.xx&_nc_gid=cjCtXtqnWyrSayDJJ6uzhQ&_nc_ss=7f2a8&oh=00_Af9t-2Bz8tOtUj31cxZsybZtvnwssY-4wgWesZAnWnlOSA&oe=6A38D901",
       "programma": {
         "partenzaBaby": "19:00",
         "partenzaNonCompetitiva": "Esordienti: 19:10 | Liberi: 19:30",
@@ -288,10 +288,10 @@
         "m": ""
       },
       "links": {
-        "iscrizioni": "",
-        "classifiche": ""
+        "iscrizioni": "https://join.endu.net/entry?edition=101514",
+        "classifiche": "https://www.endu.net/it/events/corri-nei-borghi-albino/results"
       },
-      "regolamento": "public/files/regulations/2025_albino.pdf",
+      "regolamento": "public/files/regulations/2026_albino.pdf",
       "foto": {
         "description": "Foto a cura di Mauro Monachino e Riccardo Amadori",
         "copertina": "public/media/2025/albino/2025_albino.webp",
@@ -318,7 +318,7 @@
       "isoDate": "2026-08-08",
       "logo": "public/images/logos/gromo.webp",
       "description": "Gara podistica per le vie del borgo medievale di Gromo",
-      "imgCopertina": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Borgo_di_Gromo.jpg",
+      "imgCopertina": "https://media-cdn.tripadvisor.com/media/photo-c/1280x250/0e/6a/ff/15/centro-di-gromo-in-autunno.jpg",
       "programma": {
         "partenzaBaby": "18:45",
         "partenzaNonCompetitiva": "19:15",
@@ -364,10 +364,10 @@
         "m": ""
       },
       "links": {
-        "iscrizioni": "",
-        "classifiche": ""
+        "iscrizioni": "https://join.endu.net/entry?edition=101571",
+        "classifiche": "https://www.endu.net/it/events/corri-nei-borghi-gromo-3/results"
       },
-      "regolamento": "public/files/regulations/2025_gromo.pdf",
+      "regolamento": "public/files/regulations/2026_gromo.pdf",
       "foto": {
         "description": "Foto a cura di DRfotografia",
         "copertina": "public/media/2025/gromo/2025_gromo.webp",
@@ -432,10 +432,10 @@
         "m": ""
       },
       "links": {
-        "iscrizioni": "",
-        "classifiche": ""
+        "iscrizioni": "https://join.endu.net/entry?edition=101552",
+        "classifiche": "https://www.endu.net/it/events/corri-nei-borghi-vertova/results"
       },
-      "regolamento": "public/files/regulations/2025_parre.pdf",
+      "regolamento": "public/files/regulations/2026_parre.pdf",
       "foto": {
         "description": "",
         "copertina": "public/media/2025/parre/2025_parre.webp",
@@ -502,8 +502,8 @@
         "m": ""
       },
       "links": {
-        "iscrizioni": "",
-        "classifiche": ""
+        "iscrizioni": "https://join.endu.net/entry?edition=106824",
+        "classifiche": "https://www.endu.net/it/events/corri-nei-borghi-ardesio/results"
       },
       "regolamento": "public/files/regulations/2024_ardesio.pdf",
       "foto": {
@@ -523,13 +523,13 @@
       "date": "29 Agosto",
       "isoDate": "2026-08-29",
       "logo": "public/images/logos/cerete.webp",
-      "description": "XXIX° Memorial \"Paolo Zambetti\" 1° assoluto maschile X° Trofeo \"Luigi Loda\" 1° assoluta femminile VIII° MEMORIAL DANILO FIORINA Trofeo per società",
-      "imgCopertina": "https://www.valseriana.eu/wp-content/uploads/2016/04/cerete_alto_chiesa_parrocchiale_santi_apostoli_filippo_e_giacomo__IMG_9441-52-800-600-80.jpg",
+      "description": "XXIX° Memorial “Paolo Zambetti” 1° assoluto maschile X° Trofeo “Luigi Loda” 1° assoluta femminile VIII° MEMORIAL DANILO FIORINA Trofeo per società",
+      "imgCopertina": "https://myvalley.it/wp-content/uploads/2018/01/Cerete-Alto-parrocchiale-2.jpg",
       "programma": {
         "partenzaBaby": "19:00",
         "partenzaNonCompetitiva": "Ragazzi - Adolescenti: 19:15. Liberi: 19:30",
         "partenzaCompetitiva": { "m": "20:45", "f": "20:15" },
-        "ritrovo": "Presso il centro sportivo \"Danilo Fiorina\" - Piazza Martiri della Libertà",
+        "ritrovo": "Presso il centro sportivo “Danilo Fiorina” - Piazza Martiri della Libertà",
         "parcheggi": "Scoperti, limitrofi",
         "docce": "Sì, presso il centro sportivo",
         "ristoro": "Sì",
@@ -570,16 +570,14 @@
         "m": ""
       },
       "links": {
-        "iscrizioni": "",
-        "classifiche": ""
+        "iscrizioni": "https://join.endu.net/entry?edition=101617",
+        "classifiche": "https://www.endu.net/it/events/corri-nei-borghi-cerete-4-pass-so-e-so-per-ol-pais/results"
       },
-      "regolamento": "public/files/regulations/2025_cerete.pdf",
+      "regolamento": "public/files/regulations/2026_cerete.pdf",
       "foto": {
         "description": "",
         "copertina": "public/media/2025/cerete/2025_cerete.webp",
-        "category": [
-          { "name": "", "link": "" }
-        ]
+        "category": [{ "name": "", "link": "" }]
       }
     }
   ],
