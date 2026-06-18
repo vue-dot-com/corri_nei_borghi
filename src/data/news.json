@@ -2,61 +2,61 @@
   {
     "title": "🌆 Cerete - Cala il sipario sulla Corri nei Borghi!👋",
     "image": "",
-    "bodyFile": "src/data/news/cerete-recap.md",
+    "bodyFile": "public/news/cerete-recap.md",
     "published": false
   },
   {
     "title": "⚔️ Gromo - Battaglia nel borgo medioevale! 🏞️",
     "image": "public/media/2025/2025_gromo.webp",
-    "bodyFile": "src/data/news/gromo-recap.md",
+    "bodyFile": "public/news/gromo-recap.md",
     "published": false
   },
   {
     "title": "📈 Parre – Sali scendi di emozioni! ⛰️",
     "image": "public/media/2025/parre/2025_parre.webp",
-    "bodyFile": "src/data/news/parre-recap.md",
+    "bodyFile": "public/news/parre-recap.md",
     "published": false
   },
   {
     "title": "🎽 Albino – Emozioni sotto le stelle! 🌟",
     "image": "public/media/2025/albino/2025_albino.webp",
-    "bodyFile": "src/data/news/albino-recap.md",
+    "bodyFile": "public/news/albino-recap.md",
     "published": false
   },
   {
     "title": "📣 Novità! Pre-iscrizioni Baby Run 🐤",
     "image": "public/media/2024/albino/2024_albino.webp",
-    "bodyFile": "src/data/news/baby-run-preiscrizioni.md",
+    "bodyFile": "public/news/baby-run-preiscrizioni.md",
     "published": false
   },
   {
     "title": "🧷 Gandino – Una ritorno da ricordare 🏁",
     "image": "public/media/2025/gandino/2025_gandino.webp",
-    "bodyFile": "src/data/news/gandino-recap.md",
+    "bodyFile": "public/news/gandino-recap.md",
     "published": false
   },
   {
     "title": "💚 Corrincentro una grande festa! 🏃‍♀️🏃‍♂️",
     "image": "public/media/2025/clusone/2025_clusone.webp",
-    "bodyFile": "src/data/news/clusone-recap.md",
+    "bodyFile": "public/news/clusone-recap.md",
     "published": false
   },
   {
     "title": "🌟 Novità! Pre-iscrizioni Baby Run disponibili per ogni tappa 🐤👶",
     "image": "",
-    "bodyFile": "src/data/news/20260615_preiscrizioni_baby.md",
+    "bodyFile": "public/news/20260615_preiscrizioni_baby.md",
     "published": true
   },
   {
     "title": "📣 Iscrizioni aperte! Manca poco 🏃‍♂️🏃‍♀️",
     "image": "",
-    "bodyFile": "src/data/news/20260101_social.md",
+    "bodyFile": "public/news/20260531_iscrizioni_aperte.md",
     "published": true
   },
   {
     "title": "📱 Seguici sui nostri social",
     "image": "",
-    "bodyFile": "src/data/news/20260101_social.md",
+    "bodyFile": "public/news/20260101_social.md",
     "published": true
   }
 ]
