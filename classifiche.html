@@ -3,14 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Classifiche e risultati del circuito podistico Corri nei Borghi. Consulta i risultati di tutte le edizioni." />
-    <meta property="og:title" content="Classifiche - Corri nei Borghi" />
-    <meta property="og:description" content="Classifiche e risultati del circuito podistico Corri nei Borghi." />
-    <meta property="og:image" content="https://corrineiborghi.it/public/images/logos/corri-nei-borghi-oval.webp" />
-    <meta property="og:url" content="https://corrineiborghi.it/classifiche.html" />
-    <meta property="og:type" content="website" />
-    <meta property="og:locale" content="it_IT" />
-    <title>Classifiche - Corri nei Borghi</title>
+    <title>CorrineiBorghi</title>
     <link
       rel="icon"
       type="image/x-icon"
@@ -149,20 +142,19 @@
     <script src="src/javascript/utils.js"></script>
     <script type="module">
       import constants from "./src/javascript/constants.js";
-      const currentYear = constants.config.currentYear;
       // Call the fetch navbar
       fetchAndInsertNavbar("classifiche");
       // Call other functions to insert components
       fetchAndInsertComponent("src/components/sponsor.html", "sponsor");
       fetchAndInsertComponent("src/components/footer.html", "footer");
       // Call function to generate classifiche table
-      generateClassificheHTML(constants.tappe, currentYear, {
+      generateClassificheHTML(constants.tappe, 2026, {
         yearId: "classifiche-year",
         tableId: "classifiche-table",
         trophyId: "classifiche-trophy",
       });
       // Call function to generate year tabs
-      generateYearsNavTabs(constants.tappe, currentYear, "nav-tab").then(() => {
+      generateYearsNavTabs(constants.tappe, 2026, "nav-tab").then(() => {
         // Onclick event to generate classifiche table when changing tab
         const tabYearsArray = document.querySelectorAll("button.nav-link");
         tabYearsArray.forEach((tab) => {
