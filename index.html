@@ -3,7 +3,26 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>CorrineiBorghi</title>
+    <meta
+      name="description"
+      content="Corri nei Borghi - Circuito podistico della Val Seriana. Scopri le tappe, le classifiche e le iscrizioni per l'edizione 2026."
+    />
+    <meta
+      property="og:title"
+      content="Corri nei Borghi 2026 - Circuito Podistico Val Seriana"
+    />
+    <meta
+      property="og:description"
+      content="Circuito podistico della Val Seriana. Scopri le tappe, le classifiche e le iscrizioni per l'edizione 2026."
+    />
+    <meta
+      property="og:image"
+      content="https://corrineiborghi.it/public/images/2026_tappe_tile.webp"
+    />
+    <meta property="og:url" content="https://corrineiborghi.it/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="it_IT" />
+    <title>Corri nei Borghi 2026 - Circuito Podistico Val Seriana</title>
     <link
       rel="icon"
       type="image/x-icon"
@@ -37,14 +56,13 @@
             <div>
               <h1
                 class="display-5 fw-bold text-body-emphasis lh-1 mb-3"
-                style="color: #7f2b2b !important"
+                style="color: var(--cnb-red) !important"
               >
                 <b> Corri nei Borghi 2026</b>
               </h1>
               <h2
                 class="display-10 text-body-emphasis lh-3 mb-3"
-                ,
-                style="color: #ef8a16 !important"
+                style="color: var(--cnb-orange) !important"
               >
                 XIX^ Edizione <i>- una tappa tira l'altra...</i>
               </h2>
@@ -53,11 +71,11 @@
               <div class="card-body">
                 <p class="lead" id="text">
                   La
-                  <strong style="color: #ef8a16; font-weight: bold"
+                  <strong class="text-cnb-orange" style="font-weight: bold"
                     >XIX edizione</strong
                   >
                   del
-                  <strong style="color: #7f2b2b; font-weight: bold"
+                  <strong class="text-cnb-red" style="font-weight: bold"
                     >Circuito Corri nei Borghi 2026</strong
                   >
                   ha definito il proprio calendario. Ben
@@ -80,7 +98,7 @@
                   progetto, la collaborazione e il sostegno della nostra
                   comunità mantengono vivo l'entusiasmo, spingendo sempre più
                   borghi ad unirsi al
-                  <strong style="color: #7f2b2b; font-weight: bold"
+                  <strong class="text-cnb-red" style="font-weight: bold"
                     >Circuito Corri nei Borghi</strong
                   >. Ancora una volta, a Cerete spetta il merito di ospitare il
                   <strong
@@ -169,6 +187,7 @@
 
             <div class="container-tappe-tile">
               <img
+                loading="lazy"
                 class="tappe-tile"
                 src="public/images/2026_tappe_tile.webp"
                 alt="Tappe 2026"
@@ -197,10 +216,12 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 
     <script src="src/javascript/utils.js"></script>
     <script type="module">
       import constants from "./src/javascript/constants.js";
+      const currentYear = constants.config.currentYear;
       // Call the fetch navbar
       fetchAndInsertNavbar("home");
       // Call other functions to insert components
@@ -211,7 +232,7 @@
         "countdown",
       ).then(() => {
         // Start the timer
-        startTimer(constants.tappe, 2026, "countdown");
+        startTimer(constants.tappe, currentYear, "countdown");
       });
       fetchAndInsertComponent("src/components/news.html", "news").then(
         async () => {
@@ -231,7 +252,12 @@
       // Redirect to Endu classifiche
       document.getElementById("button-classifiche").onclick = function () {
         location.href = "classifiche.html";
-        window.open(constants.tappe[0].trofeo.links.classifiche, "_blank");
+        const currentTappa = constants.tappe.find(
+          (t) => t.year === currentYear,
+        );
+        if (currentTappa) {
+          window.open(currentTappa.trofeo.links.classifiche, "_blank");
+        }
       };
       // Redirect to Google form
       document.getElementById("button-babyrun").onclick = function () {

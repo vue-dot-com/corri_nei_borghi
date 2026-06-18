@@ -3,7 +3,14 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>CorrineiBorghi</title>
+    <meta name="description" content="Tutte le tappe del circuito Corri nei Borghi 2026. Date, percorsi, programmi e classifiche di ogni gara." />
+    <meta property="og:title" content="Tappe 2026 - Corri nei Borghi" />
+    <meta property="og:description" content="Tutte le tappe del circuito Corri nei Borghi 2026. Date, percorsi, programmi e classifiche di ogni gara." />
+    <meta property="og:image" content="https://corrineiborghi.it/public/images/2026_tappe_tile.webp" />
+    <meta property="og:url" content="https://corrineiborghi.it/tappe.html" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="it_IT" />
+    <title>Tappe 2026 - Corri nei Borghi</title>
     <link
       rel="icon"
       type="image/x-icon"
@@ -34,14 +41,13 @@
       <div class="container col-xxl-10 px-3">
         <h1
           class="display-5 fw-bold text-body-emphasis lh-1 mb-3"
-          style="color: #7f2b2b !important"
+          style="color: var(--cnb-red) !important"
         >
           <b>Corri nei Borghi 2026</b>
         </h1>
         <h2
           class="display-10 text-body-emphasis lh-3 mb-3"
-          ,
-          style="color: #ef8a16 !important"
+          style="color: var(--cnb-orange) !important"
         >
           XIX^ Edizione <i>- una tappa tira l'altra...</i>
         </h2>
@@ -64,13 +70,14 @@
     <script src="src/javascript/utils.js"></script>
     <script type="module">
       import constants from "./src/javascript/constants.js";
+      const currentYear = constants.config.currentYear;
       // Call the fetch navbar
       fetchAndInsertNavbar("tappe");
       // Call other functions to insert components
       fetchAndInsertComponent("src/components/sponsor.html", "sponsor");
       fetchAndInsertComponent("src/components/footer.html", "footer");
       // For each tappa generate a card and its modals
-      generateTappePageContent(constants.tappe, 2026, {
+      generateTappePageContent(constants.tappe, currentYear, {
         cardContainerId: "cardContainer",
         modals: ["percorso", "programma", "regolamento", "classifica"],
       });
