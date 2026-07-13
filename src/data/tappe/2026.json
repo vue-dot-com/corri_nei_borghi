@@ -58,24 +58,20 @@
       },
       "regolamento": "public/files/regulations/2026_vertova.pdf",
       "foto": {
-        "description": "Foto a cura di Alessio Gualdi",
-        "copertina": "public/media/2025/vertova/2025_vertova.webp",
+        "description": "Foto a cura di DR Fotografia",
+        "copertina": "public/media/2026/vertova/2026_vertova.webp",
         "category": [
           {
-            "name": "Competitva M",
-            "link": ""
+            "name": "Album 1 di Marco Pendezza",
+            "link": "https://photos.app.goo.gl/1CPUyauWzrBzHfUWA"
           },
           {
-            "name": "Competitva F",
-            "link": ""
+            "name": "Album 2 di Pietro Granati",
+            "link": "https://photos.app.goo.gl/cmUrUx7zEH51AVE68"
           },
           {
-            "name": "Non competitiva",
-            "link": ""
-          },
-          {
-            "name": "Baby",
-            "link": ""
+            "name": "Baby Run",
+            "link": "https://photos.app.goo.gl/fUw3ew8apS7ozYKB7"
           }
         ]
       }
