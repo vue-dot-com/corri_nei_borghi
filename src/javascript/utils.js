@@ -239,8 +239,9 @@ function setElementAttibutes(element, attributes = {}) {
  * @param {Array} tappe - Array of race data.
  * @param {number} year - The year to filter the races.
  * @param {string} componentId - The ID of the container element for the cards.
+ * @param {string} babyRunFormUrl - Link to the Baby Run registration form, shared by all races.
  */
-async function generateTappeCards(tappe, year, componentId) {
+async function generateTappeCards(tappe, year, componentId, babyRunFormUrl) {
   const tappeFilteredOnYear = tappe.filter((elem) => elem.year == year)[0];
 
   // Get the container element for the cards
@@ -278,6 +279,24 @@ async function generateTappeCards(tappe, year, componentId) {
       setElementAttibutes(iscrivitiButton, {
         id: `button-iscriviti-${gara.location.toLowerCase()}`,
         onclick: `window.open('${gara.links.iscrizioni}', '_blank');`,
+      });
+    }
+
+    // The Baby Run form is the same for every tappa, it is repeated on each card
+    // because runners look for it next to the Endu link and not only on the home page
+    const babyRunButton = tempElement.querySelector(
+      "#button-iscriviti-babyrun",
+    );
+
+    if (!babyRunFormUrl) {
+      setElementAttibutes(babyRunButton, {
+        class: "btn btn-secondary px-4 disabled",
+        disabled: true,
+      });
+    } else {
+      setElementAttibutes(babyRunButton, {
+        id: `button-iscriviti-babyrun-${gara.location.toLowerCase()}`,
+        onclick: `window.open('${babyRunFormUrl}', '_blank');`,
       });
     }
     // Replace modal buttons to point to the correct programma/percorso/regolamento
@@ -526,10 +545,16 @@ function generateClassificaModalBodyContent(tappa) {
  * @param {Array} tappe - Array of race data.
  * @param {number} year - The year to filter the races.
  * @param {Object} componentsIds - Object containing the IDs of the DOM elements to update.
+ * @param {string} babyRunFormUrl - Link to the Baby Run registration form, shared by all races.
  */
-function generateTappePageContent(tappe, year, componentsIds) {
+function generateTappePageContent(tappe, year, componentsIds, babyRunFormUrl) {
   // We use then and not async await in order to support old mobile browsers like my Safari on iPhone 6
-  generateTappeCards(tappe, year, componentsIds.cardContainerId)
+  generateTappeCards(
+    tappe,
+    year,
+    componentsIds.cardContainerId,
+    babyRunFormUrl,
+  )
     .then(() => {
       componentsIds.modals.forEach((modal) => {
         generateModalsForCards(tappe, year, modal);

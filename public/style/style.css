@@ -300,6 +300,13 @@ body {
   justify-content: space-between;
 }
 
+/* The two registration buttons split the full width of the card: flex-basis 0
+   with equal grow makes each one exactly half, independent of its label,
+   so the pair always reaches the left and right edges of the card */
+#bootstrap-overrides #card-tappe .card-buttons-iscrizioni .btn {
+  flex: 1 1 0;
+}
+
 #countdown .card {
   margin-bottom: 2px;
 }

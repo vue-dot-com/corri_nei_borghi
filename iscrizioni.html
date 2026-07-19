@@ -54,7 +54,7 @@
         </h2>
         <div class="row flex-lg-column align-items-center g-5 py-3">
           <iframe
-            src="https://docs.google.com/forms/d/e/1FAIpQLSc3xak4_6z5zLgO8qf3ejk-0ZF8-l-ty91bOBdnK6Z9euDo0Q/viewform?embedded=true"
+            id="babyrun-form"
             width="640"
             height="1028"
             frameborder="0"
@@ -81,6 +81,9 @@
       // Call other functions to insert components
       fetchAndInsertComponent("src/components/sponsor.html", "sponsor");
       fetchAndInsertComponent("src/components/footer.html", "footer");
-    </script>
+      // Baby Run form, kept in config.json so every page points to the same link
+      document.getElementById("babyrun-form").src =
+        `${constants.config.babyRunFormUrl}?embedded=true`;
+</script>
   </body>
 </html>
