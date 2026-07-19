@@ -77,10 +77,15 @@
       fetchAndInsertComponent("src/components/sponsor.html", "sponsor");
       fetchAndInsertComponent("src/components/footer.html", "footer");
       // For each tappa generate a card and its modals
-      generateTappePageContent(constants.tappe, currentYear, {
-        cardContainerId: "cardContainer",
-        modals: ["percorso", "programma", "regolamento", "classifica"],
-      });
+      generateTappePageContent(
+        constants.tappe,
+        currentYear,
+        {
+          cardContainerId: "cardContainer",
+          modals: ["percorso", "programma", "regolamento", "classifica"],
+        },
+        constants.config.babyRunFormUrl,
+      );
       enablePopovers();
     </script>
   </body>

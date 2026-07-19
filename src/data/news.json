@@ -1,5 +1,11 @@
 [
   {
+    "title": "🎊 Clusone – Grande show alla XIX CorrinCentro! 🔥",
+    "image": "public/media/2026/clusone/2026_clusone.webp",
+    "bodyFile": "public/news/20260719_clusone-recap.md",
+    "published": true
+  },
+  {
     "title": "☀️ Vertova – Partenza di fuoco per il circuito 2026! 🏃‍♂️",
     "image": "public/media/2026/vertova/2026_vertova.webp",
     "bodyFile": "public/news/20260713_vertova-recap.md",
@@ -39,12 +45,6 @@
     "title": "🧷 Gandino – Una ritorno da ricordare 🏁",
     "image": "public/media/2025/gandino/2025_gandino.webp",
     "bodyFile": "public/news/gandino-recap.md",
-    "published": false
-  },
-  {
-    "title": "💚 Corrincentro una grande festa! 🏃‍♀️🏃‍♂️",
-    "image": "public/media/2025/clusone/2025_clusone.webp",
-    "bodyFile": "public/news/clusone-recap.md",
     "published": false
   },
   {

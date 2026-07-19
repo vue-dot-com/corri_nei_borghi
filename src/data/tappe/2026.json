@@ -134,12 +134,20 @@
       },
       "regolamento": "public/files/regulations/2026_clusone.pdf",
       "foto": {
-        "description": "Foto a cura di Marco Pendezza DRfotografia",
-        "copertina": "public/media/2025/clusone/2025_clusone.webp",
+        "description": "Foto a cura di DR Fotografia",
+        "copertina": "public/media/2026/clusone/2026_clusone.webp",
         "category": [
           {
-            "name": "Tutte le foto",
-            "link": ""
+            "name": "Album 1 di Marco Pendezza",
+            "link": "https://photos.app.goo.gl/gQPTnwSKeezSQWV89"
+          },
+          {
+            "name": "Album 2 di Cristian Riva",
+            "link": "https://photos.app.goo.gl/otWj4L4jnTSARp9t9"
+          },
+          {
+            "name": "Baby Run",
+            "link": "https://photos.app.goo.gl/xvtkAJEknkPZM7bw5"
           }
         ]
       }
