@@ -37,7 +37,7 @@ Se una classifica non è ancora online, fermati e segnalalo nel report finale in
 
 ## 4. Scrivi l'articolo
 
-Crea `public/news/<borgo>-recap.md` (borgo minuscolo, es. `vertova-recap.md`). Struttura obbligatoria:
+Crea `public/news/<YYYMMDD>_<borgo>-recap.md` (borgo minuscolo, es. `20260713_vertova-recap.md`). Struttura obbligatoria:
 
 1. **Apertura** (1-2 paragrafi): giorno della settimana + **data in grassetto**, borgo in **grassetto**, circuito _Corri nei Borghi_ in corsivo. Atmosfera della serata, ringraziamento ai partecipanti. Emoji si ma non troppi.
 2. Quattro sezioni `##` in quest'ordine, ognuna con emoji nel titolo:
