@@ -283,21 +283,26 @@ async function generateTappeCards(tappe, year, componentId, babyRunFormUrl) {
     }
 
     // The Baby Run form is the same for every tappa, it is repeated on each card
-    // because runners look for it next to the Endu link and not only on the home page
+    // because runners look for it next to the Endu link and not only on the home page.
+    // The button can be missing when the browser still has an older card.html in
+    // cache: in that case we skip it instead of throwing, otherwise a single stale
+    // file would stop every card on the page from being rendered
     const babyRunButton = tempElement.querySelector(
       "#button-iscriviti-babyrun",
     );
 
-    if (!babyRunFormUrl) {
-      setElementAttibutes(babyRunButton, {
-        class: "btn btn-secondary px-4 disabled",
-        disabled: true,
-      });
-    } else {
-      setElementAttibutes(babyRunButton, {
-        id: `button-iscriviti-babyrun-${gara.location.toLowerCase()}`,
-        onclick: `window.open('${babyRunFormUrl}', '_blank');`,
-      });
+    if (babyRunButton) {
+      if (!babyRunFormUrl) {
+        setElementAttibutes(babyRunButton, {
+          class: "btn btn-secondary px-4 disabled",
+          disabled: true,
+        });
+      } else {
+        setElementAttibutes(babyRunButton, {
+          id: `button-iscriviti-babyrun-${gara.location.toLowerCase()}`,
+          onclick: `window.open('${babyRunFormUrl}', '_blank');`,
+        });
+      }
     }
     // Replace modal buttons to point to the correct programma/percorso/regolamento
     // Get all radio buttons with class 'btn-check' and related labels
