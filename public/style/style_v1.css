@@ -1,0 +1,425 @@
+:root {
+  --cnb-red: #7f2b2b;
+  --cnb-orange: #ef8a16;
+}
+
+.text-cnb-red {
+  color: var(--cnb-red) !important;
+}
+
+.text-cnb-orange {
+  color: var(--cnb-orange) !important;
+}
+
+.bg-cnb-red {
+  background-color: var(--cnb-red) !important;
+}
+
+body {
+  font-family: "Source Serif 4", sans-serif !important;
+  font-weight: 600;
+}
+
+/* Header */
+.header {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.navbar-corri-nei-borghi {
+  background-color: var(--cnb-red);
+  background-image: url(../images/bandiera_pace_vuota.webp);
+  background-repeat: repeat-x;
+  background-size: 30% 5%;
+  background-position: bottom;
+  font-size: 20px;
+}
+
+.footer-corri-nei-borghi {
+  background-color: var(--cnb-red);
+  background-image: url(../images/bandiera_pace_vuota.webp);
+  background-repeat: repeat-x;
+  background-size: 30% 5%;
+  background-position: bottom;
+}
+
+.footer-corri-nei-borghi .text-content {
+  color: var(--cnb-orange);
+}
+
+.modal-titles {
+  color: var(--cnb-red);
+  text-shadow: 1px 1px 1px black;
+}
+
+.modal-header {
+  background-color: var(--cnb-red);
+  background-image: url(../images/bandiera_pace_vuota.webp);
+  background-repeat: repeat-x;
+  background-size: 30% 5%;
+  background-position: bottom;
+  font-size: 20px;
+}
+
+.modal-header .modal-title {
+  color: var(--cnb-orange);
+}
+
+.logo-small {
+  width: 60%;
+  transition: all linear 0.5s;
+}
+
+.container-tappe-tile {
+  position: relative;
+}
+
+.tappe-tile {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 3px;
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+
+.middle-tappe-tile {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container-tappe-tile:hover .tappe-tile {
+  opacity: 0.3;
+}
+
+.container-tappe-tile:hover .middle-tappe-tile {
+  opacity: 1;
+}
+
+/* CSS for small screens (e.g., mobile devices) */
+@media (max-width: 1200px) {
+  .navbar-corri-nei-borghi {
+    font-size: 15px; /* Decrease font size */
+  }
+
+  .nav-link {
+    padding: 0.5rem 0.75rem; /* Decrease padding */
+  }
+
+  .logo-small {
+    width: 50px; /* Decrease logo size */
+    transition: none;
+  }
+}
+
+body {
+  padding-top: 60px;
+}
+@media (max-width: 1200px) {
+  body {
+    padding-top: 0px;
+  }
+}
+
+.container-max-width {
+  max-width: 1600px !important;
+}
+
+.container-main {
+  padding-top: 5rem;
+}
+
+.carousel-background {
+  width: 100%;
+  height: 400px; /* Adjust height as needed */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-item {
+  position: relative;
+}
+
+.carousel-caption {
+  background-color: #66666698;
+}
+
+.menu-bar {
+  display: flex;
+  align-items: center;
+}
+
+.menu-voice-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.menu-voice-list li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.menu-voice-list li:last-child {
+  margin-right: 0;
+}
+
+.menu-voice-list a {
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.menu-voice-list a:hover {
+  color: #007bff;
+}
+
+.left-menu-part {
+  position: absolute;
+  left: 20%;
+}
+
+.right-menu-part {
+  position: absolute;
+  right: 20%;
+}
+
+/* New styles for event info */
+.event-info {
+  background-color: #f9f9f9;
+  padding: 20px;
+  text-align: center;
+}
+
+.event-info h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.event-info p {
+  font-size: 1rem;
+  color: #666;
+}
+
+#bootstrap-overrides .nav-link {
+  color: var(--cnb-orange);
+  transition: all 0.3s ease;
+}
+#bootstrap-overrides .nav-item {
+  margin-right: 25px;
+  margin-left: 25px;
+}
+
+#bootstrap-overrides .nav-link:hover {
+  transform: scale(110%);
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+.bouncing-text {
+  animation: bounce 0.8s ease-in-out 3s 3;
+}
+
+/* Add styles for classifiche table */
+.classifiche-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.location-header,
+.non-competitiva-header,
+.competitiva-header {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+  background-color: #f2f2f2;
+}
+
+.location-cell,
+.non-competitiva-f-cell,
+.non-competitiva-m-cell,
+.competitiva-f-cell,
+.competitiva-m-cell {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+#bootstrap-overrides .card-img-top {
+  object-fit: cover;
+  height: 400px;
+}
+
+#btn-group-modals .btn:hover {
+  background-color: rgb(233, 230, 230);
+  font-weight: 500;
+}
+
+#btn-group-modals .btn-check:checked + .btn {
+  background-color: rgba(233, 230, 230, 0.694);
+  font-weight: 500;
+  color: var(--cnb-red);
+}
+
+#btn-group-modals .btn-check:checked + .btn:hover {
+  background-color: rgb(233, 230, 230);
+  font-weight: 500;
+}
+
+#btn-group-modals .btn {
+  background-color: whitesmoke;
+  border-color: white;
+  color: var(--cnb-red);
+}
+
+#card-tappe .card-buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* The two registration buttons split the full width of the card: flex-basis 0
+   with equal grow makes each one exactly half, independent of its label,
+   so the pair always reaches the left and right edges of the card */
+#bootstrap-overrides #card-tappe .card-buttons-iscrizioni .btn {
+  flex: 1 1 0;
+}
+
+#countdown .card {
+  margin-bottom: 2px;
+}
+
+#countdown .card-header {
+  background-color: var(--cnb-red);
+}
+
+#countdown .card-subtitle {
+  color: var(--cnb-orange) !important;
+}
+
+#bootstrap-overrides .accordion-body {
+  overflow: auto;
+}
+
+.social-icons {
+  position: absolute;
+  top: 10px; /* Adjust as needed */
+  right: 20px; /* Adjust as needed */
+}
+
+.social-icons .svg-link {
+  text-decoration: none; /*Avoid underline in svg*/
+}
+
+.social-icons-offcanvas {
+  position: absolute;
+  top: 15px; /* Adjust as needed */
+  right: 150px; /* Adjust as needed */
+}
+
+.social-icons-offcanvas .svg-link {
+  text-decoration: none; /*Avoid underline in svg*/
+}
+
+#lead-text.card {
+  border: none;
+}
+
+@media (max-width: 991px) {
+  /*Apply when columns are squeezed to be like on mobile*/
+  #lead-text .card-body {
+    position: relative;
+    max-height: 200px; /* Adjust height as needed to show 5 lines */
+    overflow: hidden;
+  }
+
+  #show-more-btn {
+    opacity: 0.8;
+    border: none;
+    border-radius: 3px;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.8), var(--cnb-red));
+    width: 100%;
+    font-size: 1.5em;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+    position: absolute;
+    bottom: 0px;
+    color: var(--cnb-orange);
+  }
+}
+
+@media (min-width: 992px) {
+  #show-more-btn {
+    display: none;
+  }
+}
+
+#news-accordion .accordion-button.main {
+  background-color: var(--cnb-red);
+  color: var(--cnb-orange);
+  font-weight: 500;
+}
+
+#news-accordion-flush .accordion-button.collapsed {
+  font-weight: 500;
+}
+
+.card-container-media {
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card-container-media .card {
+  margin-right: 3rem;
+}
+
+.accordion-news-image {
+  display: flex;
+  justify-content: center;
+}
+
+.accordion-news-image img {
+  max-width: 60%;
+}
+
+.accordion-body table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.accordion-body table th,
+.accordion-body table td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
+}
+
+.accordion-body table th {
+  background-color: #e0ffe0;
+}
