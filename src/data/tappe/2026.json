@@ -12,7 +12,10 @@
       "programma": {
         "partenzaBaby": "19:00",
         "partenzaNonCompetitiva": "19:30",
-        "partenzaCompetitiva": { "m": "20:45", "f": "20:15" },
+        "partenzaCompetitiva": {
+          "m": "20:45",
+          "f": "20:15"
+        },
         "ritrovo": "Via Roma, nei pressi dell'oratorio e del comune",
         "parcheggi": "In zona stazione, all'ingresso del paese",
         "docce": "Sì, in oratorio",
@@ -87,7 +90,10 @@
       "programma": {
         "partenzaBaby": "19:45",
         "partenzaNonCompetitiva": "20:20",
-        "partenzaCompetitiva": { "m": "21:30", "f": "21:00" },
+        "partenzaCompetitiva": {
+          "m": "21:30",
+          "f": "21:00"
+        },
         "ritrovo": "Piazza Orologio",
         "parcheggi": "Presso il Piazzale del Sole; Conad Viale Gusmini; Piazza Manzù (coperto)",
         "docce": "No",
@@ -163,7 +169,10 @@
       "programma": {
         "partenzaBaby": "18:45",
         "partenzaNonCompetitiva": "19:30",
-        "partenzaCompetitiva": { "m": "20:45", "f": "20:15" },
+        "partenzaCompetitiva": {
+          "m": "20:45",
+          "f": "20:15"
+        },
         "ritrovo": "Piazza Vittorio Veneto, Gandino",
         "parcheggi": "Via Vittorio Veneto (adiacenti a scuola materna), Via S.G. Bosco (adiacenti a Oratorio Sacro Cuore)",
         "docce": "Sì, presso Gandinese Stadium",
@@ -210,29 +219,20 @@
       },
       "regolamento": "public/files/regulations/2026_gandino.pdf",
       "foto": {
-        "description": "Foto a cura di Marino Cuccato",
-        "copertina": "public/media/2025/gandino/2025_gandino.webp",
+        "description": "Foto a cura di DR Fotografia",
+        "copertina": "public/media/2026/gandino/2026_gandino.webp",
         "category": [
-          { "name": "Baby run", "link": "" },
           {
-            "name": "Premiazione baby run",
-            "link": ""
+            "name": "Album 1 di Marco Pendezza",
+            "link": "https://photos.google.com/share/AF1QipOoh_Djj1NmLeMbqAv1Tx3OqSoGRol1P0kRrPs4Q2T-g5KDx6Oyrrth-6HeeDUC7g?pli=1&key=ZkhlTWI2RjhGalI4VHFROFpJTWZMVkVpeWprWkhR"
           },
           {
-            "name": "Non competitiva",
-            "link": ""
+            "name": "Album 2 di Diego De Giorgi",
+            "link": "https://photos.google.com/share/AF1QipOSd7kBB-RQu25cS18jC_ee9w31TOHaTh54y_gS3sdQohpRpOJrnC81tWyuHZaxYQ?key=emNLSUdpYjgzQVItUElEY3QyU0J0S0hfZGUwQ0p3"
           },
           {
-            "name": "Competitiva femminile",
-            "link": ""
-          },
-          {
-            "name": "Competitiva maschile",
-            "link": ""
-          },
-          {
-            "name": "Premiazioni",
-            "link": ""
+            "name": "Baby run",
+            "link": "https://photos.google.com/share/AF1QipPzrEe1kdlMAOatFQshFhOnDPKEz5frwJteTjj5HcC6woKDx7tAmda5om7xqnyXnA?key=ZTluRFBZaEN6U1JBQl9Rakp0ZTA1elBiRG1TMF9n"
           }
         ]
       }
@@ -248,7 +248,10 @@
       "programma": {
         "partenzaBaby": "19:00",
         "partenzaNonCompetitiva": "Esordienti: 19:10 | Liberi: 19:30",
-        "partenzaCompetitiva": { "m": "20:30", "f": "20:10" },
+        "partenzaCompetitiva": {
+          "m": "20:30",
+          "f": "20:10"
+        },
         "ritrovo": "Per le ore 18:00 Albino ( BG ) nei pressi dell'Oratorio Papa Giovanni XXIII in Via Don Cristoforo Rossi n.10",
         "parcheggi": "Scoperti, limitrofi",
         "docce": "Sì, presso l'oratorio",
@@ -326,7 +329,10 @@
       "programma": {
         "partenzaBaby": "18:30",
         "partenzaNonCompetitiva": "19:15",
-        "partenzaCompetitiva": { "m": "20:30", "f": "20:00" },
+        "partenzaCompetitiva": {
+          "m": "20:30",
+          "f": "20:00"
+        },
         "ritrovo": "Piazza Dante, Gromo",
         "parcheggi": "Presso il piazzale del borgo, su via papa Giovanni XXIII",
         "docce": "No",
@@ -394,7 +400,10 @@
       "programma": {
         "partenzaBaby": "17:30",
         "partenzaNonCompetitiva": "19:30",
-        "partenzaCompetitiva": { "m": "20:45", "f": "20:15" },
+        "partenzaCompetitiva": {
+          "m": "20:45",
+          "f": "20:15"
+        },
         "ritrovo": "Oratorio G. Bosco via Roma",
         "parcheggi": "All'aperto incustoditi",
         "docce": "Sì, in oratorio",
@@ -462,7 +471,10 @@
       "programma": {
         "partenzaBaby": "18:45",
         "partenzaNonCompetitiva": "19:30",
-        "partenzaCompetitiva": { "m": "20:45", "f": "20:15" },
+        "partenzaCompetitiva": {
+          "m": "20:45",
+          "f": "20:15"
+        },
         "ritrovo": "Per le ore 18:00 in Ardesio (BG) presso Piazza Monte Grappa 3 (sotto le arcate del palazzo comunale)",
         "parcheggi": "Piazza Monte Grappa, via Locatelli, Via L. da Vinci, via XXV Aprile",
         "docce": "Sì (presso il campo comunale di Ardesio in via L. Da vinci)",
@@ -530,7 +542,10 @@
       "programma": {
         "partenzaBaby": "19:00",
         "partenzaNonCompetitiva": "Ragazzi - Adolescenti: 19:15. Liberi: 19:30",
-        "partenzaCompetitiva": { "m": "20:45", "f": "20:15" },
+        "partenzaCompetitiva": {
+          "m": "20:45",
+          "f": "20:15"
+        },
         "ritrovo": "Presso il centro sportivo “Danilo Fiorina” - Piazza Martiri della Libertà",
         "parcheggi": "Scoperti, limitrofi",
         "docce": "Sì, presso il centro sportivo",
@@ -579,7 +594,12 @@
       "foto": {
         "description": "",
         "copertina": "public/media/2025/cerete/2025_cerete.webp",
-        "category": [{ "name": "", "link": "" }]
+        "category": [
+          {
+            "name": "",
+            "link": ""
+          }
+        ]
       }
     }
   ],
