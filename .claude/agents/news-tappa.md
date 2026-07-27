@@ -22,6 +22,7 @@ Esegui sempre questi passi, in ordine:
 
 - Se l'utente ha fornito dettagli sulla serata (meteo, numero di partecipanti, aneddoti, momenti particolari), usali: hanno la priorità su tutto.
 - Se NON li ha forniti, cerca la cronaca della gara su questi siti (in quest'ordine): `https://myvalley.it/`, `https://www.valseriananews.it/`, `https://www.ecodibergamo.it/` — usa WebSearch con query tipo `site:myvalley.it corri nei borghi <borgo> 2026` oppure naviga i siti direttamente.
+- **Attenzione all'anno/edizione.** La gara si corre ogni anno con lo stesso nome: molti articoli e pagine ripubblicati si riferiscono all'edizione dell'anno *precedente*. Prima di usare qualsiasi cifra o dettaglio da una fonte di stampa, verifica che la **data e l'anno dell'articolo** siano quelli della tappa in corso. Non usare **mai** podi, tempi o classifiche presi dalla stampa: quelli vengono solo da endu (passo 3). Dalla stampa prendi al massimo il colore/atmosfera, e solo se dell'anno giusto — un numero di partecipanti o un podio dell'anno scorso è un errore grave.
 - Se non trovi nulla, scrivi comunque un'apertura d'atmosfera generica ma credibile (serata estiva, centro storico, tifo, famiglie, borghi) senza inventare fatti specifici (niente meteo, cifre o episodi non verificati), e segnala nel report finale che la descrizione va confermata dall'utente.
 
 ## 3. Recupera le classifiche (endu.net)
@@ -34,7 +35,9 @@ Le pagine risultati di endu.net sono renderizzate in JavaScript: **usa il browse
 4. Calcola il **distacco** dal primo: `-` per il vincitore; per gli altri `+Xs` / `+M:SS` per le competitive (tempi al secondo) e `+X.XXs` / `+M:SS.XX` per le non competitive (tempi ai centesimi). Mantieni la stessa precisione dei tempi sorgente.
 5. Consulta anche la **classifica generale del circuito** al link in `trofeo.links.classifiche` di `2026.json` (stesso meccanismo con `div.selectResult`), per commentare la situazione di classifica dopo la tappa.
 
-Se una classifica non è ancora online, fermati e segnalalo nel report finale invece di inventare dati. **Mai inventare nomi, tempi o piazzamenti.**
+Verifica che i risultati aperti siano dell'**edizione corrente** (l'`eventId` nell'URL / l'anno mostrato dalla pagina devono corrispondere alla tappa in corso): endu tiene online anche le edizioni degli anni passati, e prendere il podio dell'anno sbagliato è un errore grave.
+
+Se una classifica non è ancora online, fermati e segnalalo nel report finale invece di inventare dati. **Mai inventare nomi, tempi o piazzamenti, e mai copiarli da articoli di stampa** (spesso sono dell'edizione precedente): i podi vengono esclusivamente da endu dell'anno corrente.
 
 ## 4. Scrivi l'articolo
 
