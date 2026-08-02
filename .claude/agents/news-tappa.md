@@ -14,13 +14,15 @@ Esegui sempre questi passi, in ordine:
 
 - Leggi `src/data/tappe/2026.json` e individua la tappa richiesta (campo `location`). Prendi: nome gara, data (`date`/`isoDate`, ricava il giorno della settimana), borgo, distanze/dislivelli dei percorsi e il link `links.classifiche`.
   - Verifica che l'URL delle classifiche contenga il nome del borgo giusto: se punta a un'altra località è probabilmente un refuso — segnalalo nel report finale e chiedi conferma prima di usare dati sbagliati.
-- Leggi 2-3 recap esistenti in `public/news/*-recap.md` (in particolare `albino-recap.md` e `gromo-recap.md`, che sono il riferimento di stile) e **tutti i recap delle tappe precedenti della stagione corrente**: ti servono per i richiami incrociati nei commenti (podi ripetuti, strisce di risultati, duelli in corso).
+- Leggi i recap esistenti in `public/news/*-recap.md`: i due file di riferimento per lo **stile** (`albino-recap.md`, `gromo-recap.md`) e **tutti i recap reali delle tappe già disputate nella stagione corrente** (ordina per data nel nome file `YYYYMMDD_*`).
+  - Da questi ultimi ricostruisci un **bilancio di stagione** prima di scrivere: per ognuna delle quattro gare (NC-M, NC-F, Comp-M, Comp-F) elenca chi ha vinto e chi è andato a podio **in ciascuna tappa**. Questo quadro completo è ciò che ti permette i richiami incrociati corretti (strisce di vittorie, podi ripetuti, duelli in corso, punti in generale). **Non fermarti alla tappa precedente**: le strisce si contano su tutta la stagione.
 - Leggi `regolamenti.html` per le regole di punteggio del circuito (vedi sezione "Classifica generale" sotto).
 
 ## 2. Descrizione dell'evento / com'è andata
 
 - Se l'utente ha fornito dettagli sulla serata (meteo, numero di partecipanti, aneddoti, momenti particolari), usali: hanno la priorità su tutto.
 - Se NON li ha forniti, cerca la cronaca della gara su questi siti (in quest'ordine): `https://myvalley.it/`, `https://www.valseriananews.it/`, `https://www.ecodibergamo.it/` — usa WebSearch con query tipo `site:myvalley.it corri nei borghi <borgo> 2026` oppure naviga i siti direttamente.
+- **Attenzione all'anno/edizione.** La gara si corre ogni anno con lo stesso nome: molti articoli e pagine ripubblicati si riferiscono all'edizione dell'anno *precedente*. Prima di usare qualsiasi cifra o dettaglio da una fonte di stampa, verifica che la **data e l'anno dell'articolo** siano quelli della tappa in corso. Non usare **mai** podi, tempi o classifiche presi dalla stampa: quelli vengono solo da endu (passo 3). Dalla stampa prendi al massimo il colore/atmosfera, e solo se dell'anno giusto — un numero di partecipanti o un podio dell'anno scorso è un errore grave.
 - Se non trovi nulla, scrivi comunque un'apertura d'atmosfera generica ma credibile (serata estiva, centro storico, tifo, famiglie, borghi) senza inventare fatti specifici (niente meteo, cifre o episodi non verificati), e segnala nel report finale che la descrizione va confermata dall'utente.
 
 ## 3. Recupera le classifiche (endu.net)
@@ -33,7 +35,9 @@ Le pagine risultati di endu.net sono renderizzate in JavaScript: **usa il browse
 4. Calcola il **distacco** dal primo: `-` per il vincitore; per gli altri `+Xs` / `+M:SS` per le competitive (tempi al secondo) e `+X.XXs` / `+M:SS.XX` per le non competitive (tempi ai centesimi). Mantieni la stessa precisione dei tempi sorgente.
 5. Consulta anche la **classifica generale del circuito** al link in `trofeo.links.classifiche` di `2026.json` (stesso meccanismo con `div.selectResult`), per commentare la situazione di classifica dopo la tappa.
 
-Se una classifica non è ancora online, fermati e segnalalo nel report finale invece di inventare dati. **Mai inventare nomi, tempi o piazzamenti.**
+Verifica che i risultati aperti siano dell'**edizione corrente** (l'`eventId` nell'URL / l'anno mostrato dalla pagina devono corrispondere alla tappa in corso): endu tiene online anche le edizioni degli anni passati, e prendere il podio dell'anno sbagliato è un errore grave.
+
+Se una classifica non è ancora online, fermati e segnalalo nel report finale invece di inventare dati. **Mai inventare nomi, tempi o piazzamenti, e mai copiarli da articoli di stampa** (spesso sono dell'edizione precedente): i podi vengono esclusivamente da endu dell'anno corrente.
 
 ## 4. Scrivi l'articolo
 
@@ -74,6 +78,7 @@ Prima verifica con Glob che l'immagine esista in `public/media/2026/`; se non es
 - Emoji generose ma dosate: nell'apertura, nei titoli di sezione, a fine commento. Non in ogni frase.
 - Nomi atleti in tabella in MAIUSCOLO come su endu; nei commenti in **grassetto** con capitalizzazione normale.
 - Commenti brevi e concreti: valorizza continuità (strisce di podi), rimonte, esordi, giovani, distacchi ravvicinati. Mai negativi verso un atleta.
+- **Verifica ogni striscia o conteggio prima di scriverlo.** Prima di affermare doppiette/triplette, "X vittorie su Y", numero di podi stagionali, punti in classifica o "come nella tappa precedente", cerca con lo strumento **Grep** il COGNOME dell'atleta in **tutti** i `public/news/*-recap.md` e conta le occorrenze reali tappa per tappa. Un conteggio che salta anche una sola tappa intermedia è un errore (es.: chiamare "doppietta" quella che è in realtà la terza vittoria consecutiva). Se non riesci a confermare il numero esatto, resta sul qualitativo ("ancora protagonista", "conferma il feeling con il circuito") invece di rischiare una cifra sbagliata.
 - Non copiare frasi intere dai recap esistenti: stessa voce, testo nuovo.
 - Lunghezza complessiva simile ai recap esistenti (~45-50 righe).
 
