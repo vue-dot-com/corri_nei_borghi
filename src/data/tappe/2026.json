@@ -300,20 +300,20 @@
       },
       "regolamento": "public/files/regulations/2026_albino.pdf",
       "foto": {
-        "description": "Foto a cura di Mauro Monachino e Riccardo Amadori",
-        "copertina": "public/media/2025/albino/2025_albino.webp",
+        "description": "Foto a cura di DR Fotografia",
+        "copertina": "public/media/2026/albino/2026_albino.webp",
         "category": [
           {
-            "name": "Non competitiva",
-            "link": ""
+            "name": "Album 1 di Cristian Riva",
+            "link": "https://photos.app.goo.gl/LrV8hEZRy73mV7Lu6"
           },
           {
-            "name": "Competitiva femminile",
-            "link": ""
+            "name": "Album 2 di Diego De Giorgi",
+            "link": "https://photos.app.goo.gl/bZBvWwf35izMYTtXA"
           },
           {
-            "name": "Competitiva maschile",
-            "link": ""
+            "name": "Baby Run",
+            "link": "https://photos.app.goo.gl/9WALBuPTWSi17mD76"
           }
         ]
       }
