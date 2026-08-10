@@ -380,11 +380,19 @@
       "regolamento": "public/files/regulations/2026_gromo.pdf",
       "foto": {
         "description": "Foto a cura di DRfotografia",
-        "copertina": "public/media/2025/gromo/2025_gromo.webp",
+        "copertina": "public/media/2026/gromo/2026_gromo.webp",
         "category": [
           {
-            "name": "Tutte le foto",
-            "link": ""
+            "name": "Album 1 di Marco Pendezza",
+            "link": "https://photos.app.goo.gl/1iEjSLybAWMU4gVC7"
+          },
+          {
+            "name": "Album 2 di Diego De Giorgi",
+            "link": "https://photos.app.goo.gl/ByBHmiaqDgkff7GF9"
+          },
+          {
+            "name": "Baby Run",
+            "link": "https://photos.app.goo.gl/GTpCwztXSFKKqZ8T7"
           }
         ]
       }
