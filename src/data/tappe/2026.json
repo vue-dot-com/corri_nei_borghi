@@ -379,7 +379,7 @@
       },
       "regolamento": "public/files/regulations/2026_gromo.pdf",
       "foto": {
-        "description": "Foto a cura di DRfotografia",
+        "description": "Foto a cura di DR Fotografia",
         "copertina": "public/media/2026/gromo/2026_gromo.webp",
         "category": [
           {
@@ -458,12 +458,20 @@
       },
       "regolamento": "public/files/regulations/2026_parre.pdf",
       "foto": {
-        "description": "",
-        "copertina": "public/media/2025/parre/2025_parre.webp",
+        "description": "Foto a cura di DR Fotografia",
+        "copertina": "public/media/2026/parre/2026_parre.webp",
         "category": [
           {
-            "name": "Competitiva e premiazioni",
-            "link": ""
+            "name": "Album 1 di Marco Pendezza",
+            "link": "https://photos.app.goo.gl/JEB89doTeHS9fiDt8"
+          },
+          {
+            "name": "Album 2 di Diego De Giorgi",
+            "link": "https://photos.app.goo.gl/EVUTTbqc5RspwV3MA"
+          },
+          {
+            "name": "Baby Run",
+            "link": "https://photos.app.goo.gl/sFWucrpc82bb7r137"
           }
         ]
       }
