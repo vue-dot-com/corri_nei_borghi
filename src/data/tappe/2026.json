@@ -537,12 +537,20 @@
       },
       "regolamento": "public/files/regulations/2026_ardesio.pdf",
       "foto": {
-        "description": "Foto a cura di Ph_iliset",
-        "copertina": "public/media/2024/ardesio/2024_ardesio.webp",
+        "description": "Foto a cura di DR Fotografia",
+        "copertina": "public/media/2026/ardesio/2026_ardesio.webp",
         "category": [
           {
-            "name": "",
-            "link": ""
+            "name": "Album 1 di Marco Pendezza",
+            "link": "https://photos.app.goo.gl/WwkTuognsw3ZGQmr9"
+          },
+          {
+            "name": "Album 2 di Diego De Giorgi",
+            "link": "https://photos.app.goo.gl/DEGufRWSPCmGBTmt7"
+          },
+          {
+            "name": "Baby Run",
+            "link": "https://photos.app.goo.gl/yMwG87AUrA3bEQw46"
           }
         ]
       }
