@@ -1,7 +1,13 @@
 [
   {
+    "title": "🏆 Cerete – Gran finale: si chiude la XIX edizione del Circuito! 💞",
+    "image": "public/media/2026/cerete/2026_cerete.webp",
+    "bodyFile": "public/news/20260829_cerete-recap.md",
+    "published": true
+  },
+  {
     "title": "🏔️ Ardesio – Scandella tris, Sonzogni balza in testa: tutto si decide a Cerete! 🔜",
-    "image": "public/media/2026/ardesio/2026_ardesio.web",
+    "image": "public/media/2026/ardesio/2026_ardesio.webp",
     "bodyFile": "public/news/20260821_ardesio-recap.md",
     "published": true
   },

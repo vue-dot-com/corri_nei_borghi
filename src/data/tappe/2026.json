@@ -616,12 +616,20 @@
       },
       "regolamento": "public/files/regulations/2026_cerete.pdf",
       "foto": {
-        "description": "",
-        "copertina": "public/media/2025/cerete/2025_cerete.webp",
+        "description": "Foto a cura di DR Fotografia",
+        "copertina": "public/media/2026/cerete/2026_cerete.webp",
         "category": [
           {
-            "name": "",
-            "link": ""
+            "name": "Album 1 di Pietro Granati",
+            "link": "https://photos.app.goo.gl/FkBheUsxcykMuxHA7"
+          },
+          {
+            "name": "Album 2 di Diego Degiorgi",
+            "link": "https://photos.app.goo.gl/KeCJQKe5KWMt47Ns8"
+          },
+          {
+            "name": "Baby Run",
+            "link": "https://photos.app.goo.gl/KejDe1YFhJQJvq1q9"
           }
         ]
       }
